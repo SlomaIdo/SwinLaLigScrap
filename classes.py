@@ -85,23 +85,51 @@ class AthleticsDisciplines():
         self.soup = BeautifulSoup(self.page.content, 'html.parser')
     
     def extract_main_table(self) -> str:
+        """Extract the main table in a single competition page.
+
+        Raises:
+            ValueError: If the number of columns in the table does not match the number of headers.
+
+        Returns:
+            list: list of dictionaries with the competition details.
+        """
         main_table = self.soup.find_all('table', {"class": "table res-table"})
         main_table_columns = main_table[0].find('tr', {"class": "disciplines-title"})
-        #TODO: Find how to extract the columns of the table in specific order.
-        main_table_columns = [i.text for i in main_table_columns.find_all('th')]
-        
+        #//TODO #1 Find how to extract the columns of the table in specific order.       
+        #Only 7 headers are needed. 
+        main_table_columns = tuple([i.text for i in main_table_columns.find_all('th')[0:6]])        
         rows_of_table = main_table[0].find_all('tr')
+        comp_rows = []
         for row in rows_of_table:
             text_ls = [j.text for j in row.find_all('td')]
+            if len(text_ls) == 0: 
+                continue            
+            #remove all \n from list elements
+            text_ls = [item.replace('\n', '') for item in text_ls]
+            text_ls = text_ls[0:6]
+            # find the reults link
             link = row.find_all('a',{"class": "btn btn-primary resultsModal button-with-spinner"})
             if len(link) > 0:
-                link = link[0]['href']
-            link
-        return main_table
+                results_link = link[0]['href']
+            else:
+                results_link = None
+
+            if len(text_ls) == 6 and len(main_table_columns) == 6:
+                row_dict = dict(zip(main_table_columns, text_ls))
+            else:
+                raise ValueError('The number of columns in the table does not\
+                                  match the number of headers.')
+            if results_link is not None:
+                row_dict['results_link'] = results_link
+            else:
+                row_dict['results_link'] = None
+            comp_rows.append(row_dict)
+        return comp_rows
     
 url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplines/9453'
 test = AthleticsDisciplines(url)
-test.extract_main_table()
+comp_details = test.extract_main_table()
+comp_details
 
 """
 test.soup        
