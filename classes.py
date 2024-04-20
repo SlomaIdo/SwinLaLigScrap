@@ -1,3 +1,9 @@
+#TODO: #2 Move all the functions to separate function file.
+#TODO: #3 Putting this all together, create a flow to scrape the competitions, disciplines and results.
+#TODO: #4 debug and test the code, via a whole run.
+#TODO: #5 Push to SQLite database.
+
+
 import requests
 from bs4 import BeautifulSoup
 
