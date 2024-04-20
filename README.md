@@ -46,6 +46,12 @@ So all we need to get from here is to find the `iframes` that are connected to t
 Also we should collect info from the meta data. 
 TODO: What is the meta data for each competition?
 
+* If english is needed, one can add the `_culture` cookie to the GET request.
+ For example: 
+`self.page = requests.get(url, cookies={'_culture':'en-US'})`
+
 #### AthleticsDisciplines
 AthleticsDisciplines is the main container for a day of a competition.
 Each AthleticsDisciplines starts with a table with those column:
+
+#### AthleticsDisciplines
