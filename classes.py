@@ -6,6 +6,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+from functions import extract_athletics_discipline, extract_athletics_discipline_results
 
 class CompetitionScraper():
     
@@ -91,52 +92,16 @@ class AthleticsDisciplines():
     
     def extract_main_table(self) -> str:
         """Extract the main table in a single competition page.
-
-        Raises:
-            ValueError: If the number of columns in the table does not match the number of headers.
-
-        Returns:
-            list: list of dictionaries with the competition details.
         """
-        requests.post('https://loglig.com:2053/Common/SetCulture?lang=en')
-        main_table = self.soup.find_all('table', {"class": "table res-table"})
-        main_table_columns = main_table[0].find('tr', {"class": "disciplines-title"})        
-        #Only 7 headers are needed. 
-        main_table_columns = tuple([i.text for i in main_table_columns.find_all('th')])
-        main_table_columns = main_table_columns[0:7]        
-        rows_of_table = main_table[0].find_all('tr')
-        comp_rows = []
-        for row in rows_of_table:
-            text_ls = [j.text for j in row.find_all('td')]
-            if len(text_ls) == 0: 
-                continue            
-            #remove all \n from list elements
-            text_ls = [item.replace('\n', '') for item in text_ls]
-            text_ls = text_ls[0:7]
-            # find the reults link
-            link = row.find_all('a',{"class": "btn btn-primary resultsModal button-with-spinner"})
-            if len(link) > 0:
-                results_link = link[0]['href']
-            else:
-                results_link = None
-
-            if len(text_ls) == 7 and len(main_table_columns) == 7:
-                row_dict = dict(zip(main_table_columns, text_ls))
-            else:
-                raise ValueError('The number of columns in the table does not\
-                                  match the number of headers.')
-            if results_link is not None:
-                row_dict['results_link'] = results_link
-            else:
-                row_dict['results_link'] = None
-            comp_rows.append(row_dict)
-        return comp_rows
+        return(
+            extract_athletics_discipline(self.soup, n=7)
+            )
 
 
-url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplines/9453'
-test = AthleticsDisciplines(url)
-comp_details = test.extract_main_table()
-comp_details
+#url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplines/9453'
+#test = AthleticsDisciplines(url)
+#comp_details = test.extract_main_table()
+#comp_details
 
 class AthleticsDisciplineResults():
     """Class for extracting the results table in a single discipline page.
@@ -148,46 +113,13 @@ class AthleticsDisciplineResults():
         self.soup = BeautifulSoup(self.page.content, 'html.parser')
         
     def extract_results_table(self) -> str:
-        """Extract the results table in a single competition page.
-    
-            Raises:
-                ValueError: If the number of columns in the table does not match the number of headers.
-    
-            Returns:
-                list: list of dictionaries with the competition results.
+        """Extract the results table in a single competition page.    
         """
-        results_table = self.soup.find_all('table', {"class": "table res-table"})
-        main_table_columns = results_table[0].find('tr', {"class": "disciplines-title"})        
-            #Only 8 headers are needed.
-            # Parsing the main table columns.
-        main_table_columns = tuple([i.text for i in main_table_columns.find_all('th')])
+        return(
+            extract_athletics_discipline_results(self.soup, n=8)
+               )
 
-        rows_of_table = results_table[0].find_all('tr')
-        comp_rows = []
-        table_first_row = None
-        for row in rows_of_table:
-            text_ls = [j.text for j in row.find_all('td')]
-            if len(text_ls) == 0: 
-                continue            
-                #remove all \n from list elements
-            text_ls = [item.replace('\n', '') for item in text_ls]
-            text_ls = [item.rstrip() for item in text_ls]
-            text_ls = text_ls[0:8]
-               
-            if len(text_ls) == 8 and len(main_table_columns) == 8:
-                row_dict = dict(zip(main_table_columns, text_ls))
-            elif text_ls[0] == 'Direct Finals':
-                table_first_row = text_ls[0]
-                continue
-            else:
-                raise ValueError('The number of columns in the table does not\
-                                      match the number of headers.')
-            row_dict['table_first_row'] = table_first_row
-            comp_rows.append(row_dict)
-        return comp_rows
-            
-
-#url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplineResults/41422'
-#test = AthleticsDisciplineResults(url)
-#comp_details = test.extract_results_table()
+url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplineResults/41422'
+test = AthleticsDisciplineResults(url)
+comp_details = test.extract_results_table()
 #comp_details
