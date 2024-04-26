@@ -65,6 +65,8 @@ def extract_athletics_discipline_results(soup:BeautifulSoup, n:int=8)-> list:
         list: List of Dicts with the table rows.
     """
     results_table = soup.find_all('table', {"class": "table res-table"})
+    if len(results_table) == 0:
+        return []
     main_table_columns = results_table[0].find('tr', {"class": "disciplines-title"})        
     #Only 8 headers are needed.
     # Parsing the main table columns.
@@ -88,7 +90,11 @@ def extract_athletics_discipline_results(soup:BeautifulSoup, n:int=8)-> list:
         if (len(text_ls) == n and len(main_table_columns) == n) or \
             (len(text_ls) == len(main_table_columns)):
             row_dict = dict(zip(main_table_columns, text_ls))
-        elif text_ls[0] == 'Direct Finals' or text_ls[0] == 'Preliminary' or text_ls[0] == 'Qualifications' or text_ls[0] == 'Finals':
+        elif text_ls[0] == 'Direct Finals' or \
+                text_ls[0] == 'Preliminary' or \
+                text_ls[0] == 'Qualifications' or \
+                text_ls[0] == 'Finals' or \
+                text_ls[0] == 'Semifinals':
             table_first_row = text_ls[0]
             continue
         else:

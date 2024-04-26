@@ -2,6 +2,7 @@ from classes import *
 import pandas as pd
 
 base_url = 'https://isr.org.il/'
+loglig_url = 'https://loglig.com:2053/'
 url = 'https://isr.org.il/competitions.asp?cYear=2024&cMonth=0&cType=1&cMode=0&isFinish=true'
 comp = CompetitionScraper(url)
 comp_names = comp.get_competition_names()
@@ -23,5 +24,14 @@ for i in year_comps:
         events_lst.append(full_dict)
         
 events_lst
-#year_comps_df = pd.DataFrame(year_comps)
-#year_comps_df
+# filter events so there is more than 0 participants in the event
+# filter events so there is a link to the results
+
+events_df = pd.DataFrame(events_lst)
+events_df = events_df[events_df['Total Participants'] != '0']
+events_df = events_df[events_df['results_link'].notnull()]
+
+for i,row in events_df.iterrows():
+    url = loglig_url + row['results_link']
+    example = AthleticsDisciplineResults(url=url).extract_results_table()
+    example
