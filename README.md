@@ -54,5 +54,24 @@ TODO: What is the meta data for each competition?
 AthleticsDisciplines is the main container for a day of a competition.
 Each AthleticsDisciplines starts with a table with those column:
 
-#### AthleticsDisciplines
+#### AthleticsDisciplinesResults
 
+
+
+# Database
+
+We will use Sqlite database to push results to. 
+The first layer will be the list of the competitions.
+
+## Ingest Process
+
+### Ingesting Events
+The first flow is to ingest the events based on the class code above.
+This will results in three tables: `ingest_events`, `production_events` and `failed_events`.
+The first one is just the results of our query, while the two latters are the results wheter these succeeded in the process.
+
+We sort to fail/pass based on:
+Existance of valid link and participants above 0. Failed events will be reviewed later. 
+
+### Ingesting Results
+Based on the `production_events` table we go and fetch all of the results using the `AthleticsDisciplineResults` class, and append the results to `discipline_results_ingest` table. This will be the main table we will work on the results. 
