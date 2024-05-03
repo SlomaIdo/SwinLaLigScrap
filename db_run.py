@@ -5,7 +5,7 @@ from database import Database
 base_url = 'https://isr.org.il/'
 loglig_url = 'https://loglig.com:2053/'
 
-swim_database = Database(file='swim_database.sqlite3')
+swim_database = Database(file='swim_database_2.sqlite3')
 
 
 df = pd.read_sql_query('SELECT * FROM production_events', swim_database.conn)

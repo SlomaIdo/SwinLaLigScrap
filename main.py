@@ -4,12 +4,12 @@ from database import Database
 
 base_url = 'https://isr.org.il/'
 loglig_url = 'https://loglig.com:2053/'
-url = 'https://isr.org.il/competitions.asp?cYear=2024&cMonth=0&cType=1&cMode=0&isFinish=true'
+url = 'https://isr.org.il/competitions.asp?cYear=2023&cMonth=0&cType=1&cMode=0&isFinish=true'
 comp = CompetitionScraper(url)
 comp_names = comp.get_competition_names()
 
 #Init Database
-swim_database = Database(file='swim_database.sqlite3')
+swim_database = Database(file='swim_database_2.sqlite3')
 
 year_comps = []
 for i in comp_names:
@@ -34,6 +34,6 @@ events_lst
 
 events_df = pd.DataFrame(events_lst)
 
-swim_database.insert_dataframe_into_table(events_df, 'ingest_events', if_exists='replace')
+swim_database.insert_dataframe_into_table(events_df, 'ingest_events', if_exists='append')
 swim_database.process_ingest_comp()
-swim_database
+#swim_database

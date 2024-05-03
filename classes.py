@@ -109,7 +109,11 @@ class AthleticsDisciplineResults():
         
     def __init__(self, url:str) -> None:
         self.url = url
-        self.page = requests.get(url, cookies={'_culture':'en-US'})
+        try:
+            self.page = requests.get(url, cookies={'_culture':'en-US'},timeout=15.0)
+        except requests.exceptions.ReadTimeout:
+            print('The request timed out', url)
+            pass
         self.soup = BeautifulSoup(self.page.content, 'html.parser')
         
     def extract_results_table(self) -> str:
