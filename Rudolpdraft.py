@@ -16,7 +16,6 @@ mw_df.loc[mw_df['Category'].str.contains('boys|Men|Boys|men', na=False),'Gender'
 mw_df.loc[mw_df['Category'].str.contains('Girls|Women', na=False),'Gender'] = 'F'
 
 mw_df['RudolphEvent'] = mw_df['Event'].apply(replace_event_to_Rudolph)
-mw_df[['RudolphEvent','Event']].value_counts()
 mw_df = mw_df[mw_df['RudolphEvent'] != False]
 # create a Rudolph object for each row
 mw_df['RudolphScore'] = mw_df.apply(lambda x: Rudolph(year=str(const_year),

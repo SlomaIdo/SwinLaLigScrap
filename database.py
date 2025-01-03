@@ -22,6 +22,17 @@ class Database:
             else:
                 print(f'Not all rows were inserted correctly into {table_name}')
             return num_rows
+    def check_production_links(self):
+        query = """
+                SELECT results_link FROM production_events
+                EXCEPT
+                SELECT results_link FROM discipline_results_ingest
+                """
+        links = self.conn.execute(query).fetchall()
+        links_ls = [row[0] for row in links]
+        linkd_df = pd.DataFrame({'results_link':links_ls,'status':'missing from production'})
+        self.insert_dataframe_into_table(linkd_df, 'links_check', if_exists='replace')
+        return links
 
         
 

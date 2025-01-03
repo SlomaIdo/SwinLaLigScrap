@@ -144,7 +144,7 @@ def Rudolph(year:int, gender:str, age:str, event:str, result:str) -> int:
         result = '00%3A' + result
     try:
         bswim_url = base_url.format(year, gender, age, event, result)
-        page = requests.get(bswim_url, headers={'User-Agent': headers})#, data=payload)
+        page = requests.get(bswim_url, headers={'User-Agent': headers})
         soup = BeautifulSoup(page.text, 'html.parser')
         return int(soup.text)
     except Exception as e:
@@ -181,5 +181,3 @@ def replace_event_to_Rudolph(str):
         return False
     else:
         return str
-
-#Rudolph('2024', 'M', '10', '50 Freestyle', '00:00:30.00')

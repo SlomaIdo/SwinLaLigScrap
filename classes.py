@@ -111,10 +111,13 @@ class AthleticsDisciplineResults():
         self.url = url
         try:
             self.page = requests.get(url, cookies={'_culture':'en-US'},timeout=15.0)
-        except requests.exceptions.ReadTimeout:
+        except requests.exceptions.ReadTimeout or requests.exceptions.ConnectionError as e:
             print('The request timed out', url)
+            raise e
+        try:
+            self.soup = BeautifulSoup(self.page.content, 'html.parser')
+        except AttributeError:
             pass
-        self.soup = BeautifulSoup(self.page.content, 'html.parser')
         
     def extract_results_table(self) -> str:
         """Extract the results table in a single competition page.    

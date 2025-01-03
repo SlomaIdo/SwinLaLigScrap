@@ -4,7 +4,7 @@ from database import Database
 
 base_url = 'https://isr.org.il/'
 loglig_url = 'https://loglig.com:2053/'
-url = 'https://isr.org.il/competitions.asp?cYear=2023&cMonth=0&cType=1&cMode=0&isFinish=true'
+url = 'https://isr.org.il/competitions.asp?cYear=2024&cMonth=0&cType=1&cMode=0&isFinish=true'
 comp = CompetitionScraper(url)
 comp_names = comp.get_competition_names()
 
