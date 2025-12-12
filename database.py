@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 import sqlalchemy
 import numpy as np
+import logging
 
 class Database:
     """Database from the swimming results
@@ -88,15 +89,37 @@ def process_ingest(df):
     # Time: 09:00
     #First we see which rows have the correct format
     time_pattern = '\\d{2}/\\d{2}/\\d{4} \\d{2}:\\d{2}'
-    time_pass =np.where(~df_passed['Start Time'].str.contains(time_pattern))
-    if len(time_pass[0]) > 0:
-        print(f'The following rows do not have the correct format for Start Time: {time_pass[0]}')
-        raise ValueError('The Start Time column does not have the correct format')
-    else:    
-        df_passed['Date'] = df_passed['Start Time'].str.split(' ').str[0]
-        df_passed['Date'] = pd.to_datetime(df_passed['Date'], dayfirst=True)
-        df_passed['Year'] = df_passed['Date'].dt.year   
-        df_passed['Time'] = df_passed['Start Time'].str.split(' ').str[1]
+    
+    try:
+        time_pass = np.where(~df_passed['Start Time'].str.contains(time_pattern, na=False))
+        
+        if len(time_pass[0]) > 0:
+            # Log the problematic rows
+            problematic_rows = df_passed.iloc[time_pass[0]]
+            logging.warning(f'Found {len(time_pass[0])} rows with incorrect Start Time format')
+            logging.warning(f'Problematic row indices: {time_pass[0]}')
+            logging.warning(f'Problematic Start Time values:\n{problematic_rows["Start Time"].values}')
+            
+            # Move problematic rows to failed
+            df_failed = pd.concat([df_failed, problematic_rows[df_failed.columns]])
+            df_passed = df_passed.drop(problematic_rows.index)
+            logging.info(f'Moved {len(time_pass[0])} rows to failed table due to Start Time format issues')
+        
+        # Process the remaining rows with correct format
+        if len(df_passed) > 0:
+            df_passed['Date'] = df_passed['Start Time'].str.split(' ').str[0]
+            df_passed['Date'] = pd.to_datetime(df_passed['Date'], dayfirst=True)
+            df_passed['Year'] = df_passed['Date'].dt.year   
+            df_passed['Time'] = df_passed['Start Time'].str.split(' ').str[1]
+        else:
+            logging.warning('No rows passed the Start Time format check')
+            
+    except Exception as e:
+        logging.error(f'Error processing Start Time column: {e}')
+        logging.error(f'Moving all remaining rows to failed table')
+        df_failed = pd.concat([df_failed, df_passed[df_failed.columns]])
+        df_passed = df_passed.iloc[0:0]  # Empty dataframe with same columns
+    
     df_passed['Status'] = 'Passed'
     df_failed['Status'] = 'Failed'
     #insert the data into the production table

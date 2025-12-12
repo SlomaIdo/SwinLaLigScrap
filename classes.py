@@ -107,17 +107,29 @@ class AthleticsDisciplineResults():
     """Class for extracting the results table in a single discipline page.
     """
         
-    def __init__(self, url:str) -> None:
+    def __init__(self, url:str, max_retries:int=3, timeout:int=30) -> None:
         self.url = url
-        try:
-            self.page = requests.get(url, cookies={'_culture':'en-US'},timeout=15.0)
-        except requests.exceptions.ReadTimeout or requests.exceptions.ConnectionError as e:
-            print('The request timed out', url)
-            raise e
-        try:
-            self.soup = BeautifulSoup(self.page.content, 'html.parser')
-        except AttributeError:
-            pass
+        self.max_retries = max_retries
+        self.timeout = timeout
+        
+        # Retry logic with exponential backoff
+        for attempt in range(max_retries):
+            try:
+                self.page = requests.get(url, cookies={'_culture':'en-US'}, timeout=timeout)
+                self.soup = BeautifulSoup(self.page.content, 'html.parser')
+                return  # Success, exit the retry loop
+            except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # Exponential backoff: 1s, 2s, 4s
+                    print(f'Attempt {attempt + 1}/{max_retries} failed for {url}. Retrying in {wait_time}s...')
+                    import time
+                    time.sleep(wait_time)
+                else:
+                    print(f'The request timed out after {max_retries} attempts: {url}')
+                    raise e
+            except AttributeError:
+                # Handle cases where page.content doesn't exist
+                pass
         
     def extract_results_table(self) -> str:
         """Extract the results table in a single competition page.    
@@ -126,7 +138,7 @@ class AthleticsDisciplineResults():
             extract_athletics_discipline_results(self.soup, n=8)
                )
 
-url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplineResults/41422'
-test = AthleticsDisciplineResults(url)
-comp_details = test.extract_results_table()
+#url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplineResults/41422'
+#test = AthleticsDisciplineResults(url)
+#comp_details = test.extract_results_table()
 #comp_details
