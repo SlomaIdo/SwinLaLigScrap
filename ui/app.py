@@ -5,7 +5,7 @@ A Dash-based web application for analyzing swimming performance data from the IS
 """
 
 import dash
-from dash import dcc, html, Input, Output, State
+from dash import dcc, html, Input, Output, State, dash_table
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import plotly.express as px
@@ -92,7 +92,17 @@ app.layout = dbc.Container([
                             searchable=True,
                             clearable=True
                         ),
-                    ], md=6),
+                    ], md=12),
+                ], className="mb-4"),
+                
+                # Swimmer events summary table
+                dbc.Row([
+                    dbc.Col([
+                        html.Div(id="swimmer-events-summary")
+                    ])
+                ], className="mb-4"),
+                
+                dbc.Row([
                     dbc.Col([
                         html.H4("Event Selection", className="mt-4 mb-3"),
                         dbc.Label("Select Event:"),
@@ -104,17 +114,17 @@ app.layout = dbc.Container([
                             clearable=True
                         ),
                     ], md=6),
-                ], className="mb-4"),
-                
-                dbc.Row([
                     dbc.Col([
-                        dbc.Button(
-                            "Analyze Performance",
-                            id="analyze-button",
-                            color="success",
-                            className="w-100"
-                        ),
-                    ], md=12)
+                        html.Div([
+                            html.H4("Analyze Event", className="mt-4 mb-3"),
+                            dbc.Button(
+                                "Analyze Performance",
+                                id="analyze-button",
+                                color="success",
+                                className="w-100 mt-4"
+                            ),
+                        ])
+                    ], md=6),
                 ], className="mb-4"),
                 
                 # Performance statistics cards
@@ -335,10 +345,96 @@ app.layout = dbc.Container([
                     ])
                 ], className="mb-4"),
                 
+                # Filters section
                 dbc.Row([
                     dbc.Col([
-                        html.H5("Recent Results", className="mb-3"),
-                        html.Div(id="recent-results-table")
+                        html.H5("Filter Results", className="mb-3"),
+                    ])
+                ]),
+                
+                dbc.Row([
+                    dbc.Col([
+                        dbc.Label("Club:"),
+                        dcc.Dropdown(
+                            id="explorer-club-dropdown",
+                            options=[],
+                            placeholder="All clubs",
+                            multi=True,
+                            searchable=True,
+                            clearable=True
+                        ),
+                    ], md=3),
+                    dbc.Col([
+                        dbc.Label("Year of Birth:"),
+                        dcc.Dropdown(
+                            id="explorer-year-dropdown",
+                            options=[],
+                            placeholder="All years",
+                            multi=True,
+                            searchable=True,
+                            clearable=True
+                        ),
+                    ], md=3),
+                    dbc.Col([
+                        dbc.Label("Gender:"),
+                        dcc.Dropdown(
+                            id="explorer-gender-dropdown",
+                            options=[
+                                {"label": "Boys", "value": "Boys"},
+                                {"label": "Girls", "value": "Girls"}
+                            ],
+                            placeholder="All",
+                            clearable=True
+                        ),
+                    ], md=3),
+                    dbc.Col([
+                        dbc.Label("Event:"),
+                        dcc.Dropdown(
+                            id="explorer-event-dropdown",
+                            options=[],
+                            placeholder="All events",
+                            searchable=True,
+                            clearable=True
+                        ),
+                    ], md=3),
+                ], className="mb-3"),
+                
+                dbc.Row([
+                    dbc.Col([
+                        dbc.Button(
+                            [html.I(className="fas fa-search me-2"), "Apply Filters"],
+                            id="explorer-filter-button",
+                            color="primary",
+                            className="me-2"
+                        ),
+                        dbc.Button(
+                            [html.I(className="fas fa-redo me-2"), "Reset Filters"],
+                            id="explorer-reset-button",
+                            color="secondary"
+                        ),
+                    ], className="mb-3")
+                ]),
+                
+                # Results section
+                dbc.Row([
+                    dbc.Col([
+                        html.H5(id="results-count", className="mb-3"),
+                        html.Div(id="filtered-results-table")
+                    ])
+                ], className="mb-3"),
+                
+                # Pagination controls
+                dbc.Row([
+                    dbc.Col([
+                        html.Div([
+                            dbc.ButtonGroup([
+                                dbc.Button("Previous", id="prev-page-button", color="primary", outline=True),
+                                dbc.Button(id="page-info", disabled=True, color="light"),
+                                dbc.Button("Next", id="next-page-button", color="primary", outline=True),
+                            ]),
+                            dcc.Store(id='current-page', data=1),
+                            dcc.Store(id='total-pages', data=1),
+                        ], className="d-flex justify-content-center")
                     ])
                 ]),
             ], fluid=True)
@@ -359,6 +455,125 @@ app.layout = dbc.Container([
 
 
 # Callbacks
+
+@app.callback(
+    Output("swimmer-events-summary", "children"),
+    Input("swimmer-dropdown", "value")
+)
+def update_swimmer_events_summary(swimmer_name):
+    """Display summary table of all events for selected swimmer"""
+    if not swimmer_name:
+        return html.Div()
+    
+    try:
+        # Get all data for the swimmer
+        swimmer_data = df[df['Full name'].str.upper() == swimmer_name.upper()].copy()
+        
+        if len(swimmer_data) == 0:
+            return html.Div()
+        
+        # Group by event and calculate statistics
+        event_stats = []
+        for event in swimmer_data['Event'].unique():
+            event_data = swimmer_data[swimmer_data['Event'] == event].sort_values('Date')
+            
+            total_races = len(event_data)
+            best_time = event_data['result_seconds'].min()
+            latest_time = event_data['result_seconds'].iloc[-1]
+            first_time = event_data['result_seconds'].iloc[0]
+            
+            # Calculate total improvement from first to latest (negative means got faster)
+            total_improvement = ((latest_time - first_time) / first_time * 100) if first_time > 0 else 0
+            
+            # Calculate improvement from last race (n from n-1)
+            if len(event_data) >= 2:
+                second_last_time = event_data['result_seconds'].iloc[-2]
+                improvement_from_last = ((latest_time - second_last_time) / second_last_time * 100) if second_last_time > 0 else 0
+            else:
+                improvement_from_last = 0
+            
+            event_stats.append({
+                'Event': event,
+                'Total Races': total_races,
+                'Best Time': f"{best_time:.2f}s",
+                'Latest Time': f"{latest_time:.2f}s",
+                'Total Improvement': f"{total_improvement:+.1f}%",
+                'Improvement from Last': f"{improvement_from_last:+.1f}%"
+            })
+        
+        # Create DataFrame and sort by event name
+        summary_df = pd.DataFrame(event_stats).sort_values('Event').reset_index(drop=True)
+        
+        # Create interactive DataTable
+        summary_table = dash_table.DataTable(
+            id='events-summary-table',
+            columns=[{"name": col, "id": col} for col in summary_df.columns],
+            data=summary_df.to_dict('records'),
+            style_table={'overflowX': 'auto'},
+            style_cell={
+                'textAlign': 'left',
+                'padding': '10px',
+                'fontFamily': 'Arial, sans-serif',
+                'fontSize': '14px'
+            },
+            style_header={
+                'backgroundColor': '#4f46e5',
+                'color': 'white',
+                'fontWeight': 'bold',
+                'textAlign': 'left'
+            },
+            style_data={
+                'backgroundColor': 'white',
+                'border': '1px solid #ddd'
+            },
+            style_data_conditional=[
+                {
+                    'if': {'row_index': 'odd'},
+                    'backgroundColor': '#f8f9fa'
+                },
+                {
+                    'if': {'state': 'selected'},
+                    'backgroundColor': '#e0e7ff',
+                    'border': '1px solid #4f46e5'
+                }
+            ],
+            row_selectable='single',
+            selected_rows=[],
+            page_action='none',
+            css=[{
+                'selector': '.dash-spreadsheet td div',
+                'rule': '''
+                    line-height: 15px;
+                    max-height: 30px; min-height: 30px; height: 30px;
+                    display: block;
+                    overflow-y: hidden;
+                '''
+            }]
+        )
+        
+        return html.Div([
+            html.H5(f"Events Summary for {swimmer_name}", className="mb-3"),
+            html.P("Click on a row to select that event for detailed analysis", className="text-muted small mb-2"),
+            summary_table
+        ])
+        
+    except Exception as e:
+        return html.Div(f"Error loading swimmer data: {str(e)}", className="text-danger")
+
+
+@app.callback(
+    Output("event-dropdown-individual", "value"),
+    Input("events-summary-table", "selected_rows"),
+    State("events-summary-table", "data"),
+    prevent_initial_call=True
+)
+def update_event_from_table(selected_rows, table_data):
+    """Update event dropdown when a row is clicked in the summary table"""
+    if selected_rows and table_data:
+        selected_event = table_data[selected_rows[0]]['Event']
+        return selected_event
+    return dash.no_update
+
 
 @app.callback(
     [Output("refresh-status", "children"),
@@ -665,20 +880,21 @@ def update_comparison(n_clicks, swimmer_name, event_pattern, gender):
 
 @app.callback(
     [Output("database-stats", "children"),
-     Output("recent-results-table", "children")],
+     Output("explorer-club-dropdown", "options"),
+     Output("explorer-year-dropdown", "options"),
+     Output("explorer-event-dropdown", "options")],
     Input("tabs", "active_tab")
 )
-def update_data_explorer(active_tab):
-    """Update data explorer tab"""
+def update_data_explorer_init(active_tab):
+    """Initialize data explorer tab with filter options"""
     if active_tab != "tab-explorer":
-        return html.Div(), html.Div()
+        return html.Div(), [], [], []
     
     try:
         # Database statistics
         total_results = len(df)
         total_swimmers = df['Full name'].nunique()
         total_events = df['Event'].nunique()
-        total_competitions = df['competition_name'].nunique() if 'competition_name' in df.columns else 'N/A'
         
         date_range = "N/A"
         if 'Date' in df.columns:
@@ -711,13 +927,133 @@ def update_data_explorer(active_tab):
             ], md=3),
         ])
         
-        # Recent results
-        recent_df = df.sort_values('Date', ascending=False).head(50) if 'Date' in df.columns else df.head(50)
-        display_columns = ['Date', 'Full name', 'Event', 'Category', 'result_seconds', 'Club']
-        display_columns = [col for col in display_columns if col in recent_df.columns]
+        # Get filter options
+        clubs = sorted(df['Club'].dropna().unique()) if 'Club' in df.columns else []
+        club_options = [{"label": club, "value": club} for club in clubs]
         
-        recent_table = dbc.Table.from_dataframe(
-            recent_df[display_columns],
+        years = sorted(df['Year Of Birth'].dropna().unique(), reverse=True) if 'Year Of Birth' in df.columns else []
+        year_options = [{"label": int(year), "value": year} for year in years]
+        
+        events = sorted(df['Event'].dropna().unique()) if 'Event' in df.columns else []
+        event_options = [{"label": event, "value": event} for event in events]
+        
+        return stats_cards, club_options, year_options, event_options
+    except Exception as e:
+        return html.Div(f"Error loading data: {str(e)}"), [], [], []
+
+
+@app.callback(
+    [Output("explorer-club-dropdown", "value"),
+     Output("explorer-year-dropdown", "value"),
+     Output("explorer-gender-dropdown", "value"),
+     Output("explorer-event-dropdown", "value")],
+    Input("explorer-reset-button", "n_clicks"),
+    prevent_initial_call=True
+)
+def reset_explorer_filters(n_clicks):
+    """Reset all filter dropdowns"""
+    return None, None, None, None
+
+
+@app.callback(
+    [Output("filtered-results-table", "children"),
+     Output("results-count", "children"),
+     Output("current-page", "data"),
+     Output("total-pages", "data"),
+     Output("page-info", "children")],
+    [Input("explorer-filter-button", "n_clicks"),
+     Input("prev-page-button", "n_clicks"),
+     Input("next-page-button", "n_clicks")],
+    [State("explorer-club-dropdown", "value"),
+     State("explorer-year-dropdown", "value"),
+     State("explorer-gender-dropdown", "value"),
+     State("explorer-event-dropdown", "value"),
+     State("current-page", "data")],
+    prevent_initial_call=True
+)
+def update_filtered_results(filter_clicks, prev_clicks, next_clicks, clubs, years, gender, event, current_page):
+    """Filter and paginate results"""
+    ctx = dash.callback_context
+    
+    # Determine which button was clicked
+    if not ctx.triggered:
+        button_id = None
+    else:
+        button_id = ctx.triggered[0]['prop_id'].split('.')[0]
+    
+    # Reset to page 1 if filter button was clicked
+    if button_id == "explorer-filter-button":
+        current_page = 1
+    elif button_id == "prev-page-button":
+        current_page = max(1, current_page - 1)
+    elif button_id == "next-page-button":
+        current_page = current_page + 1
+    
+    try:
+        # Start with full dataset
+        filtered_df = df.copy()
+        
+        # Apply filters
+        if clubs:
+            filtered_df = filtered_df[filtered_df['Club'].isin(clubs)]
+        
+        if years:
+            filtered_df = filtered_df[filtered_df['Year Of Birth'].isin(years)]
+        
+        if gender:
+            filtered_df = filtered_df[filtered_df['Category'].str.contains(gender, case=False, na=False)]
+        
+        if event:
+            filtered_df = filtered_df[filtered_df['Event'] == event]
+        
+        if len(filtered_df) == 0:
+            return (
+                html.Div("No results found with the selected filters.", className="text-muted"),
+                "Results: 0",
+                1,
+                1,
+                "Page 1 of 1"
+            )
+        
+        # Get best time for each swimmer in each event
+        grouped = filtered_df.groupby(['Full name', 'Event'], as_index=False).agg({
+            'result_seconds': 'min',
+            'Date': 'max',
+            'Club': 'first',
+            'Category': 'first',
+            'Year Of Birth': 'first'
+        })
+        
+        # Sort by best time
+        grouped = grouped.sort_values('result_seconds')
+        
+        # Pagination
+        results_per_page = 50
+        total_results = len(grouped)
+        total_pages = max(1, (total_results + results_per_page - 1) // results_per_page)
+        current_page = min(current_page, total_pages)
+        
+        start_idx = (current_page - 1) * results_per_page
+        end_idx = start_idx + results_per_page
+        
+        page_df = grouped.iloc[start_idx:end_idx]
+        
+        # Prepare display columns
+        display_columns = ['Full name', 'Event', 'result_seconds', 'Date', 'Club', 'Category', 'Year Of Birth']
+        display_columns = [col for col in display_columns if col in page_df.columns]
+        
+        # Rename for display
+        display_df = page_df[display_columns].copy()
+        display_df['result_seconds'] = display_df['result_seconds'].apply(lambda x: f"{x:.2f}s")
+        display_df = display_df.rename(columns={
+            'Full name': 'Swimmer',
+            'result_seconds': 'Best Time',
+            'Year Of Birth': 'Birth Year'
+        })
+        
+        # Create table
+        results_table = dbc.Table.from_dataframe(
+            display_df,
             striped=True,
             bordered=True,
             hover=True,
@@ -725,9 +1061,19 @@ def update_data_explorer(active_tab):
             size='sm'
         )
         
-        return stats_cards, recent_table
+        results_count = f"Results: {total_results:,} swimmers (showing {start_idx + 1}-{min(end_idx, total_results)})"
+        page_info = f"Page {current_page} of {total_pages}"
+        
+        return results_table, results_count, current_page, total_pages, page_info
+        
     except Exception as e:
-        return html.Div(f"Error loading data: {str(e)}"), html.Div()
+        return (
+            html.Div(f"Error: {str(e)}", className="text-danger"),
+            "Results: 0",
+            1,
+            1,
+            "Page 1 of 1"
+        )
 
 
 if __name__ == "__main__":

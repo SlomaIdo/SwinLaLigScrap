@@ -86,24 +86,39 @@ def create_performance_chart(
     go.Figure
         Plotly figure object
     """
-    # Sort by date
-    swimmer_data = swimmer_data.sort_values('Date')
+    # Sort by date and create a copy
+    swimmer_data = swimmer_data.sort_values('Date').copy()
+    
+    # Calculate improvements
+    swimmer_data['prev_time'] = swimmer_data['result_seconds'].shift(1)
+    swimmer_data['improvement_from_prev'] = swimmer_data['prev_time'] - swimmer_data['result_seconds']
+    swimmer_data['improvement_pct_from_prev'] = (swimmer_data['improvement_from_prev'] / swimmer_data['prev_time']) * 100
+    
+    # Calculate year-to-year improvement
+    swimmer_data['year'] = swimmer_data['Date'].dt.year
+    yearly_best = swimmer_data.groupby('year')['result_seconds'].min().reset_index()
+    yearly_best['prev_year_best'] = yearly_best['result_seconds'].shift(1)
+    yearly_best['ytoy_improvement_pct'] = ((yearly_best['prev_year_best'] - yearly_best['result_seconds']) / yearly_best['prev_year_best']) * 100
+    
+    # Merge year-to-year data back
+    swimmer_data = swimmer_data.merge(yearly_best[['year', 'ytoy_improvement_pct']], on='year', how='left')
     
     # Calculate best time and trend
     best_time = swimmer_data['result_seconds'].min()
     best_idx = swimmer_data['result_seconds'].idxmin()
     
-    # Create figure
+    # Create figure with secondary y-axis
     fig = go.Figure()
     
-    # Add main line
+    # Add main performance line
     fig.add_trace(go.Scatter(
         x=swimmer_data['Date'],
         y=swimmer_data['result_seconds'],
         mode='lines+markers',
-        name='Performance',
+        name='Performance Time',
         line=dict(color='#4f46e5', width=3),  # primary color
         marker=dict(size=10, color='#4f46e5'),
+        yaxis='y',
         hovertemplate='<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                       '<b>Time:</b> %{y:.2f}s<br>' +
                       '<extra></extra>'
@@ -116,11 +131,43 @@ def create_performance_chart(
         mode='markers',
         name='Best Time',
         marker=dict(size=15, color='#fbbf24', symbol='star', line=dict(color='#f59e0b', width=2)),  # secondary/chart-4
+        yaxis='y',
         hovertemplate='<b>Best Time</b><br>' +
                       '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                       '<b>Time:</b> %{y:.2f}s<br>' +
                       '<extra></extra>'
     ))
+    
+    # Add improvement from previous measurement (on secondary axis)
+    fig.add_trace(go.Scatter(
+        x=swimmer_data['Date'],
+        y=swimmer_data['improvement_from_prev'],
+        mode='lines+markers',
+        name='Improvement from Previous',
+        line=dict(color='#10b981', width=2, dash='dot'),  # chart-3 (green)
+        marker=dict(size=6, color='#10b981'),
+        yaxis='y2',
+        hovertemplate='<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                      '<b>Improvement:</b> %{y:.2f}s<br>' +
+                      '<extra></extra>'
+    ))
+    
+    # Add year-to-year percentage improvement (on secondary axis)
+    # Filter out NaN values for cleaner display
+    ytoy_data = swimmer_data[swimmer_data['ytoy_improvement_pct'].notna()].copy()
+    if len(ytoy_data) > 0:
+        fig.add_trace(go.Scatter(
+            x=ytoy_data['Date'],
+            y=ytoy_data['ytoy_improvement_pct'],
+            mode='lines+markers',
+            name='Year-to-Year Improvement %',
+            line=dict(color='#ec4899', width=2, dash='dashdot'),  # chart-5 (pink)
+            marker=dict(size=8, color='#ec4899', symbol='diamond'),
+            yaxis='y2',
+            hovertemplate='<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                          '<b>YoY Improvement:</b> %{y:.2f}%<br>' +
+                          '<extra></extra>'
+        ))
     
     # Add trend line if enough data points
     if len(swimmer_data) >= 3:
@@ -135,14 +182,15 @@ def create_performance_chart(
             x=swimmer_data['Date'],
             y=p(swimmer_data['date_numeric']),
             mode='lines',
-            name='Trend',
+            name='Trend Line',
             line=dict(color='#ef4444', width=2, dash='dash'),  # destructive color
+            yaxis='y',
             hovertemplate='<b>Trend Line</b><br>' +
                           '<b>Time:</b> %{y:.2f}s<br>' +
                           '<extra></extra>'
         ))
     
-    # Update layout
+    # Update layout with dual y-axes
     fig.update_layout(
         title=dict(
             text=f"{swimmer_name} - {event_pattern} Performance Over Time",
@@ -151,18 +199,20 @@ def create_performance_chart(
             xanchor='center'
         ),
         xaxis_title="Date",
-        yaxis_title="Time (seconds)",
-        hovermode='closest',
+        hovermode='x unified',
         template='plotly_white',
-        height=500,
+        height=600,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=1.02,
-            xanchor="right",
-            x=1
+            orientation="v",
+            yanchor="top",
+            y=0.99,
+            xanchor="left",
+            x=1.02,
+            bgcolor='rgba(255, 255, 255, 0.9)',
+            bordercolor='rgba(79, 70, 229, 0.2)',
+            borderwidth=1
         ),
         xaxis=dict(
             showgrid=True,
@@ -170,10 +220,21 @@ def create_performance_chart(
             gridcolor='rgba(79, 70, 229, 0.1)'
         ),
         yaxis=dict(
+            title="Time (seconds)",
             showgrid=True,
             gridwidth=1,
             gridcolor='rgba(79, 70, 229, 0.1)',
-            autorange='reversed'  # Lower times are better
+            autorange='reversed',  # Lower times are better
+            side='left'
+        ),
+        yaxis2=dict(
+            title="Improvement (seconds / %)",
+            overlaying='y',
+            side='right',
+            showgrid=False,
+            zeroline=True,
+            zerolinewidth=2,
+            zerolinecolor='rgba(0, 0, 0, 0.3)'
         )
     )
     

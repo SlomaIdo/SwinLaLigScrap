@@ -78,22 +78,10 @@ class DataLoader:
             # Connect to database
             conn = sqlite3.connect(self.db_path)
             
-            # Load data from discipline_results_ingest table
+            # Load all columns from discipline_results_ingest table
+            # Note: Club column has whitespace in its name in the database
             query = """
-                SELECT 
-                    "Full name",
-                    "Year Of Birth",
-                    "Event",
-                    "Category",
-                    "Date",
-                    "Results",
-                    "Club",
-                    "Place",
-                    "Heat",
-                    "Lane",
-                    "Points",
-                    "competition_name",
-                    "results_link"
+                SELECT *
                 FROM discipline_results_ingest
                 WHERE "Full name" IS NOT NULL
                 AND "Results" IS NOT NULL
@@ -103,6 +91,12 @@ class DataLoader:
             conn.close()
             
             logger.info(f"Loaded {len(df)} records from database")
+            
+            # Rename the Club column if it has whitespace in the name
+            club_cols = [col for col in df.columns if 'Club' in col and col != 'Club']
+            if club_cols:
+                df = df.rename(columns={club_cols[0]: 'Club'})
+                logger.info(f"Renamed column '{club_cols[0]}' to 'Club'")
             
             # Preprocess data
             df = self._preprocess_data(df)
@@ -258,6 +252,22 @@ class DataLoader:
         categories = sorted(self._data_cache['Category'].dropna().unique())
         logger.info(f"Found {len(categories)} unique categories")
         return categories
+    
+    def get_clubs(self) -> List[str]:
+        """
+        Get a sorted list of unique club names.
+        
+        Returns
+        -------
+        List[str]
+            Sorted list of club names
+        """
+        if self._data_cache is None:
+            self.load_data()
+        
+        clubs = sorted(self._data_cache['Club'].dropna().unique())
+        logger.info(f"Found {len(clubs)} unique clubs")
+        return clubs
     
     def get_swimmer_info(self, swimmer_name: str) -> pd.DataFrame:
         """
