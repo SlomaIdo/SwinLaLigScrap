@@ -151,6 +151,60 @@ def Rudolph(year:int, gender:str, age:str, event:str, result:str) -> int:
         print(f"Error: {e}")
         return None
 
+def parse_swim_time_to_seconds(time_str):
+    """
+    Convert swim time string to total seconds.
+    Handles multiple formats:
+    - MM:SS.ms (e.g., '1:23.45' -> 83.45 seconds)
+    - M:SS.ms (e.g., '2:15.67' -> 135.67 seconds)
+    - SS.ms (e.g., '59.23' -> 59.23 seconds)
+    - SS (e.g., '45' -> 45.0 seconds)
+    
+    Args:
+        time_str: String representation of swim time
+        
+    Returns:
+        float: Total time in seconds, or np.nan if conversion fails
+        
+    Examples:
+        >>> parse_swim_time_to_seconds('1:23.45')
+        83.45
+        >>> parse_swim_time_to_seconds('59.23')
+        59.23
+        >>> parse_swim_time_to_seconds('2:15.67')
+        135.67
+        >>> parse_swim_time_to_seconds('')
+        nan
+    """
+    import pandas as pd
+    import numpy as np
+    
+    if pd.isna(time_str) or time_str == '' or time_str is None:
+        return np.nan
+    
+    try:
+        time_str = str(time_str).strip()
+        
+        # Check if time contains minutes (has colon)
+        if ':' in time_str:
+            parts = time_str.split(':')
+            minutes = int(parts[0])
+            seconds = float(parts[1])
+            result = minutes * 60 + seconds
+        else:
+            # Only seconds (with or without milliseconds)
+            result = float(time_str)
+        
+        # Convert 0 to None (np.nan)
+        if result == 0:
+            return np.nan
+        
+        return result
+            
+    except (ValueError, IndexError, AttributeError) as e:
+        # Return NaN for any conversion errors
+        return np.nan
+
 def replace_event_to_Rudolph(str):
     """_summary_
 
