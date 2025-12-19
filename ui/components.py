@@ -246,12 +246,12 @@ def create_distribution_chart(
     event_pattern: str
 ) -> go.Figure:
     """
-    Create a violin plot showing event distribution across categories.
+    Create a violin plot showing event distribution by swimmer age.
     
     Parameters
     ----------
     event_data : pd.DataFrame
-        DataFrame containing event results
+        DataFrame containing event results with 'Age' and 'Age_Binned' columns
     event_pattern : str
         Event pattern being analyzed
     
@@ -260,40 +260,70 @@ def create_distribution_chart(
     go.Figure
         Plotly figure object
     """
-    # Create violin plot using plotly express
+    # Sort by age for proper ordering (smallest on left), with 18+ at the end
+    event_data_sorted = event_data.copy()
+    event_data_sorted['sort_key'] = event_data_sorted['Age_Binned'].apply(lambda x: 999 if x == '18+' else int(x))
+    event_data_sorted = event_data_sorted.sort_values('sort_key')
+    
+    # Create violin plot using plotly express (without individual points)
     fig = px.violin(
-        event_data,
-        x='Category',
+        event_data_sorted,
+        x='Age_Binned',
         y='result_seconds',
         box=True,
-        points='all',
-        color='Category',
-        hover_data=['Full name', 'Date', 'Club'],
-        title=f"{event_pattern} - Distribution by Category"
+        points=False,
+        color='Age_Binned',
+        hover_data=['Full name', 'Date', 'Club', 'Category', 'Year Of Birth'],
+        title=f"{event_pattern} - Distribution by Age"
+    )
+    
+    # Update violin traces to not stretch for outliers
+    fig.update_traces(
+        spanmode='soft',  # Don't stretch to outliers
+        scalemode='width'
     )
     
     # Update layout
+    # Create custom category order with 18+ at the end
+    unique_ages = event_data_sorted['Age_Binned'].unique()
+    age_order = sorted([age for age in unique_ages if age != '18+'], key=lambda x: int(x))
+    if '18+' in unique_ages:
+        age_order.append('18+')
+    
+    # Determine y-axis range based on event distance (reversed so lower times are at top)
+    y_range = None
+    if '100' in event_pattern:
+        y_range = [200, 30]
+    elif '200' in event_pattern:
+        y_range = [300, 100]
+    elif '400' in event_pattern:
+        y_range = [500, 250]
+    
     fig.update_layout(
         title=dict(
             font=dict(size=18, color='#333', family='Arial, sans-serif'),
             x=0.5,
             xanchor='center'
         ),
-        xaxis_title="Category",
+        xaxis_title="Age (years)",
         yaxis_title="Time (seconds)",
         hovermode='closest',
         template='plotly_white',
         height=600,
         showlegend=False,
+        xaxis=dict(
+            type='category',
+            categoryorder='array',
+            categoryarray=age_order
+        ),
         yaxis=dict(
             showgrid=True,
             gridwidth=1,
             gridcolor='lightgray',
-            autorange='reversed'  # Lower times are better
+            autorange='reversed' if y_range is None else True,  # Lower times are better (at top)
+            range=y_range if y_range else None
         )
     )
-    
-    fig.update_xaxes(tickangle=45)
     
     return fig
 
@@ -303,7 +333,7 @@ def create_comparison_chart(
     swimmer_name: str,
     swimmer_time: float,
     event_pattern: str,
-    gender: str,
+    gender_label: str,
     birth_year: int,
     chart_type: str = "density"
 ) -> go.Figure:
@@ -320,8 +350,8 @@ def create_comparison_chart(
         Swimmer's best time
     event_pattern : str
         Event pattern being analyzed
-    gender : str
-        Gender category
+    gender_label : str
+        Gender category label
     birth_year : int
         Birth year of the cohort
     chart_type : str
@@ -388,7 +418,7 @@ def create_comparison_chart(
             annotation_position="bottom"
         )
         
-        title = f"Cohort Distribution - {event_pattern} ({gender}) - Birth Year {birth_year}"
+        title = f"Cohort Distribution - {event_pattern} ({gender_label}) - Birth Year {birth_year}"
         yaxis_title = "Density"
         
     else:  # histogram

@@ -41,9 +41,12 @@ data_loader = DataLoader()
 
 # Load initial data
 df = data_loader.load_data()
-swimmers = data_loader.get_swimmers()
+
+# Filter out relay teams (names with commas) for individual swimmer analysis
+df_individual = df[~df['Full name'].str.contains(',', na=False)].copy()
+
+swimmers = sorted(df_individual['Full name'].dropna().unique())
 events = data_loader.get_events()
-categories = data_loader.get_categories()
 
 # App layout
 app.layout = dbc.Container([
@@ -182,15 +185,17 @@ app.layout = dbc.Container([
                         ),
                     ], md=6),
                     dbc.Col([
-                        html.H4("Category Filter", className="mt-4 mb-3"),
-                        dbc.Label("Select Categories (optional):"),
-                        dcc.Dropdown(
-                            id="category-dropdown",
-                            options=[{"label": cat, "value": cat} for cat in categories],
-                            placeholder="All categories",
-                            multi=True,
-                            searchable=True,
-                            clearable=True
+                        html.H4("Gender", className="mt-4 mb-3"),
+                        dbc.Label("Select Gender:"),
+                        dbc.RadioItems(
+                            id="gender-radio-distribution",
+                            options=[
+                                {"label": "Female (Girls/Women)", "value": "Female"},
+                                {"label": "Male (Boys/Men)", "value": "Male"}
+                            ],
+                            value="Female",
+                            inline=True,
+                            className="mt-2"
                         ),
                     ], md=6),
                 ], className="mb-4"),
@@ -206,19 +211,19 @@ app.layout = dbc.Container([
                     ], md=12)
                 ], className="mb-4"),
                 
-                # Distribution statistics
-                dbc.Row([
-                    dbc.Col([
-                        html.Div(id="distribution-stats")
-                    ])
-                ], className="mb-4"),
-                
-                # Distribution chart
+                # Distribution chart (shown first)
                 dbc.Row([
                     dbc.Col([
                         html.Div([
                             dcc.Graph(id="distribution-chart")
                         ], className="graph-container")
+                    ])
+                ], className="mb-4"),
+                
+                # Distribution statistics (shown below chart)
+                dbc.Row([
+                    dbc.Col([
+                        html.Div(id="distribution-stats")
                     ])
                 ]),
             ], fluid=True)
@@ -238,7 +243,7 @@ app.layout = dbc.Container([
                             searchable=True,
                             clearable=True
                         ),
-                    ], md=4),
+                    ], md=6),
                     dbc.Col([
                         html.H4("Event Selection", className="mt-4 mb-3"),
                         dbc.Label("Select Event:"),
@@ -249,20 +254,7 @@ app.layout = dbc.Container([
                             searchable=True,
                             clearable=True
                         ),
-                    ], md=4),
-                    dbc.Col([
-                        html.H4("Gender Selection", className="mt-4 mb-3"),
-                        dbc.Label("Select Gender:"),
-                        dcc.Dropdown(
-                            id="gender-dropdown",
-                            options=[
-                                {"label": "Boys", "value": "Boys"},
-                                {"label": "Girls", "value": "Girls"}
-                            ],
-                            placeholder="Select gender...",
-                            clearable=True
-                        ),
-                    ], md=4),
+                    ], md=6),
                 ], className="mb-4"),
                 
                 dbc.Row([
@@ -466,8 +458,8 @@ def update_swimmer_events_summary(swimmer_name):
         return html.Div()
     
     try:
-        # Get all data for the swimmer
-        swimmer_data = df[df['Full name'].str.upper() == swimmer_name.upper()].copy()
+        # Get all data for the swimmer (using individual swimmers only)
+        swimmer_data = df_individual[df_individual['Full name'].str.upper() == swimmer_name.upper()].copy()
         
         if len(swimmer_data) == 0:
             return html.Div()
@@ -581,24 +573,23 @@ def update_event_from_table(selected_rows, table_data):
      Output("swimmer-dropdown-comparison", "options"),
      Output("event-dropdown-individual", "options"),
      Output("event-dropdown-distribution", "options"),
-     Output("event-dropdown-comparison", "options"),
-     Output("category-dropdown", "options")],
+     Output("event-dropdown-comparison", "options")],
     Input("refresh-button", "n_clicks"),
     prevent_initial_call=True
 )
 def refresh_data(n_clicks):
     """Refresh data from database"""
-    global df, swimmers, events, categories
+    global df, df_individual, swimmers, events
     
     try:
         df = data_loader.load_data()
-        swimmers = data_loader.get_swimmers()
+        # Filter out relay teams (names with commas)
+        df_individual = df[~df['Full name'].str.contains(',', na=False)].copy()
+        swimmers = sorted(df_individual['Full name'].dropna().unique())
         events = data_loader.get_events()
-        categories = data_loader.get_categories()
         
         swimmer_options = [{"label": name, "value": name} for name in swimmers]
         event_options = [{"label": event, "value": event} for event in events]
-        category_options = [{"label": cat, "value": cat} for cat in categories]
         
         status = dbc.Alert(
             f"Data refreshed successfully! Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
@@ -607,10 +598,10 @@ def refresh_data(n_clicks):
             duration=4000
         )
         
-        return status, swimmer_options, swimmer_options, event_options, event_options, event_options, category_options
+        return status, swimmer_options, swimmer_options, event_options, event_options, event_options
     except Exception as e:
         status = dbc.Alert(f"Error refreshing data: {str(e)}", color="danger", dismissable=True)
-        return status, [], [], [], [], [], []
+        return status, [], [], [], [], []
 
 
 @app.callback(
@@ -637,10 +628,10 @@ def update_individual_performance(n_clicks, swimmer_name, event_pattern):
         return "--", "--", "--", "--", empty_fig
     
     try:
-        # Filter data for the specific swimmer and event
-        swimmer_data = df[
-            (df['Full name'].str.upper() == swimmer_name.upper()) & 
-            (df['Event'].str.contains(event_pattern, case=False, na=False))
+        # Filter data for the specific swimmer and event (using individual swimmers only)
+        swimmer_data = df_individual[
+            (df_individual['Full name'].str.upper() == swimmer_name.upper()) & 
+            (df_individual['Event'].str.contains(event_pattern, case=False, na=False))
         ].copy()
         
         # Sort by date
@@ -695,10 +686,10 @@ def update_individual_performance(n_clicks, swimmer_name, event_pattern):
      Output("distribution-chart", "figure")],
     Input("distribution-button", "n_clicks"),
     [State("event-dropdown-distribution", "value"),
-     State("category-dropdown", "value")],
+     State("gender-radio-distribution", "value")],
     prevent_initial_call=True
 )
-def update_distribution(n_clicks, event_pattern, selected_categories):
+def update_distribution(n_clicks, event_pattern, selected_gender):
     """Update event distribution analysis"""
     if not event_pattern:
         empty_fig = go.Figure()
@@ -711,11 +702,14 @@ def update_distribution(n_clicks, event_pattern, selected_categories):
         return html.Div("No data"), empty_fig
     
     try:
-        # Filter data
+        # Filter data by event
         event_data = df[df['Event'].str.contains(event_pattern, case=False, na=False)].copy()
         
-        if selected_categories:
-            event_data = event_data[event_data['Category'].isin(selected_categories)]
+        # Filter by gender (Boys/Men or Girls/Women)
+        if selected_gender == "Female":
+            event_data = event_data[event_data['Category'].str.contains('Girl|Women', case=False, na=False)]
+        elif selected_gender == "Male":
+            event_data = event_data[event_data['Category'].str.contains('Boy|Men', case=False, na=False)]
         
         if len(event_data) == 0:
             empty_fig = go.Figure()
@@ -727,14 +721,39 @@ def update_distribution(n_clicks, event_pattern, selected_categories):
             )
             return html.Div("No data"), empty_fig
         
-        # Create statistics cards
-        stats_data = event_data.groupby('Category')['result_seconds'].agg([
+        # Calculate swimmer age at the time of the result
+        event_data['Date'] = pd.to_datetime(event_data['Date'], errors='coerce')
+        event_data['Year Of Birth'] = pd.to_numeric(event_data['Year Of Birth'], errors='coerce')
+        event_data['Age'] = event_data['Date'].dt.year - event_data['Year Of Birth']
+        
+        # Filter out invalid ages and limit to age 22 or below
+        event_data = event_data[event_data['Age'].notna() & (event_data['Age'] > 0) & (event_data['Age'] <= 22)]
+        
+        # Bin ages above 18 into "18+"
+        event_data['Age_Binned'] = event_data['Age'].apply(lambda x: '18+' if x > 18 else str(int(x)))
+        
+        if len(event_data) == 0:
+            empty_fig = go.Figure()
+            empty_fig.add_annotation(
+                text=f"No valid age data found for {event_pattern}",
+                xref="paper", yref="paper",
+                x=0.5, y=0.5, showarrow=False,
+                font=dict(size=16)
+            )
+            return html.Div("No data"), empty_fig
+        
+        # Create statistics cards by age (using binned ages for display)
+        stats_data = event_data.groupby('Age_Binned')['result_seconds'].agg([
             ('count', 'count'),
             ('mean', lambda x: f"{x.mean():.2f}s"),
             ('median', lambda x: f"{x.median():.2f}s"),
             ('min', lambda x: f"{x.min():.2f}s"),
             ('max', lambda x: f"{x.max():.2f}s")
         ]).reset_index()
+        stats_data.rename(columns={'Age_Binned': 'Age'}, inplace=True)
+        # Sort with 18+ at the end
+        stats_data['sort_key'] = stats_data['Age'].apply(lambda x: 999 if x == '18+' else int(x))
+        stats_data = stats_data.sort_values('sort_key').drop(columns=['sort_key'])
         
         stats_table = dbc.Table.from_dataframe(
             stats_data,
@@ -744,13 +763,16 @@ def update_distribution(n_clicks, event_pattern, selected_categories):
             responsive=True
         )
         
-        stats_content = html.Div([
-            html.H5(f"Total Results: {len(event_data)}", className="mb-3"),
-            stats_table
-        ])
-        
         # Create distribution chart
         fig = create_distribution_chart(event_data, event_pattern)
+        
+        # Create statistics section below the chart
+        stats_content = html.Div([
+            html.Hr(className="my-4"),
+            html.H5(f"Total Results: {len(event_data)}", className="mb-3"),
+            html.P(f"Age Range: {int(event_data['Age'].min())} - {int(event_data['Age'].max())} years", className="text-muted"),
+            stats_table
+        ])
         
         return stats_content, fig
     except Exception as e:
@@ -775,16 +797,15 @@ def update_distribution(n_clicks, event_pattern, selected_categories):
      Output("comparison-histogram-chart", "figure")],
     Input("comparison-button", "n_clicks"),
     [State("swimmer-dropdown-comparison", "value"),
-     State("event-dropdown-comparison", "value"),
-     State("gender-dropdown", "value")],
+     State("event-dropdown-comparison", "value")],
     prevent_initial_call=True
 )
-def update_comparison(n_clicks, swimmer_name, event_pattern, gender):
+def update_comparison(n_clicks, swimmer_name, event_pattern):
     """Update cohort comparison analysis"""
-    if not swimmer_name or not event_pattern or not gender:
+    if not swimmer_name or not event_pattern:
         empty_fig = go.Figure()
         empty_fig.add_annotation(
-            text="Please select swimmer, event, and gender",
+            text="Please select swimmer and event",
             xref="paper", yref="paper",
             x=0.5, y=0.5, showarrow=False,
             font=dict(size=16)
@@ -792,8 +813,8 @@ def update_comparison(n_clicks, swimmer_name, event_pattern, gender):
         return "--", "--", "--", "--", "--", "--", empty_fig, empty_fig
     
     try:
-        # Get swimmer's birth year
-        swimmer_data_all = df[df['Full name'].str.upper() == swimmer_name.upper()]
+        # Get swimmer's birth year and infer gender (using individual swimmers only)
+        swimmer_data_all = df_individual[df_individual['Full name'].str.upper() == swimmer_name.upper()]
         
         if len(swimmer_data_all) == 0:
             empty_fig = go.Figure()
@@ -807,11 +828,24 @@ def update_comparison(n_clicks, swimmer_name, event_pattern, gender):
         
         swimmer_birth_year = swimmer_data_all['Year Of Birth'].iloc[0]
         
-        # Filter cohort data
-        event_data = df[
-            (df['Year Of Birth'] == swimmer_birth_year) &
-            (df['Event'].str.contains(event_pattern, case=False, na=False)) &
-            (df['Category'].str.contains(gender, case=False, na=False))
+        # Infer gender from swimmer's category
+        swimmer_category = swimmer_data_all['Category'].iloc[0]
+        if 'Girl' in swimmer_category or 'Women' in swimmer_category:
+            gender_filter = 'Girl|Women'
+            gender_label = 'Girls/Women'
+        elif 'Boy' in swimmer_category or 'Men' in swimmer_category:
+            gender_filter = 'Boy|Men'
+            gender_label = 'Boys/Men'
+        else:
+            # Default fallback
+            gender_filter = 'Boy|Girl|Men|Women'
+            gender_label = 'All'
+        
+        # Filter cohort data (using individual swimmers only to exclude relay teams)
+        event_data = df_individual[
+            (df_individual['Year Of Birth'] == swimmer_birth_year) &
+            (df_individual['Event'].str.contains(event_pattern, case=False, na=False)) &
+            (df_individual['Category'].str.contains(gender_filter, case=False, na=False))
         ].copy()
         
         if len(event_data) == 0:
@@ -849,11 +883,11 @@ def update_comparison(n_clicks, swimmer_name, event_pattern, gender):
         
         # Create charts
         density_fig = create_comparison_chart(
-            cohort_data, swimmer_name, swimmer_time, event_pattern, gender, 
+            cohort_data, swimmer_name, swimmer_time, event_pattern, gender_label, 
             int(swimmer_birth_year), chart_type="density"
         )
         histogram_fig = create_comparison_chart(
-            cohort_data, swimmer_name, swimmer_time, event_pattern, gender,
+            cohort_data, swimmer_name, swimmer_time, event_pattern, gender_label,
             int(swimmer_birth_year), chart_type="histogram"
         )
         
