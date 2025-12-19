@@ -35,36 +35,52 @@ def parse_rudolph_pdf(pdf_path):
     all_data = []
 
     with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
+        for page_num, page in enumerate(pdf.pages, 1):  # 1-indexed page numbers
             text = page.extract_text()
             if not text:
                 continue
             
             # 1. Detect Gender and Age from Page Header
-            # Looking for strings like "männlich, Altersklasse 8" or "weiblich, offene Klasse"
-            gender = "Unknown"
-            age = "Unknown"
-            
-            if "männlich" in text.lower():
+            # Hardcode specific pages where title appears on previous page
+            if page_num == 3:
                 gender = "Male"
-            elif "weiblich" in text.lower():
-                gender = "Female"
+                age = "10"
+            elif page_num == 4:
+                gender = "Male"
+                age = "11"
+            elif page_num == 5:
+                gender = "Male"
+                age = "12"
+            else:
+                # Looking for strings like "männlich, Altersklasse 8" or "weiblich, offene Klasse"
+                gender = "Unknown"
+                age = "Unknown"
                 
-            # Extract Age
-            age_match = re.search(r'Altersklasse\s+(\d+|Offene)', text, re.IGNORECASE)
-            if age_match:
-                age = age_match.group(1)
-                if age.lower() == 'offene':
-                    age = 'Open'
-                # Fix age mappings: 81 -> 8, 92 -> 9
-                elif age == '81':
-                    age = '8'
-                elif age == '92':
-                    age = '9'
-                elif age == '83':
-                    age = '8'
-                elif age == '94':
-                    age = '9'
+                if "männlich" in text.lower():
+                    gender = "Male"
+                elif "weiblich" in text.lower():
+                    gender = "Female"
+                    
+                # Extract Age
+                # Note: Some pages have "A ltersklasse" (with space) due to PDF rendering
+                age_match = re.search(r'A?\s*ltersklasse\s+(\d+|Offene)', text, re.IGNORECASE)
+                if age_match:
+                    age = age_match.group(1)
+                    if age.lower() == 'offene':
+                        age = 'Open'
+                    # Fix age mappings with superscripts: 105 -> 10, 116 -> 11, 81 -> 8, 92 -> 9
+                    elif age == '105':
+                        age = '10'
+                    elif age == '116':
+                        age = '11'
+                    elif age == '81':
+                        age = '8'
+                    elif age == '92':
+                        age = '9'
+                    elif age == '83':
+                        age = '8'
+                    elif age == '94':
+                        age = '9'
 
             # 2. Extract Table Data
             # This logic assumes the standard grid layout of Rudolph tables
@@ -94,31 +110,122 @@ def parse_rudolph_pdf(pdf_path):
                     if not (1 <= points <= 20):
                         continue
 
-                    # Manual mapping based on 2025 standard layout (Example)
-                    # You might need to tweak these indices after looking at the first CSV output
-                    # Schema: Gender, Age, Event, Points, Time
-                    
-                    # Example mapping (Columns 1-N correspond to specific events)
-                    # We create a list of (ColumnIndex, EventName)
-                    # This is a generic placeholders mapping - check your PDF columns!
+                    # Correct column mapping based on 2025 PDF structure
+                    # The PDF has empty columns between actual data columns
+                    # Actual data appears at indices: 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44, 47, 50
                     columns_mapping = [
-                        (1, "50m Freestyle"), (2, "100m Freestyle"), (3, "200m Freestyle"),
-                        (4, "400m Freestyle"), (5, "800m Freestyle"), (6, "1500m Freestyle"),
-                        (7, "50m Breaststroke"), (8, "100m Breaststroke"), (9, "200m Breaststroke"),
-                        (10, "50m Butterfly"), (11, "100m Butterfly"), (12, "200m Butterfly"),
-                        (13, "50m Backstroke"), (14, "100m Backstroke"), (15, "200m Backstroke"),
-                        (16, "200m Individual Medley"), (17, "400m Individual Medley")
+                        (2, "50m Freestyle"),
+                        (5, "100m Freestyle"),
+                        (8, "200m Freestyle"),
+                        (11, "400m Freestyle"),
+                        (14, "800m Freestyle"),
+                        (17, "1500m Freestyle"),
+                        (20, "50m Breaststroke"),
+                        (23, "100m Breaststroke"),
+                        (26, "200m Breaststroke"),
+                        (29, "50m Butterfly"),
+                        (32, "100m Butterfly"),
+                        (35, "200m Butterfly"),
+                        (38, "50m Backstroke"),
+                        (41, "100m Backstroke"),
+                        (44, "200m Backstroke"),
+                        (47, "200m Individual Medley"),
+                        (50, "400m Individual Medley")
                     ]
 
                     for col_idx, event_name in columns_mapping:
                         if col_idx < len(row):
                             time_val = clean_time(row[col_idx])
                             if time_val:
+                                # Fix PDF bug: Male Age 11 100m Backstroke times are inflated by 1 minute
+                                if gender == "Male" and age == "11" and event_name == "100m Backstroke":
+                                    # Parse time and subtract 60 seconds
+                                    try:
+                                        parts = time_val.split(':')
+                                        if len(parts) == 2:
+                                            minutes = int(parts[0])
+                                            seconds = float(parts[1])
+                                            total_seconds = minutes * 60 + seconds - 60
+                                            # Convert back to MM:SS.ss format
+                                            new_minutes = int(total_seconds // 60)
+                                            new_seconds = total_seconds % 60
+                                            time_val = f"{new_minutes:02d}:{new_seconds:05.2f}"
+                                    except:
+                                        pass  # If parsing fails, use original value
+                                
                                 all_data.append([gender, age, event_name, points, time_val])
 
     # Create DataFrame
     df = pd.DataFrame(all_data, columns=['Gender', 'Age', 'Event', 'Points', 'Time'])
     return df
+
+def get_rudolph_score(gender, age, event, time_seconds, df_rudolph=None):
+    """
+    Calculate the Rudolph score for a given swim time.
+    
+    Parameters
+    ----------
+    gender : str
+        Gender of the swimmer ('Male' or 'Female')
+    age : int or str
+        Age of the swimmer (8-18 or 'Open' or 'Unknown')
+    event : str
+        Event name (e.g., '50m Freestyle', '100m Backstroke')
+    time_seconds : float
+        Swim time in seconds
+    df_rudolph : pd.DataFrame, optional
+        Rudolph scores DataFrame. If None, loads from database.
+    
+    Returns
+    -------
+    int or None
+        Rudolph points (1-20), or None if no score found
+        
+    Examples
+    --------
+    >>> get_rudolph_score('Female', 10, '50m Freestyle', 30.4)
+    11
+    >>> get_rudolph_score('Male', 12, '100m Backstroke', 65.5)
+    18
+    """
+    # Load data if not provided
+    if df_rudolph is None:
+        try:
+            conn = sqlite3.connect(DEFAULT_DB_PATH)
+            df_rudolph = pd.read_sql_query("SELECT * FROM rudolph_scores", conn)
+            conn.close()
+        except Exception as e:
+            print(f"Error loading Rudolph scores: {e}")
+            return None
+    
+    # Convert age to string for comparison
+    age_str = str(age)
+    
+    # Filter for the specific gender, age, and event
+    filtered = df_rudolph[
+        (df_rudolph['Gender'] == gender) & 
+        (df_rudolph['Age'] == age_str) & 
+        (df_rudolph['Event'] == event)
+    ].copy()
+    
+    if len(filtered) == 0:
+        return None
+    
+    # Convert time strings to seconds for comparison
+    from functions import parse_swim_time_to_seconds
+    filtered['Time_Seconds'] = filtered['Time'].apply(parse_swim_time_to_seconds)
+    
+    # Sort by points descending (20 is best, 1 is lowest)
+    filtered = filtered.sort_values('Points', ascending=False)
+    
+    # Find the highest points where time_seconds <= threshold
+    for _, row in filtered.iterrows():
+        if time_seconds <= row['Time_Seconds']:
+            return int(row['Points'])
+    
+    # If time is slower than even 1 point, return None
+    return None
+
 
 def ingest_to_database(df, db_path, table_name='rudolph_scores'):
     """

@@ -27,6 +27,7 @@ from ui.components import (
     create_distribution_chart,
     create_comparison_chart
 )
+from src.analysis.Rudolp import get_rudolph_score
 
 # Initialize the Dash app with custom styling
 app = dash.Dash(
@@ -471,6 +472,7 @@ def update_swimmer_events_summary(swimmer_name):
             
             total_races = len(event_data)
             best_time = event_data['result_seconds'].min()
+            best_time_idx = event_data['result_seconds'].idxmin()
             latest_time = event_data['result_seconds'].iloc[-1]
             first_time = event_data['result_seconds'].iloc[0]
             
@@ -484,10 +486,45 @@ def update_swimmer_events_summary(swimmer_name):
             else:
                 improvement_from_last = 0
             
+            # Calculate Rudolph score for best time
+            rudolph_points = None
+            try:
+                # Get best time record
+                best_record = event_data.loc[best_time_idx]
+                
+                # Calculate age at time of event
+                event_date = pd.to_datetime(best_record['Date'])
+                year_of_birth = pd.to_numeric(best_record['Year Of Birth'], errors='coerce')
+                
+                if pd.notna(event_date) and pd.notna(year_of_birth):
+                    age_at_event = event_date.year - int(year_of_birth)
+                    
+                    # Determine gender from category
+                    category = best_record.get('Category', '').lower()
+                    if 'girl' in category or 'women' in category or 'female' in category:
+                        gender = 'Female'
+                    elif 'boy' in category or 'men' in category or 'male' in category:
+                        gender = 'Male'
+                    else:
+                        gender = None
+                    
+                    # Calculate Rudolph score if we have valid data
+                    if gender and 8 <= age_at_event <= 18:
+                        rudolph_points = get_rudolph_score(
+                            gender=gender,
+                            age=age_at_event,
+                            event=event,
+                            time_seconds=best_time
+                        )
+            except Exception as e:
+                # Silently handle errors in Rudolph calculation
+                pass
+            
             event_stats.append({
                 'Event': event,
                 'Total Races': total_races,
                 'Best Time': f"{best_time:.2f}s",
+                'Rudolph Points': rudolph_points if rudolph_points else '--',
                 'Latest Time': f"{latest_time:.2f}s",
                 'Total Improvement': f"{total_improvement:+.1f}%",
                 'Improvement from Last': f"{improvement_from_last:+.1f}%"
