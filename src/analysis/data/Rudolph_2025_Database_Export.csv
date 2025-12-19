@@ -1,0 +1,3007 @@
+Gender,Age,Event,Points,Time
+Male,8,100m Freestyle,20,00:33.68
+Male,8,800m Freestyle,20,01:17.71
+Male,8,100m Breaststroke,20,02:51.20
+Male,8,100m Butterfly,20,06:18.30
+Male,8,100m Backstroke,20,13:05.70
+Male,8,400m Individual Medley,20,24:58.65
+Male,8,100m Freestyle,19,00:34.20
+Male,8,800m Freestyle,19,01:18.91
+Male,8,100m Breaststroke,19,02:53.85
+Male,8,100m Butterfly,19,06:24.15
+Male,8,100m Backstroke,19,13:17.85
+Male,8,400m Individual Medley,19,25:21.82
+Male,8,100m Freestyle,18,00:34.72
+Male,8,800m Freestyle,18,01:20.11
+Male,8,100m Breaststroke,18,02:56.50
+Male,8,100m Butterfly,18,06:30.00
+Male,8,100m Backstroke,18,13:30.00
+Male,8,400m Individual Medley,18,25:45.00
+Male,8,100m Freestyle,17,00:35.24
+Male,8,800m Freestyle,17,01:21.31
+Male,8,100m Breaststroke,17,02:59.15
+Male,8,100m Butterfly,17,06:35.85
+Male,8,100m Backstroke,17,13:42.15
+Male,8,400m Individual Medley,17,26:08.17
+Male,8,100m Freestyle,16,00:35.76
+Male,8,800m Freestyle,16,01:22.51
+Male,8,100m Breaststroke,16,03:01.79
+Male,8,100m Butterfly,16,06:41.70
+Male,8,100m Backstroke,16,13:54.30
+Male,8,400m Individual Medley,16,26:31.35
+Male,8,100m Freestyle,15,00:36.28
+Male,8,800m Freestyle,15,01:23.71
+Male,8,100m Breaststroke,15,03:04.44
+Male,8,100m Butterfly,15,06:47.55
+Male,8,100m Backstroke,15,14:06.45
+Male,8,400m Individual Medley,15,26:54.52
+Male,8,100m Freestyle,14,00:36.80
+Male,8,800m Freestyle,14,01:24.92
+Male,8,100m Breaststroke,14,03:07.09
+Male,8,100m Butterfly,14,06:53.40
+Male,8,100m Backstroke,14,14:18.60
+Male,8,400m Individual Medley,14,27:17.70
+Male,8,100m Freestyle,13,00:37.32
+Male,8,800m Freestyle,13,01:26.12
+Male,8,100m Breaststroke,13,03:09.74
+Male,8,100m Butterfly,13,06:59.25
+Male,8,100m Backstroke,13,14:30.75
+Male,8,400m Individual Medley,13,27:40.87
+Male,8,100m Freestyle,12,00:37.84
+Male,8,800m Freestyle,12,01:27.32
+Male,8,100m Breaststroke,12,03:12.39
+Male,8,100m Butterfly,12,07:05.10
+Male,8,100m Backstroke,12,14:42.90
+Male,8,400m Individual Medley,12,28:04.05
+Male,8,100m Freestyle,11,00:38.37
+Male,8,800m Freestyle,11,01:28.52
+Male,8,100m Breaststroke,11,03:15.03
+Male,8,100m Butterfly,11,07:10.95
+Male,8,100m Backstroke,11,14:55.05
+Male,8,400m Individual Medley,11,28:27.22
+Male,8,100m Freestyle,10,00:38.89
+Male,8,800m Freestyle,10,01:29.72
+Male,8,100m Breaststroke,10,03:17.68
+Male,8,100m Butterfly,10,07:16.80
+Male,8,100m Backstroke,10,15:07.20
+Male,8,400m Individual Medley,10,28:50.40
+Male,8,100m Freestyle,9,00:39.41
+Male,8,800m Freestyle,9,01:30.92
+Male,8,100m Breaststroke,9,03:20.33
+Male,8,100m Butterfly,9,07:22.65
+Male,8,100m Backstroke,9,15:19.35
+Male,8,400m Individual Medley,9,29:13.57
+Male,8,100m Freestyle,8,00:39.93
+Male,8,800m Freestyle,8,01:32.13
+Male,8,100m Breaststroke,8,03:22.97
+Male,8,100m Butterfly,8,07:28.50
+Male,8,100m Backstroke,8,15:31.50
+Male,8,400m Individual Medley,8,29:36.75
+Male,8,100m Freestyle,7,00:40.45
+Male,8,800m Freestyle,7,01:33.33
+Male,8,100m Breaststroke,7,03:25.62
+Male,8,100m Butterfly,7,07:34.35
+Male,8,100m Backstroke,7,15:43.65
+Male,8,400m Individual Medley,7,29:59.93
+Male,8,100m Freestyle,6,00:40.97
+Male,8,800m Freestyle,6,01:34.53
+Male,8,100m Breaststroke,6,03:28.27
+Male,8,100m Butterfly,6,07:40.20
+Male,8,100m Backstroke,6,15:55.80
+Male,8,400m Individual Medley,6,30:23.10
+Male,8,100m Freestyle,5,00:41.49
+Male,8,800m Freestyle,5,01:35.73
+Male,8,100m Breaststroke,5,03:30.92
+Male,8,100m Butterfly,5,07:46.05
+Male,8,100m Backstroke,5,16:07.95
+Male,8,400m Individual Medley,5,30:46.28
+Male,8,100m Freestyle,4,00:42.01
+Male,8,800m Freestyle,4,01:36.93
+Male,8,100m Breaststroke,4,03:33.56
+Male,8,100m Butterfly,4,07:51.90
+Male,8,100m Backstroke,4,16:20.10
+Male,8,400m Individual Medley,4,31:09.45
+Male,8,100m Freestyle,3,00:42.53
+Male,8,800m Freestyle,3,01:38.13
+Male,8,100m Breaststroke,3,03:36.21
+Male,8,100m Butterfly,3,07:57.75
+Male,8,100m Backstroke,3,16:32.25
+Male,8,400m Individual Medley,3,31:32.63
+Male,8,100m Freestyle,2,00:43.05
+Male,8,800m Freestyle,2,01:39.34
+Male,8,100m Breaststroke,2,03:38.86
+Male,8,100m Butterfly,2,08:03.60
+Male,8,100m Backstroke,2,16:44.40
+Male,8,400m Individual Medley,2,31:55.80
+Male,8,100m Freestyle,1,00:43.57
+Male,8,800m Freestyle,1,01:40.54
+Male,8,100m Breaststroke,1,03:41.51
+Male,8,100m Butterfly,1,08:09.45
+Male,8,100m Backstroke,1,16:56.55
+Male,8,400m Individual Medley,1,32:18.97
+Male,9,100m Freestyle,20,00:31.49
+Male,9,800m Freestyle,20,01:10.51
+Male,9,100m Breaststroke,20,02:34.95
+Male,9,100m Butterfly,20,05:32.69
+Male,9,100m Backstroke,20,11:38.40
+Male,9,400m Individual Medley,20,22:08.90
+Male,9,100m Freestyle,19,00:31.97
+Male,9,800m Freestyle,19,01:11.60
+Male,9,100m Breaststroke,19,02:37.34
+Male,9,100m Butterfly,19,05:37.84
+Male,9,100m Backstroke,19,11:49.20
+Male,9,400m Individual Medley,19,22:29.45
+Male,9,100m Freestyle,18,00:32.46
+Male,9,800m Freestyle,18,01:12.69
+Male,9,100m Breaststroke,18,02:39.74
+Male,9,100m Butterfly,18,05:42.98
+Male,9,100m Backstroke,18,12:00.00
+Male,9,400m Individual Medley,18,22:50.00
+Male,9,100m Freestyle,17,00:32.95
+Male,9,800m Freestyle,17,01:13.78
+Male,9,100m Breaststroke,17,02:42.14
+Male,9,100m Butterfly,17,05:48.12
+Male,9,100m Backstroke,17,12:10.80
+Male,9,400m Individual Medley,17,23:10.55
+Male,9,100m Freestyle,16,00:33.43
+Male,9,800m Freestyle,16,01:14.87
+Male,9,100m Breaststroke,16,02:44.53
+Male,9,100m Butterfly,16,05:53.27
+Male,9,100m Backstroke,16,12:21.60
+Male,9,400m Individual Medley,16,23:31.10
+Male,9,100m Freestyle,15,00:33.92
+Male,9,800m Freestyle,15,01:15.96
+Male,9,100m Breaststroke,15,02:46.93
+Male,9,100m Butterfly,15,05:58.41
+Male,9,100m Backstroke,15,12:32.40
+Male,9,400m Individual Medley,15,23:51.65
+Male,9,100m Freestyle,14,00:34.41
+Male,9,800m Freestyle,14,01:17.05
+Male,9,100m Breaststroke,14,02:49.32
+Male,9,100m Butterfly,14,06:03.56
+Male,9,100m Backstroke,14,12:43.20
+Male,9,400m Individual Medley,14,24:12.20
+Male,9,100m Freestyle,13,00:34.89
+Male,9,800m Freestyle,13,01:18.14
+Male,9,100m Breaststroke,13,02:51.72
+Male,9,100m Butterfly,13,06:08.70
+Male,9,100m Backstroke,13,12:54.00
+Male,9,400m Individual Medley,13,24:32.75
+Male,9,100m Freestyle,12,00:35.38
+Male,9,800m Freestyle,12,01:19.23
+Male,9,100m Breaststroke,12,02:54.12
+Male,9,100m Butterfly,12,06:13.85
+Male,9,100m Backstroke,12,13:04.80
+Male,9,400m Individual Medley,12,24:53.30
+Male,9,100m Freestyle,11,00:35.87
+Male,9,800m Freestyle,11,01:20.32
+Male,9,100m Breaststroke,11,02:56.51
+Male,9,100m Butterfly,11,06:18.99
+Male,9,100m Backstroke,11,13:15.60
+Male,9,400m Individual Medley,11,25:13.85
+Male,9,100m Freestyle,10,00:36.36
+Male,9,800m Freestyle,10,01:21.41
+Male,9,100m Breaststroke,10,02:58.91
+Male,9,100m Butterfly,10,06:24.14
+Male,9,100m Backstroke,10,13:26.40
+Male,9,400m Individual Medley,10,25:34.40
+Male,9,100m Freestyle,9,00:36.84
+Male,9,800m Freestyle,9,01:22.50
+Male,9,100m Breaststroke,9,03:01.30
+Male,9,100m Butterfly,9,06:29.28
+Male,9,100m Backstroke,9,13:37.20
+Male,9,400m Individual Medley,9,25:54.95
+Male,9,100m Freestyle,8,00:37.33
+Male,9,800m Freestyle,8,01:23.59
+Male,9,100m Breaststroke,8,03:03.70
+Male,9,100m Butterfly,8,06:34.43
+Male,9,100m Backstroke,8,13:48.00
+Male,9,400m Individual Medley,8,26:15.50
+Male,9,100m Freestyle,7,00:37.82
+Male,9,800m Freestyle,7,01:24.68
+Male,9,100m Breaststroke,7,03:06.10
+Male,9,100m Butterfly,7,06:39.57
+Male,9,100m Backstroke,7,13:58.80
+Male,9,400m Individual Medley,7,26:36.05
+Male,9,100m Freestyle,6,00:38.30
+Male,9,800m Freestyle,6,01:25.77
+Male,9,100m Breaststroke,6,03:08.49
+Male,9,100m Butterfly,6,06:44.72
+Male,9,100m Backstroke,6,14:09.60
+Male,9,400m Individual Medley,6,26:56.60
+Male,9,100m Freestyle,5,00:38.79
+Male,9,800m Freestyle,5,01:26.86
+Male,9,100m Breaststroke,5,03:10.89
+Male,9,100m Butterfly,5,06:49.86
+Male,9,100m Backstroke,5,14:20.40
+Male,9,400m Individual Medley,5,27:17.15
+Male,9,100m Freestyle,4,00:39.28
+Male,9,800m Freestyle,4,01:27.95
+Male,9,100m Breaststroke,4,03:13.29
+Male,9,100m Butterfly,4,06:55.01
+Male,9,100m Backstroke,4,14:31.20
+Male,9,400m Individual Medley,4,27:37.70
+Male,9,100m Freestyle,3,00:39.76
+Male,9,800m Freestyle,3,01:29.05
+Male,9,100m Breaststroke,3,03:15.68
+Male,9,100m Butterfly,3,07:00.15
+Male,9,100m Backstroke,3,14:42.00
+Male,9,400m Individual Medley,3,27:58.25
+Male,9,100m Freestyle,2,00:40.25
+Male,9,800m Freestyle,2,01:30.14
+Male,9,100m Breaststroke,2,03:18.08
+Male,9,100m Butterfly,2,07:05.30
+Male,9,100m Backstroke,2,14:52.80
+Male,9,400m Individual Medley,2,28:18.80
+Male,9,100m Freestyle,1,00:40.74
+Male,9,800m Freestyle,1,01:31.23
+Male,9,100m Breaststroke,1,03:20.47
+Male,9,100m Butterfly,1,07:10.44
+Male,9,100m Backstroke,1,15:03.60
+Male,9,400m Individual Medley,1,28:39.35
+Male,10,50m Freestyle,20,00:29.27
+Male,10,100m Freestyle,20,00:29.27
+Male,10,400m Freestyle,20,01:05.64
+Male,10,800m Freestyle,20,01:05.64
+Male,10,50m Breaststroke,20,02:21.44
+Male,10,100m Breaststroke,20,02:21.44
+Male,10,50m Butterfly,20,04:55.34
+Male,10,100m Butterfly,20,04:55.34
+Male,10,50m Backstroke,20,10:26.25
+Male,10,100m Backstroke,20,10:26.25
+Male,10,200m Individual Medley,20,19:45.98
+Male,10,400m Individual Medley,20,19:45.98
+Male,10,100m Freestyle,19,00:29.73
+Male,10,800m Freestyle,19,01:06.65
+Male,10,100m Breaststroke,19,02:23.62
+Male,10,100m Butterfly,19,04:59.90
+Male,10,100m Backstroke,19,10:35.94
+Male,10,400m Individual Medley,19,20:04.32
+Male,10,100m Freestyle,18,00:30.18
+Male,10,800m Freestyle,18,01:07.67
+Male,10,100m Breaststroke,18,02:25.81
+Male,10,100m Butterfly,18,05:04.47
+Male,10,100m Backstroke,18,10:45.62
+Male,10,400m Individual Medley,18,20:22.66
+Male,10,100m Freestyle,17,00:30.63
+Male,10,800m Freestyle,17,01:08.69
+Male,10,100m Breaststroke,17,02:28.00
+Male,10,100m Butterfly,17,05:09.04
+Male,10,100m Backstroke,17,10:55.30
+Male,10,400m Individual Medley,17,20:41.00
+Male,10,100m Freestyle,16,00:31.09
+Male,10,800m Freestyle,16,01:09.70
+Male,10,100m Breaststroke,16,02:30.18
+Male,10,100m Butterfly,16,05:13.60
+Male,10,100m Backstroke,16,11:04.99
+Male,10,400m Individual Medley,16,20:59.34
+Male,10,100m Freestyle,15,00:31.54
+Male,10,800m Freestyle,15,01:10.72
+Male,10,100m Breaststroke,15,02:32.37
+Male,10,100m Butterfly,15,05:18.17
+Male,10,100m Backstroke,15,11:14.67
+Male,10,400m Individual Medley,15,21:17.68
+Male,10,100m Freestyle,14,00:31.99
+Male,10,800m Freestyle,14,01:11.73
+Male,10,100m Breaststroke,14,02:34.56
+Male,10,100m Butterfly,14,05:22.74
+Male,10,100m Backstroke,14,11:24.36
+Male,10,400m Individual Medley,14,21:36.02
+Male,10,100m Freestyle,13,00:32.44
+Male,10,800m Freestyle,13,01:12.75
+Male,10,100m Breaststroke,13,02:36.75
+Male,10,100m Butterfly,13,05:27.31
+Male,10,100m Backstroke,13,11:34.04
+Male,10,400m Individual Medley,13,21:54.36
+Male,10,100m Freestyle,12,00:32.90
+Male,10,800m Freestyle,12,01:13.76
+Male,10,100m Breaststroke,12,02:38.93
+Male,10,100m Butterfly,12,05:31.87
+Male,10,100m Backstroke,12,11:43.73
+Male,10,400m Individual Medley,12,22:12.70
+Male,10,100m Freestyle,11,00:33.35
+Male,10,800m Freestyle,11,01:14.78
+Male,10,100m Breaststroke,11,02:41.12
+Male,10,100m Butterfly,11,05:36.44
+Male,10,100m Backstroke,11,11:53.41
+Male,10,400m Individual Medley,11,22:31.04
+Male,10,100m Freestyle,10,00:33.80
+Male,10,800m Freestyle,10,01:15.79
+Male,10,100m Breaststroke,10,02:43.31
+Male,10,100m Butterfly,10,05:41.01
+Male,10,100m Backstroke,10,12:03.09
+Male,10,400m Individual Medley,10,22:49.38
+Male,10,100m Freestyle,9,00:34.25
+Male,10,800m Freestyle,9,01:16.81
+Male,10,100m Breaststroke,9,02:45.49
+Male,10,100m Butterfly,9,05:45.57
+Male,10,100m Backstroke,9,12:12.78
+Male,10,400m Individual Medley,9,23:07.72
+Male,10,100m Freestyle,8,00:34.71
+Male,10,800m Freestyle,8,01:17.82
+Male,10,100m Breaststroke,8,02:47.68
+Male,10,100m Butterfly,8,05:50.14
+Male,10,100m Backstroke,8,12:22.46
+Male,10,400m Individual Medley,8,23:26.06
+Male,10,100m Freestyle,7,00:35.16
+Male,10,800m Freestyle,7,01:18.84
+Male,10,100m Breaststroke,7,02:49.87
+Male,10,100m Butterfly,7,05:54.71
+Male,10,100m Backstroke,7,12:32.15
+Male,10,400m Individual Medley,7,23:44.40
+Male,10,100m Freestyle,6,00:35.61
+Male,10,800m Freestyle,6,01:19.85
+Male,10,100m Breaststroke,6,02:52.06
+Male,10,100m Butterfly,6,05:59.27
+Male,10,100m Backstroke,6,12:41.83
+Male,10,400m Individual Medley,6,24:02.74
+Male,10,100m Freestyle,5,00:36.07
+Male,10,800m Freestyle,5,01:20.87
+Male,10,100m Breaststroke,5,02:54.24
+Male,10,100m Butterfly,5,06:03.84
+Male,10,100m Backstroke,5,12:51.52
+Male,10,400m Individual Medley,5,24:21.08
+Male,10,100m Freestyle,4,00:36.52
+Male,10,800m Freestyle,4,01:21.88
+Male,10,100m Breaststroke,4,02:56.43
+Male,10,100m Butterfly,4,06:08.41
+Male,10,100m Backstroke,4,13:01.20
+Male,10,400m Individual Medley,4,24:39.42
+Male,10,100m Freestyle,3,00:36.97
+Male,10,800m Freestyle,3,01:22.90
+Male,10,100m Breaststroke,3,02:58.62
+Male,10,100m Butterfly,3,06:12.98
+Male,10,100m Backstroke,3,13:10.88
+Male,10,400m Individual Medley,3,24:57.76
+Male,10,100m Freestyle,2,00:37.42
+Male,10,800m Freestyle,2,01:23.91
+Male,10,100m Breaststroke,2,03:00.80
+Male,10,100m Butterfly,2,06:17.54
+Male,10,100m Backstroke,2,13:20.57
+Male,10,400m Individual Medley,2,25:16.10
+Male,10,100m Freestyle,1,00:37.88
+Male,10,800m Freestyle,1,01:24.93
+Male,10,100m Breaststroke,1,03:02.99
+Male,10,100m Butterfly,1,06:22.11
+Male,10,100m Backstroke,1,13:30.25
+Male,10,400m Individual Medley,1,25:34.44
+Male,12,50m Freestyle,20,00:27.51
+Male,12,100m Freestyle,20,00:27.51
+Male,12,400m Freestyle,20,01:00.16
+Male,12,800m Freestyle,20,01:00.16
+Male,12,50m Breaststroke,20,02:12.93
+Male,12,100m Breaststroke,20,02:12.93
+Male,12,50m Butterfly,20,04:38.64
+Male,12,100m Butterfly,20,04:38.64
+Male,12,50m Backstroke,20,09:42.66
+Male,12,100m Backstroke,20,09:42.66
+Male,12,200m Individual Medley,20,18:23.86
+Male,12,400m Individual Medley,20,18:23.86
+Male,12,100m Freestyle,19,00:27.93
+Male,12,800m Freestyle,19,01:01.09
+Male,12,100m Breaststroke,19,02:14.98
+Male,12,100m Butterfly,19,04:42.95
+Male,12,100m Backstroke,19,09:51.67
+Male,12,400m Individual Medley,19,18:40.93
+Male,12,100m Freestyle,18,00:28.36
+Male,12,800m Freestyle,18,01:02.02
+Male,12,100m Breaststroke,18,02:17.04
+Male,12,100m Butterfly,18,04:47.26
+Male,12,100m Backstroke,18,10:00.68
+Male,12,400m Individual Medley,18,18:58.00
+Male,12,100m Freestyle,17,00:28.79
+Male,12,800m Freestyle,17,01:02.95
+Male,12,100m Breaststroke,17,02:19.10
+Male,12,100m Butterfly,17,04:51.57
+Male,12,100m Backstroke,17,10:09.69
+Male,12,400m Individual Medley,17,19:15.07
+Male,12,100m Freestyle,16,00:29.21
+Male,12,800m Freestyle,16,01:03.88
+Male,12,100m Breaststroke,16,02:21.15
+Male,12,100m Butterfly,16,04:55.88
+Male,12,100m Backstroke,16,10:18.70
+Male,12,400m Individual Medley,16,19:32.14
+Male,12,100m Freestyle,15,00:29.64
+Male,12,800m Freestyle,15,01:04.81
+Male,12,100m Breaststroke,15,02:23.21
+Male,12,100m Butterfly,15,05:00.19
+Male,12,100m Backstroke,15,10:27.71
+Male,12,400m Individual Medley,15,19:49.21
+Male,12,100m Freestyle,14,00:30.06
+Male,12,800m Freestyle,14,01:05.74
+Male,12,100m Breaststroke,14,02:25.26
+Male,12,100m Butterfly,14,05:04.50
+Male,12,100m Backstroke,14,10:36.72
+Male,12,400m Individual Medley,14,20:06.28
+Male,12,100m Freestyle,13,00:30.49
+Male,12,800m Freestyle,13,01:06.67
+Male,12,100m Breaststroke,13,02:27.32
+Male,12,100m Butterfly,13,05:08.80
+Male,12,100m Backstroke,13,10:45.73
+Male,12,400m Individual Medley,13,20:23.35
+Male,12,100m Freestyle,12,00:30.91
+Male,12,800m Freestyle,12,01:07.60
+Male,12,100m Breaststroke,12,02:29.37
+Male,12,100m Butterfly,12,05:13.11
+Male,12,100m Backstroke,12,10:54.74
+Male,12,400m Individual Medley,12,20:40.42
+Male,12,100m Freestyle,11,00:31.34
+Male,12,800m Freestyle,11,01:08.53
+Male,12,100m Breaststroke,11,02:31.43
+Male,12,100m Butterfly,11,05:17.42
+Male,12,100m Backstroke,11,11:03.75
+Male,12,400m Individual Medley,11,20:57.49
+Male,12,100m Freestyle,10,00:31.76
+Male,12,800m Freestyle,10,01:09.46
+Male,12,100m Breaststroke,10,02:33.48
+Male,12,100m Butterfly,10,05:21.73
+Male,12,100m Backstroke,10,11:12.76
+Male,12,400m Individual Medley,10,21:14.56
+Male,12,100m Freestyle,9,00:32.19
+Male,12,800m Freestyle,9,01:10.39
+Male,12,100m Breaststroke,9,02:35.54
+Male,12,100m Butterfly,9,05:26.04
+Male,12,100m Backstroke,9,11:21.77
+Male,12,400m Individual Medley,9,21:31.63
+Male,12,100m Freestyle,8,00:32.61
+Male,12,800m Freestyle,8,01:11.32
+Male,12,100m Breaststroke,8,02:37.60
+Male,12,100m Butterfly,8,05:30.35
+Male,12,100m Backstroke,8,11:30.78
+Male,12,400m Individual Medley,8,21:48.70
+Male,12,100m Freestyle,7,00:33.04
+Male,12,800m Freestyle,7,01:12.25
+Male,12,100m Breaststroke,7,02:39.65
+Male,12,100m Butterfly,7,05:34.66
+Male,12,100m Backstroke,7,11:39.79
+Male,12,400m Individual Medley,7,22:05.77
+Male,12,100m Freestyle,6,00:33.46
+Male,12,800m Freestyle,6,01:13.18
+Male,12,100m Breaststroke,6,02:41.71
+Male,12,100m Butterfly,6,05:38.97
+Male,12,100m Backstroke,6,11:48.80
+Male,12,400m Individual Medley,6,22:22.84
+Male,12,100m Freestyle,5,00:33.89
+Male,12,800m Freestyle,5,01:14.11
+Male,12,100m Breaststroke,5,02:43.76
+Male,12,100m Butterfly,5,05:43.28
+Male,12,100m Backstroke,5,11:57.81
+Male,12,400m Individual Medley,5,22:39.91
+Male,12,100m Freestyle,4,00:34.32
+Male,12,800m Freestyle,4,01:15.04
+Male,12,100m Breaststroke,4,02:45.82
+Male,12,100m Butterfly,4,05:47.58
+Male,12,100m Backstroke,4,12:06.82
+Male,12,400m Individual Medley,4,22:56.98
+Male,12,100m Freestyle,3,00:34.74
+Male,12,800m Freestyle,3,01:15.97
+Male,12,100m Breaststroke,3,02:47.87
+Male,12,100m Butterfly,3,05:51.89
+Male,12,100m Backstroke,3,12:15.83
+Male,12,400m Individual Medley,3,23:14.05
+Male,12,100m Freestyle,2,00:35.17
+Male,12,800m Freestyle,2,01:16.90
+Male,12,100m Breaststroke,2,02:49.93
+Male,12,100m Butterfly,2,05:56.20
+Male,12,100m Backstroke,2,12:24.84
+Male,12,400m Individual Medley,2,23:31.12
+Male,12,100m Freestyle,1,00:35.59
+Male,12,800m Freestyle,1,01:17.84
+Male,12,100m Breaststroke,1,02:51.99
+Male,12,100m Butterfly,1,06:00.51
+Male,12,100m Backstroke,1,12:33.85
+Male,12,400m Individual Medley,1,23:48.19
+Unknown,Unknown,50m Freestyle,20,00:25.68
+Unknown,Unknown,100m Freestyle,20,00:25.68
+Unknown,Unknown,400m Freestyle,20,00:56.07
+Unknown,Unknown,800m Freestyle,20,00:56.07
+Unknown,Unknown,50m Breaststroke,20,02:04.32
+Unknown,Unknown,100m Breaststroke,20,02:04.32
+Unknown,Unknown,50m Butterfly,20,04:18.16
+Unknown,Unknown,100m Butterfly,20,04:18.16
+Unknown,Unknown,50m Backstroke,20,09:11.72
+Unknown,Unknown,100m Backstroke,20,09:11.72
+Unknown,Unknown,200m Individual Medley,20,17:27.03
+Unknown,Unknown,400m Individual Medley,20,17:27.03
+Unknown,Unknown,100m Freestyle,19,00:26.07
+Unknown,Unknown,800m Freestyle,19,00:56.93
+Unknown,Unknown,100m Breaststroke,19,02:06.24
+Unknown,Unknown,100m Butterfly,19,04:22.15
+Unknown,Unknown,100m Backstroke,19,09:20.25
+Unknown,Unknown,400m Individual Medley,19,17:43.22
+Unknown,Unknown,100m Freestyle,18,00:26.47
+Unknown,Unknown,800m Freestyle,18,00:57.80
+Unknown,Unknown,100m Breaststroke,18,02:08.16
+Unknown,Unknown,100m Butterfly,18,04:26.14
+Unknown,Unknown,100m Backstroke,18,09:28.78
+Unknown,Unknown,400m Individual Medley,18,17:59.41
+Unknown,Unknown,100m Freestyle,17,00:26.87
+Unknown,Unknown,800m Freestyle,17,00:58.67
+Unknown,Unknown,100m Breaststroke,17,02:10.08
+Unknown,Unknown,100m Butterfly,17,04:30.13
+Unknown,Unknown,100m Backstroke,17,09:37.31
+Unknown,Unknown,400m Individual Medley,17,18:15.60
+Unknown,Unknown,100m Freestyle,16,00:27.26
+Unknown,Unknown,800m Freestyle,16,00:59.53
+Unknown,Unknown,100m Breaststroke,16,02:12.00
+Unknown,Unknown,100m Butterfly,16,04:34.12
+Unknown,Unknown,100m Backstroke,16,09:45.84
+Unknown,Unknown,400m Individual Medley,16,18:31.79
+Unknown,Unknown,100m Freestyle,15,00:27.66
+Unknown,Unknown,800m Freestyle,15,01:00.40
+Unknown,Unknown,100m Breaststroke,15,02:13.93
+Unknown,Unknown,100m Butterfly,15,04:38.12
+Unknown,Unknown,100m Backstroke,15,09:54.38
+Unknown,Unknown,400m Individual Medley,15,18:47.98
+Unknown,Unknown,100m Freestyle,14,00:28.06
+Unknown,Unknown,800m Freestyle,14,01:01.27
+Unknown,Unknown,100m Breaststroke,14,02:15.85
+Unknown,Unknown,100m Butterfly,14,04:42.11
+Unknown,Unknown,100m Backstroke,14,10:02.91
+Unknown,Unknown,400m Individual Medley,14,19:04.17
+Unknown,Unknown,100m Freestyle,13,00:28.46
+Unknown,Unknown,800m Freestyle,13,01:02.13
+Unknown,Unknown,100m Breaststroke,13,02:17.77
+Unknown,Unknown,100m Butterfly,13,04:46.10
+Unknown,Unknown,100m Backstroke,13,10:11.44
+Unknown,Unknown,400m Individual Medley,13,19:20.37
+Unknown,Unknown,100m Freestyle,12,00:28.85
+Unknown,Unknown,800m Freestyle,12,01:03.00
+Unknown,Unknown,100m Breaststroke,12,02:19.69
+Unknown,Unknown,100m Butterfly,12,04:50.09
+Unknown,Unknown,100m Backstroke,12,10:19.97
+Unknown,Unknown,400m Individual Medley,12,19:36.56
+Unknown,Unknown,100m Freestyle,11,00:29.25
+Unknown,Unknown,800m Freestyle,11,01:03.87
+Unknown,Unknown,100m Breaststroke,11,02:21.62
+Unknown,Unknown,100m Butterfly,11,04:54.08
+Unknown,Unknown,100m Backstroke,11,10:28.50
+Unknown,Unknown,400m Individual Medley,11,19:52.75
+Unknown,Unknown,100m Freestyle,10,00:29.65
+Unknown,Unknown,800m Freestyle,10,01:04.74
+Unknown,Unknown,100m Breaststroke,10,02:23.54
+Unknown,Unknown,100m Butterfly,10,04:58.08
+Unknown,Unknown,100m Backstroke,10,10:37.03
+Unknown,Unknown,400m Individual Medley,10,20:08.94
+Unknown,Unknown,100m Freestyle,9,00:30.04
+Unknown,Unknown,800m Freestyle,9,01:05.60
+Unknown,Unknown,100m Breaststroke,9,02:25.46
+Unknown,Unknown,100m Butterfly,9,05:02.07
+Unknown,Unknown,100m Backstroke,9,10:45.57
+Unknown,Unknown,400m Individual Medley,9,20:25.13
+Unknown,Unknown,100m Freestyle,8,00:30.44
+Unknown,Unknown,800m Freestyle,8,01:06.47
+Unknown,Unknown,100m Breaststroke,8,02:27.38
+Unknown,Unknown,100m Butterfly,8,05:06.06
+Unknown,Unknown,100m Backstroke,8,10:54.10
+Unknown,Unknown,400m Individual Medley,8,20:41.32
+Unknown,Unknown,100m Freestyle,7,00:30.84
+Unknown,Unknown,800m Freestyle,7,01:07.34
+Unknown,Unknown,100m Breaststroke,7,02:29.31
+Unknown,Unknown,100m Butterfly,7,05:10.05
+Unknown,Unknown,100m Backstroke,7,11:02.63
+Unknown,Unknown,400m Individual Medley,7,20:57.51
+Unknown,Unknown,100m Freestyle,6,00:31.23
+Unknown,Unknown,800m Freestyle,6,01:08.20
+Unknown,Unknown,100m Breaststroke,6,02:31.23
+Unknown,Unknown,100m Butterfly,6,05:14.05
+Unknown,Unknown,100m Backstroke,6,11:11.16
+Unknown,Unknown,400m Individual Medley,6,21:13.70
+Unknown,Unknown,100m Freestyle,5,00:31.63
+Unknown,Unknown,800m Freestyle,5,01:09.07
+Unknown,Unknown,100m Breaststroke,5,02:33.15
+Unknown,Unknown,100m Butterfly,5,05:18.04
+Unknown,Unknown,100m Backstroke,5,11:19.69
+Unknown,Unknown,400m Individual Medley,5,21:29.89
+Unknown,Unknown,100m Freestyle,4,00:32.03
+Unknown,Unknown,800m Freestyle,4,01:09.94
+Unknown,Unknown,100m Breaststroke,4,02:35.07
+Unknown,Unknown,100m Butterfly,4,05:22.03
+Unknown,Unknown,100m Backstroke,4,11:28.22
+Unknown,Unknown,400m Individual Medley,4,21:46.09
+Unknown,Unknown,100m Freestyle,3,00:32.43
+Unknown,Unknown,800m Freestyle,3,01:10.80
+Unknown,Unknown,100m Breaststroke,3,02:37.00
+Unknown,Unknown,100m Butterfly,3,05:26.02
+Unknown,Unknown,100m Backstroke,3,11:36.76
+Unknown,Unknown,400m Individual Medley,3,22:02.28
+Unknown,Unknown,100m Freestyle,2,00:32.82
+Unknown,Unknown,800m Freestyle,2,01:11.67
+Unknown,Unknown,100m Breaststroke,2,02:38.92
+Unknown,Unknown,100m Butterfly,2,05:30.01
+Unknown,Unknown,100m Backstroke,2,11:45.29
+Unknown,Unknown,400m Individual Medley,2,22:18.47
+Unknown,Unknown,100m Freestyle,1,00:33.22
+Unknown,Unknown,800m Freestyle,1,01:12.54
+Unknown,Unknown,100m Breaststroke,1,02:40.84
+Unknown,Unknown,100m Butterfly,1,05:34.01
+Unknown,Unknown,100m Backstroke,1,11:53.82
+Unknown,Unknown,400m Individual Medley,1,22:34.66
+Male,13,50m Freestyle,20,00:24.29
+Male,13,100m Freestyle,20,00:24.29
+Male,13,400m Freestyle,20,00:53.26
+Male,13,800m Freestyle,20,00:53.26
+Male,13,50m Breaststroke,20,01:56.98
+Male,13,100m Breaststroke,20,01:56.98
+Male,13,50m Butterfly,20,04:08.91
+Male,13,100m Butterfly,20,04:08.91
+Male,13,50m Backstroke,20,08:42.41
+Male,13,100m Backstroke,20,08:42.41
+Male,13,200m Individual Medley,20,16:29.53
+Male,13,400m Individual Medley,20,16:29.53
+Male,13,100m Freestyle,19,00:24.66
+Male,13,800m Freestyle,19,00:54.09
+Male,13,100m Breaststroke,19,01:58.79
+Male,13,100m Butterfly,19,04:12.76
+Male,13,100m Backstroke,19,08:50.49
+Male,13,400m Individual Medley,19,16:44.83
+Male,13,100m Freestyle,18,00:25.04
+Male,13,800m Freestyle,18,00:54.91
+Male,13,100m Breaststroke,18,02:00.60
+Male,13,100m Butterfly,18,04:16.61
+Male,13,100m Backstroke,18,08:58.57
+Male,13,400m Individual Medley,18,17:00.13
+Male,13,100m Freestyle,17,00:25.42
+Male,13,800m Freestyle,17,00:55.73
+Male,13,100m Breaststroke,17,02:02.41
+Male,13,100m Butterfly,17,04:20.46
+Male,13,100m Backstroke,17,09:06.65
+Male,13,400m Individual Medley,17,17:15.43
+Male,13,100m Freestyle,16,00:25.79
+Male,13,800m Freestyle,16,00:56.56
+Male,13,100m Breaststroke,16,02:04.22
+Male,13,100m Butterfly,16,04:24.31
+Male,13,100m Backstroke,16,09:14.73
+Male,13,400m Individual Medley,16,17:30.73
+Male,13,100m Freestyle,15,00:26.17
+Male,13,800m Freestyle,15,00:57.38
+Male,13,100m Breaststroke,15,02:06.03
+Male,13,100m Butterfly,15,04:28.16
+Male,13,100m Backstroke,15,09:22.81
+Male,13,400m Individual Medley,15,17:46.04
+Male,13,100m Freestyle,14,00:26.54
+Male,13,800m Freestyle,14,00:58.20
+Male,13,100m Breaststroke,14,02:07.84
+Male,13,100m Butterfly,14,04:32.01
+Male,13,100m Backstroke,14,09:30.88
+Male,13,400m Individual Medley,14,18:01.34
+Male,13,100m Freestyle,13,00:26.92
+Male,13,800m Freestyle,13,00:59.03
+Male,13,100m Breaststroke,13,02:09.64
+Male,13,100m Butterfly,13,04:35.86
+Male,13,100m Backstroke,13,09:38.96
+Male,13,400m Individual Medley,13,18:16.64
+Male,13,100m Freestyle,12,00:27.29
+Male,13,800m Freestyle,12,00:59.85
+Male,13,100m Breaststroke,12,02:11.45
+Male,13,100m Butterfly,12,04:39.70
+Male,13,100m Backstroke,12,09:47.04
+Male,13,400m Individual Medley,12,18:31.94
+Male,13,100m Freestyle,11,00:27.67
+Male,13,800m Freestyle,11,01:00.68
+Male,13,100m Breaststroke,11,02:13.26
+Male,13,100m Butterfly,11,04:43.55
+Male,13,100m Backstroke,11,09:55.12
+Male,13,400m Individual Medley,11,18:47.24
+Male,13,100m Freestyle,10,00:28.04
+Male,13,800m Freestyle,10,01:01.50
+Male,13,100m Breaststroke,10,02:15.07
+Male,13,100m Butterfly,10,04:47.40
+Male,13,100m Backstroke,10,10:03.20
+Male,13,400m Individual Medley,10,19:02.55
+Male,13,100m Freestyle,9,00:28.42
+Male,13,800m Freestyle,9,01:02.32
+Male,13,100m Breaststroke,9,02:16.88
+Male,13,100m Butterfly,9,04:51.25
+Male,13,100m Backstroke,9,10:11.28
+Male,13,400m Individual Medley,9,19:17.85
+Male,13,100m Freestyle,8,00:28.80
+Male,13,800m Freestyle,8,01:03.15
+Male,13,100m Breaststroke,8,02:18.69
+Male,13,100m Butterfly,8,04:55.10
+Male,13,100m Backstroke,8,10:19.36
+Male,13,400m Individual Medley,8,19:33.15
+Male,13,100m Freestyle,7,00:29.17
+Male,13,800m Freestyle,7,01:03.97
+Male,13,100m Breaststroke,7,02:20.50
+Male,13,100m Butterfly,7,04:58.95
+Male,13,100m Backstroke,7,10:27.43
+Male,13,400m Individual Medley,7,19:48.45
+Male,13,100m Freestyle,6,00:29.55
+Male,13,800m Freestyle,6,01:04.79
+Male,13,100m Breaststroke,6,02:22.31
+Male,13,100m Butterfly,6,05:02.80
+Male,13,100m Backstroke,6,10:35.51
+Male,13,400m Individual Medley,6,20:03.75
+Male,13,100m Freestyle,5,00:29.92
+Male,13,800m Freestyle,5,01:05.62
+Male,13,100m Breaststroke,5,02:24.12
+Male,13,100m Butterfly,5,05:06.65
+Male,13,100m Backstroke,5,10:43.59
+Male,13,400m Individual Medley,5,20:19.06
+Male,13,100m Freestyle,4,00:30.30
+Male,13,800m Freestyle,4,01:06.44
+Male,13,100m Breaststroke,4,02:25.93
+Male,13,100m Butterfly,4,05:10.50
+Male,13,100m Backstroke,4,10:51.67
+Male,13,400m Individual Medley,4,20:34.36
+Male,13,100m Freestyle,3,00:30.67
+Male,13,800m Freestyle,3,01:07.26
+Male,13,100m Breaststroke,3,02:27.74
+Male,13,100m Butterfly,3,05:14.35
+Male,13,100m Backstroke,3,10:59.75
+Male,13,400m Individual Medley,3,20:49.66
+Male,13,100m Freestyle,2,00:31.05
+Male,13,800m Freestyle,2,01:08.09
+Male,13,100m Breaststroke,2,02:29.54
+Male,13,100m Butterfly,2,05:18.20
+Male,13,100m Backstroke,2,11:07.83
+Male,13,400m Individual Medley,2,21:04.96
+Male,13,100m Freestyle,1,00:31.43
+Male,13,800m Freestyle,1,01:08.91
+Male,13,100m Breaststroke,1,02:31.35
+Male,13,100m Butterfly,1,05:22.05
+Male,13,100m Backstroke,1,11:15.91
+Male,13,400m Individual Medley,1,21:20.26
+Male,14,50m Freestyle,20,00:23.44
+Male,14,100m Freestyle,20,00:23.44
+Male,14,400m Freestyle,20,00:51.57
+Male,14,800m Freestyle,20,00:51.57
+Male,14,50m Breaststroke,20,01:53.25
+Male,14,100m Breaststroke,20,01:53.25
+Male,14,50m Butterfly,20,04:01.69
+Male,14,100m Butterfly,20,04:01.69
+Male,14,50m Backstroke,20,08:22.87
+Male,14,100m Backstroke,20,08:22.87
+Male,14,200m Individual Medley,20,15:57.31
+Male,14,400m Individual Medley,20,15:57.31
+Male,14,100m Freestyle,19,00:23.81
+Male,14,800m Freestyle,19,00:52.36
+Male,14,100m Breaststroke,19,01:55.00
+Male,14,100m Butterfly,19,04:05.42
+Male,14,100m Backstroke,19,08:30.64
+Male,14,400m Individual Medley,19,16:12.12
+Male,14,100m Freestyle,18,00:24.17
+Male,14,800m Freestyle,18,00:53.16
+Male,14,100m Breaststroke,18,01:56.75
+Male,14,100m Butterfly,18,04:09.16
+Male,14,100m Backstroke,18,08:38.42
+Male,14,400m Individual Medley,18,16:26.92
+Male,14,100m Freestyle,17,00:24.53
+Male,14,800m Freestyle,17,00:53.96
+Male,14,100m Breaststroke,17,01:58.50
+Male,14,100m Butterfly,17,04:12.90
+Male,14,100m Backstroke,17,08:46.20
+Male,14,400m Individual Medley,17,16:41.72
+Male,14,100m Freestyle,16,00:24.90
+Male,14,800m Freestyle,16,00:54.75
+Male,14,100m Breaststroke,16,02:00.25
+Male,14,100m Butterfly,16,04:16.63
+Male,14,100m Backstroke,16,08:53.97
+Male,14,400m Individual Medley,16,16:56.53
+Male,14,100m Freestyle,15,00:25.26
+Male,14,800m Freestyle,15,00:55.55
+Male,14,100m Breaststroke,15,02:02.00
+Male,14,100m Butterfly,15,04:20.37
+Male,14,100m Backstroke,15,09:01.75
+Male,14,400m Individual Medley,15,17:11.33
+Male,14,100m Freestyle,14,00:25.62
+Male,14,800m Freestyle,14,00:56.35
+Male,14,100m Breaststroke,14,02:03.76
+Male,14,100m Butterfly,14,04:24.11
+Male,14,100m Backstroke,14,09:09.53
+Male,14,400m Individual Medley,14,17:26.14
+Male,14,100m Freestyle,13,00:25.98
+Male,14,800m Freestyle,13,00:57.15
+Male,14,100m Breaststroke,13,02:05.51
+Male,14,100m Butterfly,13,04:27.85
+Male,14,100m Backstroke,13,09:17.30
+Male,14,400m Individual Medley,13,17:40.94
+Male,14,100m Freestyle,12,00:26.35
+Male,14,800m Freestyle,12,00:57.94
+Male,14,100m Breaststroke,12,02:07.26
+Male,14,100m Butterfly,12,04:31.58
+Male,14,100m Backstroke,12,09:25.08
+Male,14,400m Individual Medley,12,17:55.74
+Male,14,100m Freestyle,11,00:26.71
+Male,14,800m Freestyle,11,00:58.74
+Male,14,100m Breaststroke,11,02:09.01
+Male,14,100m Butterfly,11,04:35.32
+Male,14,100m Backstroke,11,09:32.85
+Male,14,400m Individual Medley,11,18:10.55
+Male,14,100m Freestyle,10,00:27.07
+Male,14,800m Freestyle,10,00:59.54
+Male,14,100m Breaststroke,10,02:10.76
+Male,14,100m Butterfly,10,04:39.06
+Male,14,100m Backstroke,10,09:40.63
+Male,14,400m Individual Medley,10,18:25.35
+Male,14,100m Freestyle,9,00:27.43
+Male,14,800m Freestyle,9,01:00.34
+Male,14,100m Breaststroke,9,02:12.51
+Male,14,100m Butterfly,9,04:42.80
+Male,14,100m Backstroke,9,09:48.41
+Male,14,400m Individual Medley,9,18:40.15
+Male,14,100m Freestyle,8,00:27.80
+Male,14,800m Freestyle,8,01:01.13
+Male,14,100m Breaststroke,8,02:14.26
+Male,14,100m Butterfly,8,04:46.53
+Male,14,100m Backstroke,8,09:56.18
+Male,14,400m Individual Medley,8,18:54.96
+Male,14,100m Freestyle,7,00:28.16
+Male,14,800m Freestyle,7,01:01.93
+Male,14,100m Breaststroke,7,02:16.01
+Male,14,100m Butterfly,7,04:50.27
+Male,14,100m Backstroke,7,10:03.96
+Male,14,400m Individual Medley,7,19:09.76
+Male,14,100m Freestyle,6,00:28.52
+Male,14,800m Freestyle,6,01:02.73
+Male,14,100m Breaststroke,6,02:17.76
+Male,14,100m Butterfly,6,04:54.01
+Male,14,100m Backstroke,6,10:11.74
+Male,14,400m Individual Medley,6,19:24.57
+Male,14,100m Freestyle,5,00:28.88
+Male,14,800m Freestyle,5,01:03.53
+Male,14,100m Breaststroke,5,02:19.52
+Male,14,100m Butterfly,5,04:57.75
+Male,14,100m Backstroke,5,10:19.51
+Male,14,400m Individual Medley,5,19:39.37
+Male,14,100m Freestyle,4,00:29.25
+Male,14,800m Freestyle,4,01:04.32
+Male,14,100m Breaststroke,4,02:21.27
+Male,14,100m Butterfly,4,05:01.48
+Male,14,100m Backstroke,4,10:27.29
+Male,14,400m Individual Medley,4,19:54.17
+Male,14,100m Freestyle,3,00:29.61
+Male,14,800m Freestyle,3,01:05.12
+Male,14,100m Breaststroke,3,02:23.02
+Male,14,100m Butterfly,3,05:05.22
+Male,14,100m Backstroke,3,10:35.06
+Male,14,400m Individual Medley,3,20:08.98
+Male,14,100m Freestyle,2,00:29.97
+Male,14,800m Freestyle,2,01:05.92
+Male,14,100m Breaststroke,2,02:24.77
+Male,14,100m Butterfly,2,05:08.96
+Male,14,100m Backstroke,2,10:42.84
+Male,14,400m Individual Medley,2,20:23.78
+Male,14,100m Freestyle,1,00:30.33
+Male,14,800m Freestyle,1,01:06.72
+Male,14,100m Breaststroke,1,02:26.52
+Male,14,100m Butterfly,1,05:12.70
+Male,14,100m Backstroke,1,10:50.62
+Male,14,400m Individual Medley,1,20:38.58
+Male,15,50m Freestyle,20,00:22.85
+Male,15,100m Freestyle,20,00:22.85
+Male,15,400m Freestyle,20,00:50.05
+Male,15,800m Freestyle,20,00:50.05
+Male,15,50m Breaststroke,20,01:49.60
+Male,15,100m Breaststroke,20,01:49.60
+Male,15,50m Butterfly,20,03:54.06
+Male,15,100m Butterfly,20,03:54.06
+Male,15,50m Backstroke,20,08:10.65
+Male,15,100m Backstroke,20,08:10.65
+Male,15,200m Individual Medley,20,15:29.79
+Male,15,400m Individual Medley,20,15:29.79
+Male,15,100m Freestyle,19,00:23.21
+Male,15,800m Freestyle,19,00:50.83
+Male,15,100m Breaststroke,19,01:51.30
+Male,15,100m Butterfly,19,03:57.68
+Male,15,100m Backstroke,19,08:18.23
+Male,15,400m Individual Medley,19,15:44.17
+Male,15,100m Freestyle,18,00:23.56
+Male,15,800m Freestyle,18,00:51.60
+Male,15,100m Breaststroke,18,01:52.99
+Male,15,100m Butterfly,18,04:01.30
+Male,15,100m Backstroke,18,08:25.82
+Male,15,400m Individual Medley,18,15:58.55
+Male,15,100m Freestyle,17,00:23.91
+Male,15,800m Freestyle,17,00:52.37
+Male,15,100m Breaststroke,17,01:54.68
+Male,15,100m Butterfly,17,04:04.92
+Male,15,100m Backstroke,17,08:33.41
+Male,15,400m Individual Medley,17,16:12.93
+Male,15,100m Freestyle,16,00:24.27
+Male,15,800m Freestyle,16,00:53.15
+Male,15,100m Breaststroke,16,01:56.38
+Male,15,100m Butterfly,16,04:08.54
+Male,15,100m Backstroke,16,08:40.99
+Male,15,400m Individual Medley,16,16:27.31
+Male,15,100m Freestyle,15,00:24.62
+Male,15,800m Freestyle,15,00:53.92
+Male,15,100m Breaststroke,15,01:58.07
+Male,15,100m Butterfly,15,04:12.16
+Male,15,100m Backstroke,15,08:48.58
+Male,15,400m Individual Medley,15,16:41.68
+Male,15,100m Freestyle,14,00:24.97
+Male,15,800m Freestyle,14,00:54.70
+Male,15,100m Breaststroke,14,01:59.77
+Male,15,100m Butterfly,14,04:15.78
+Male,15,100m Backstroke,14,08:56.17
+Male,15,400m Individual Medley,14,16:56.06
+Male,15,100m Freestyle,13,00:25.33
+Male,15,800m Freestyle,13,00:55.47
+Male,15,100m Breaststroke,13,02:01.46
+Male,15,100m Butterfly,13,04:19.40
+Male,15,100m Backstroke,13,09:03.76
+Male,15,400m Individual Medley,13,17:10.44
+Male,15,100m Freestyle,12,00:25.68
+Male,15,800m Freestyle,12,00:56.24
+Male,15,100m Breaststroke,12,02:03.16
+Male,15,100m Butterfly,12,04:23.02
+Male,15,100m Backstroke,12,09:11.34
+Male,15,400m Individual Medley,12,17:24.82
+Male,15,100m Freestyle,11,00:26.03
+Male,15,800m Freestyle,11,00:57.02
+Male,15,100m Breaststroke,11,02:04.85
+Male,15,100m Butterfly,11,04:26.64
+Male,15,100m Backstroke,11,09:18.93
+Male,15,400m Individual Medley,11,17:39.20
+Male,15,100m Freestyle,10,00:26.39
+Male,15,800m Freestyle,10,00:57.79
+Male,15,100m Breaststroke,10,02:06.55
+Male,15,100m Butterfly,10,04:30.26
+Male,15,100m Backstroke,10,09:26.52
+Male,15,400m Individual Medley,10,17:53.58
+Male,15,100m Freestyle,9,00:26.74
+Male,15,800m Freestyle,9,00:58.57
+Male,15,100m Breaststroke,9,02:08.24
+Male,15,100m Butterfly,9,04:33.88
+Male,15,100m Backstroke,9,09:34.11
+Male,15,400m Individual Medley,9,18:07.95
+Male,15,100m Freestyle,8,00:27.09
+Male,15,800m Freestyle,8,00:59.34
+Male,15,100m Breaststroke,8,02:09.94
+Male,15,100m Butterfly,8,04:37.49
+Male,15,100m Backstroke,8,09:41.69
+Male,15,400m Individual Medley,8,18:22.33
+Male,15,100m Freestyle,7,00:27.45
+Male,15,800m Freestyle,7,01:00.11
+Male,15,100m Breaststroke,7,02:11.63
+Male,15,100m Butterfly,7,04:41.11
+Male,15,100m Backstroke,7,09:49.28
+Male,15,400m Individual Medley,7,18:36.71
+Male,15,100m Freestyle,6,00:27.80
+Male,15,800m Freestyle,6,01:00.89
+Male,15,100m Breaststroke,6,02:13.33
+Male,15,100m Butterfly,6,04:44.73
+Male,15,100m Backstroke,6,09:56.87
+Male,15,400m Individual Medley,6,18:51.09
+Male,15,100m Freestyle,5,00:28.15
+Male,15,800m Freestyle,5,01:01.66
+Male,15,100m Breaststroke,5,02:15.02
+Male,15,100m Butterfly,5,04:48.35
+Male,15,100m Backstroke,5,10:04.45
+Male,15,400m Individual Medley,5,19:05.47
+Male,15,100m Freestyle,4,00:28.51
+Male,15,800m Freestyle,4,01:02.44
+Male,15,100m Breaststroke,4,02:16.72
+Male,15,100m Butterfly,4,04:51.97
+Male,15,100m Backstroke,4,10:12.04
+Male,15,400m Individual Medley,4,19:19.85
+Male,15,100m Freestyle,3,00:28.86
+Male,15,800m Freestyle,3,01:03.21
+Male,15,100m Breaststroke,3,02:18.41
+Male,15,100m Butterfly,3,04:55.59
+Male,15,100m Backstroke,3,10:19.63
+Male,15,400m Individual Medley,3,19:34.22
+Male,15,100m Freestyle,2,00:29.21
+Male,15,800m Freestyle,2,01:03.98
+Male,15,100m Breaststroke,2,02:20.11
+Male,15,100m Butterfly,2,04:59.21
+Male,15,100m Backstroke,2,10:27.22
+Male,15,400m Individual Medley,2,19:48.60
+Male,15,100m Freestyle,1,00:29.57
+Male,15,800m Freestyle,1,01:04.76
+Male,15,100m Breaststroke,1,02:21.80
+Male,15,100m Butterfly,1,05:02.83
+Male,15,100m Backstroke,1,10:34.80
+Male,15,400m Individual Medley,1,20:02.98
+Male,16,50m Freestyle,20,00:22.58
+Male,16,100m Freestyle,20,00:22.58
+Male,16,400m Freestyle,20,00:49.50
+Male,16,800m Freestyle,20,00:49.50
+Male,16,50m Breaststroke,20,01:48.16
+Male,16,100m Breaststroke,20,01:48.16
+Male,16,50m Butterfly,20,03:49.68
+Male,16,100m Butterfly,20,03:49.68
+Male,16,50m Backstroke,20,07:57.38
+Male,16,100m Backstroke,20,07:57.38
+Male,16,200m Individual Medley,20,15:09.54
+Male,16,400m Individual Medley,20,15:09.54
+Male,16,100m Freestyle,19,00:22.93
+Male,16,800m Freestyle,19,00:50.26
+Male,16,100m Breaststroke,19,01:49.84
+Male,16,100m Butterfly,19,03:53.23
+Male,16,100m Backstroke,19,08:04.76
+Male,16,400m Individual Medley,19,15:23.60
+Male,16,100m Freestyle,18,00:23.28
+Male,16,800m Freestyle,18,00:51.03
+Male,16,100m Breaststroke,18,01:51.51
+Male,16,100m Butterfly,18,03:56.78
+Male,16,100m Backstroke,18,08:12.14
+Male,16,400m Individual Medley,18,15:37.67
+Male,16,100m Freestyle,17,00:23.63
+Male,16,800m Freestyle,17,00:51.80
+Male,16,100m Breaststroke,17,01:53.18
+Male,16,100m Butterfly,17,04:00.33
+Male,16,100m Backstroke,17,08:19.52
+Male,16,400m Individual Medley,17,15:51.74
+Male,16,100m Freestyle,16,00:23.98
+Male,16,800m Freestyle,16,00:52.56
+Male,16,100m Breaststroke,16,01:54.86
+Male,16,100m Butterfly,16,04:03.88
+Male,16,100m Backstroke,16,08:26.90
+Male,16,400m Individual Medley,16,16:05.80
+Male,16,100m Freestyle,15,00:24.33
+Male,16,800m Freestyle,15,00:53.33
+Male,16,100m Breaststroke,15,01:56.53
+Male,16,100m Butterfly,15,04:07.44
+Male,16,100m Backstroke,15,08:34.29
+Male,16,400m Individual Medley,15,16:19.87
+Male,16,100m Freestyle,14,00:24.68
+Male,16,800m Freestyle,14,00:54.09
+Male,16,100m Breaststroke,14,01:58.20
+Male,16,100m Butterfly,14,04:10.99
+Male,16,100m Backstroke,14,08:41.67
+Male,16,400m Individual Medley,14,16:33.93
+Male,16,100m Freestyle,13,00:25.03
+Male,16,800m Freestyle,13,00:54.86
+Male,16,100m Breaststroke,13,01:59.87
+Male,16,100m Butterfly,13,04:14.54
+Male,16,100m Backstroke,13,08:49.05
+Male,16,400m Individual Medley,13,16:48.00
+Male,16,100m Freestyle,12,00:25.38
+Male,16,800m Freestyle,12,00:55.62
+Male,16,100m Breaststroke,12,02:01.55
+Male,16,100m Butterfly,12,04:18.09
+Male,16,100m Backstroke,12,08:56.43
+Male,16,400m Individual Medley,12,17:02.06
+Male,16,100m Freestyle,11,00:25.72
+Male,16,800m Freestyle,11,00:56.39
+Male,16,100m Breaststroke,11,02:03.22
+Male,16,100m Butterfly,11,04:21.64
+Male,16,100m Backstroke,11,09:03.81
+Male,16,400m Individual Medley,11,17:16.13
+Male,16,100m Freestyle,10,00:26.07
+Male,16,800m Freestyle,10,00:57.15
+Male,16,100m Breaststroke,10,02:04.89
+Male,16,100m Butterfly,10,04:25.19
+Male,16,100m Backstroke,10,09:11.20
+Male,16,400m Individual Medley,10,17:30.19
+Male,16,100m Freestyle,9,00:26.42
+Male,16,800m Freestyle,9,00:57.92
+Male,16,100m Breaststroke,9,02:06.56
+Male,16,100m Butterfly,9,04:28.75
+Male,16,100m Backstroke,9,09:18.58
+Male,16,400m Individual Medley,9,17:44.26
+Male,16,100m Freestyle,8,00:26.77
+Male,16,800m Freestyle,8,00:58.68
+Male,16,100m Breaststroke,8,02:08.24
+Male,16,100m Butterfly,8,04:32.30
+Male,16,100m Backstroke,8,09:25.96
+Male,16,400m Individual Medley,8,17:58.32
+Male,16,100m Freestyle,7,00:27.12
+Male,16,800m Freestyle,7,00:59.45
+Male,16,100m Breaststroke,7,02:09.91
+Male,16,100m Butterfly,7,04:35.85
+Male,16,100m Backstroke,7,09:33.34
+Male,16,400m Individual Medley,7,18:12.39
+Male,16,100m Freestyle,6,00:27.47
+Male,16,800m Freestyle,6,01:00.22
+Male,16,100m Breaststroke,6,02:11.58
+Male,16,100m Butterfly,6,04:39.40
+Male,16,100m Backstroke,6,09:40.73
+Male,16,400m Individual Medley,6,18:26.45
+Male,16,100m Freestyle,5,00:27.82
+Male,16,800m Freestyle,5,01:00.98
+Male,16,100m Breaststroke,5,02:13.25
+Male,16,100m Butterfly,5,04:42.95
+Male,16,100m Backstroke,5,09:48.11
+Male,16,400m Individual Medley,5,18:40.52
+Male,16,100m Freestyle,4,00:28.17
+Male,16,800m Freestyle,4,01:01.75
+Male,16,100m Breaststroke,4,02:14.93
+Male,16,100m Butterfly,4,04:46.50
+Male,16,100m Backstroke,4,09:55.49
+Male,16,400m Individual Medley,4,18:54.58
+Male,16,100m Freestyle,3,00:28.52
+Male,16,800m Freestyle,3,01:02.51
+Male,16,100m Breaststroke,3,02:16.60
+Male,16,100m Butterfly,3,04:50.06
+Male,16,100m Backstroke,3,10:02.87
+Male,16,400m Individual Medley,3,19:08.65
+Male,16,100m Freestyle,2,00:28.87
+Male,16,800m Freestyle,2,01:03.28
+Male,16,100m Breaststroke,2,02:18.27
+Male,16,100m Butterfly,2,04:53.61
+Male,16,100m Backstroke,2,10:10.25
+Male,16,400m Individual Medley,2,19:22.71
+Male,16,100m Freestyle,1,00:29.22
+Male,16,800m Freestyle,1,01:04.04
+Male,16,100m Breaststroke,1,02:19.95
+Male,16,100m Butterfly,1,04:57.16
+Male,16,100m Backstroke,1,10:17.64
+Male,16,400m Individual Medley,1,19:36.78
+Male,17,50m Freestyle,20,00:22.27
+Male,17,100m Freestyle,20,00:22.27
+Male,17,400m Freestyle,20,00:48.81
+Male,17,800m Freestyle,20,00:48.81
+Male,17,50m Breaststroke,20,01:46.99
+Male,17,100m Breaststroke,20,01:46.99
+Male,17,50m Butterfly,20,03:46.57
+Male,17,100m Butterfly,20,03:46.57
+Male,17,50m Backstroke,20,07:48.95
+Male,17,100m Backstroke,20,07:48.95
+Male,17,200m Individual Medley,20,14:55.76
+Male,17,400m Individual Medley,20,14:55.76
+Male,17,100m Freestyle,19,00:22.62
+Male,17,800m Freestyle,19,00:49.57
+Male,17,100m Breaststroke,19,01:48.65
+Male,17,100m Butterfly,19,03:50.08
+Male,17,100m Backstroke,19,07:56.20
+Male,17,400m Individual Medley,19,15:09.61
+Male,17,100m Freestyle,18,00:22.96
+Male,17,800m Freestyle,18,00:50.32
+Male,17,100m Breaststroke,18,01:50.30
+Male,17,100m Butterfly,18,03:53.58
+Male,17,100m Backstroke,18,08:03.45
+Male,17,400m Individual Medley,18,15:23.46
+Male,17,100m Freestyle,17,00:23.30
+Male,17,800m Freestyle,17,00:51.07
+Male,17,100m Breaststroke,17,01:51.95
+Male,17,100m Butterfly,17,03:57.08
+Male,17,100m Backstroke,17,08:10.70
+Male,17,400m Individual Medley,17,15:37.31
+Male,17,100m Freestyle,16,00:23.65
+Male,17,800m Freestyle,16,00:51.83
+Male,17,100m Breaststroke,16,01:53.61
+Male,17,100m Butterfly,16,04:00.59
+Male,17,100m Backstroke,16,08:17.95
+Male,17,400m Individual Medley,16,15:51.16
+Male,17,100m Freestyle,15,00:23.99
+Male,17,800m Freestyle,15,00:52.58
+Male,17,100m Breaststroke,15,01:55.26
+Male,17,100m Butterfly,15,04:04.09
+Male,17,100m Backstroke,15,08:25.21
+Male,17,400m Individual Medley,15,16:05.02
+Male,17,100m Freestyle,14,00:24.34
+Male,17,800m Freestyle,14,00:53.34
+Male,17,100m Breaststroke,14,01:56.92
+Male,17,100m Butterfly,14,04:07.59
+Male,17,100m Backstroke,14,08:32.46
+Male,17,400m Individual Medley,14,16:18.87
+Male,17,100m Freestyle,13,00:24.68
+Male,17,800m Freestyle,13,00:54.09
+Male,17,100m Breaststroke,13,01:58.57
+Male,17,100m Butterfly,13,04:11.10
+Male,17,100m Backstroke,13,08:39.71
+Male,17,400m Individual Medley,13,16:32.72
+Male,17,100m Freestyle,12,00:25.03
+Male,17,800m Freestyle,12,00:54.85
+Male,17,100m Breaststroke,12,02:00.23
+Male,17,100m Butterfly,12,04:14.60
+Male,17,100m Backstroke,12,08:46.96
+Male,17,400m Individual Medley,12,16:46.57
+Male,17,100m Freestyle,11,00:25.37
+Male,17,800m Freestyle,11,00:55.60
+Male,17,100m Breaststroke,11,02:01.88
+Male,17,100m Butterfly,11,04:18.11
+Male,17,100m Backstroke,11,08:54.21
+Male,17,400m Individual Medley,11,17:00.42
+Male,17,100m Freestyle,10,00:25.72
+Male,17,800m Freestyle,10,00:56.36
+Male,17,100m Breaststroke,10,02:03.54
+Male,17,100m Butterfly,10,04:21.61
+Male,17,100m Backstroke,10,09:01.46
+Male,17,400m Individual Medley,10,17:14.28
+Male,17,100m Freestyle,9,00:26.06
+Male,17,800m Freestyle,9,00:57.11
+Male,17,100m Breaststroke,9,02:05.19
+Male,17,100m Butterfly,9,04:25.11
+Male,17,100m Backstroke,9,09:08.72
+Male,17,400m Individual Medley,9,17:28.13
+Male,17,100m Freestyle,8,00:26.40
+Male,17,800m Freestyle,8,00:57.87
+Male,17,100m Breaststroke,8,02:06.84
+Male,17,100m Butterfly,8,04:28.62
+Male,17,100m Backstroke,8,09:15.97
+Male,17,400m Individual Medley,8,17:41.98
+Male,17,100m Freestyle,7,00:26.75
+Male,17,800m Freestyle,7,00:58.62
+Male,17,100m Breaststroke,7,02:08.50
+Male,17,100m Butterfly,7,04:32.12
+Male,17,100m Backstroke,7,09:23.22
+Male,17,400m Individual Medley,7,17:55.83
+Male,17,100m Freestyle,6,00:27.09
+Male,17,800m Freestyle,6,00:59.38
+Male,17,100m Breaststroke,6,02:10.15
+Male,17,100m Butterfly,6,04:35.62
+Male,17,100m Backstroke,6,09:30.47
+Male,17,400m Individual Medley,6,18:09.68
+Male,17,100m Freestyle,5,00:27.44
+Male,17,800m Freestyle,5,01:00.13
+Male,17,100m Breaststroke,5,02:11.81
+Male,17,100m Butterfly,5,04:39.13
+Male,17,100m Backstroke,5,09:37.72
+Male,17,400m Individual Medley,5,18:23.53
+Male,17,100m Freestyle,4,00:27.78
+Male,17,800m Freestyle,4,01:00.89
+Male,17,100m Breaststroke,4,02:13.46
+Male,17,100m Butterfly,4,04:42.63
+Male,17,100m Backstroke,4,09:44.97
+Male,17,400m Individual Medley,4,18:37.39
+Male,17,100m Freestyle,3,00:28.13
+Male,17,800m Freestyle,3,01:01.64
+Male,17,100m Breaststroke,3,02:15.12
+Male,17,100m Butterfly,3,04:46.14
+Male,17,100m Backstroke,3,09:52.23
+Male,17,400m Individual Medley,3,18:51.24
+Male,17,100m Freestyle,2,00:28.47
+Male,17,800m Freestyle,2,01:02.40
+Male,17,100m Breaststroke,2,02:16.77
+Male,17,100m Butterfly,2,04:49.64
+Male,17,100m Backstroke,2,09:59.48
+Male,17,400m Individual Medley,2,19:05.09
+Male,17,100m Freestyle,1,00:28.81
+Male,17,800m Freestyle,1,01:03.15
+Male,17,100m Breaststroke,1,02:18.43
+Male,17,100m Butterfly,1,04:53.14
+Male,17,100m Backstroke,1,10:06.73
+Male,17,400m Individual Medley,1,19:18.94
+Male,18,50m Freestyle,20,00:21.94
+Male,18,100m Freestyle,20,00:21.94
+Male,18,400m Freestyle,20,00:48.03
+Male,18,800m Freestyle,20,00:48.03
+Male,18,50m Breaststroke,20,01:45.76
+Male,18,100m Breaststroke,20,01:45.76
+Male,18,50m Butterfly,20,03:43.84
+Male,18,100m Butterfly,20,03:43.84
+Male,18,50m Backstroke,20,07:45.20
+Male,18,100m Backstroke,20,07:45.20
+Male,18,200m Individual Medley,20,14:51.36
+Male,18,400m Individual Medley,20,14:51.36
+Male,18,100m Freestyle,19,00:22.28
+Male,18,800m Freestyle,19,00:48.78
+Male,18,100m Breaststroke,19,01:47.39
+Male,18,100m Butterfly,19,03:47.30
+Male,18,100m Backstroke,19,07:52.40
+Male,18,400m Individual Medley,19,15:05.15
+Male,18,100m Freestyle,18,00:22.62
+Male,18,800m Freestyle,18,00:49.52
+Male,18,100m Breaststroke,18,01:49.03
+Male,18,100m Butterfly,18,03:50.76
+Male,18,100m Backstroke,18,07:59.59
+Male,18,400m Individual Medley,18,15:18.93
+Male,18,100m Freestyle,17,00:22.96
+Male,18,800m Freestyle,17,00:50.26
+Male,18,100m Breaststroke,17,01:50.67
+Male,18,100m Butterfly,17,03:54.22
+Male,18,100m Backstroke,17,08:06.78
+Male,18,400m Individual Medley,17,15:32.71
+Male,18,100m Freestyle,16,00:23.30
+Male,18,800m Freestyle,16,00:51.01
+Male,18,100m Breaststroke,16,01:52.30
+Male,18,100m Butterfly,16,03:57.68
+Male,18,100m Backstroke,16,08:13.98
+Male,18,400m Individual Medley,16,15:46.50
+Male,18,100m Freestyle,15,00:23.64
+Male,18,800m Freestyle,15,00:51.75
+Male,18,100m Breaststroke,15,01:53.94
+Male,18,100m Butterfly,15,04:01.14
+Male,18,100m Backstroke,15,08:21.17
+Male,18,400m Individual Medley,15,16:00.28
+Male,18,100m Freestyle,14,00:23.98
+Male,18,800m Freestyle,14,00:52.49
+Male,18,100m Breaststroke,14,01:55.57
+Male,18,100m Butterfly,14,04:04.61
+Male,18,100m Backstroke,14,08:28.37
+Male,18,400m Individual Medley,14,16:14.07
+Male,18,100m Freestyle,13,00:24.32
+Male,18,800m Freestyle,13,00:53.23
+Male,18,100m Breaststroke,13,01:57.21
+Male,18,100m Butterfly,13,04:08.07
+Male,18,100m Backstroke,13,08:35.56
+Male,18,400m Individual Medley,13,16:27.85
+Male,18,100m Freestyle,12,00:24.66
+Male,18,800m Freestyle,12,00:53.98
+Male,18,100m Breaststroke,12,01:58.84
+Male,18,100m Butterfly,12,04:11.53
+Male,18,100m Backstroke,12,08:42.75
+Male,18,400m Individual Medley,12,16:41.63
+Male,18,100m Freestyle,11,00:25.00
+Male,18,800m Freestyle,11,00:54.72
+Male,18,100m Breaststroke,11,02:00.48
+Male,18,100m Butterfly,11,04:14.99
+Male,18,100m Backstroke,11,08:49.95
+Male,18,400m Individual Medley,11,16:55.42
+Male,18,100m Freestyle,10,00:25.33
+Male,18,800m Freestyle,10,00:55.46
+Male,18,100m Breaststroke,10,02:02.11
+Male,18,100m Butterfly,10,04:18.45
+Male,18,100m Backstroke,10,08:57.14
+Male,18,400m Individual Medley,10,17:09.20
+Male,18,100m Freestyle,9,00:25.67
+Male,18,800m Freestyle,9,00:56.21
+Male,18,100m Breaststroke,9,02:03.75
+Male,18,100m Butterfly,9,04:21.91
+Male,18,100m Backstroke,9,09:04.33
+Male,18,400m Individual Medley,9,17:22.99
+Male,18,100m Freestyle,8,00:26.01
+Male,18,800m Freestyle,8,00:56.95
+Male,18,100m Breaststroke,8,02:05.38
+Male,18,100m Butterfly,8,04:25.37
+Male,18,100m Backstroke,8,09:11.53
+Male,18,400m Individual Medley,8,17:36.77
+Male,18,100m Freestyle,7,00:26.35
+Male,18,800m Freestyle,7,00:57.69
+Male,18,100m Breaststroke,7,02:07.02
+Male,18,100m Butterfly,7,04:28.84
+Male,18,100m Backstroke,7,09:18.72
+Male,18,400m Individual Medley,7,17:50.55
+Male,18,100m Freestyle,6,00:26.69
+Male,18,800m Freestyle,6,00:58.43
+Male,18,100m Breaststroke,6,02:08.66
+Male,18,100m Butterfly,6,04:32.30
+Male,18,100m Backstroke,6,09:25.92
+Male,18,400m Individual Medley,6,18:04.34
+Male,18,100m Freestyle,5,00:27.03
+Male,18,800m Freestyle,5,00:59.18
+Male,18,100m Breaststroke,5,02:10.29
+Male,18,100m Butterfly,5,04:35.76
+Male,18,100m Backstroke,5,09:33.11
+Male,18,400m Individual Medley,5,18:18.12
+Male,18,100m Freestyle,4,00:27.37
+Male,18,800m Freestyle,4,00:59.92
+Male,18,100m Breaststroke,4,02:11.93
+Male,18,100m Butterfly,4,04:39.22
+Male,18,100m Backstroke,4,09:40.30
+Male,18,400m Individual Medley,4,18:31.91
+Male,18,100m Freestyle,3,00:27.71
+Male,18,800m Freestyle,3,01:00.66
+Male,18,100m Breaststroke,3,02:13.56
+Male,18,100m Butterfly,3,04:42.68
+Male,18,100m Backstroke,3,09:47.50
+Male,18,400m Individual Medley,3,18:45.69
+Male,18,100m Freestyle,2,00:28.05
+Male,18,800m Freestyle,2,01:01.40
+Male,18,100m Breaststroke,2,02:15.20
+Male,18,100m Butterfly,2,04:46.14
+Male,18,100m Backstroke,2,09:54.69
+Male,18,400m Individual Medley,2,18:59.47
+Male,18,100m Freestyle,1,00:28.39
+Male,18,800m Freestyle,1,01:02.15
+Male,18,100m Breaststroke,1,02:16.83
+Male,18,100m Butterfly,1,04:49.60
+Male,18,100m Backstroke,1,10:01.89
+Male,18,400m Individual Medley,1,19:13.26
+Male,Unknown,50m Freestyle,20,00:21.39
+Male,Unknown,100m Freestyle,20,00:21.39
+Male,Unknown,400m Freestyle,20,00:46.90
+Male,Unknown,800m Freestyle,20,00:46.90
+Male,Unknown,50m Breaststroke,20,01:42.94
+Male,Unknown,100m Breaststroke,20,01:42.94
+Male,Unknown,50m Butterfly,20,03:37.70
+Male,Unknown,100m Butterfly,20,03:37.70
+Male,Unknown,50m Backstroke,20,07:33.36
+Male,Unknown,100m Backstroke,20,07:33.36
+Male,Unknown,200m Individual Medley,20,14:24.80
+Male,Unknown,400m Individual Medley,20,14:24.80
+Male,Unknown,100m Freestyle,19,00:21.72
+Male,Unknown,800m Freestyle,19,00:47.62
+Male,Unknown,100m Breaststroke,19,01:44.53
+Male,Unknown,100m Butterfly,19,03:41.06
+Male,Unknown,100m Backstroke,19,07:40.37
+Male,Unknown,400m Individual Medley,19,14:38.18
+Male,Unknown,100m Freestyle,18,00:22.05
+Male,Unknown,800m Freestyle,18,00:48.35
+Male,Unknown,100m Breaststroke,18,01:46.12
+Male,Unknown,100m Butterfly,18,03:44.43
+Male,Unknown,100m Backstroke,18,07:47.38
+Male,Unknown,400m Individual Medley,18,14:51.55
+Male,Unknown,100m Freestyle,17,00:22.38
+Male,Unknown,800m Freestyle,17,00:49.08
+Male,Unknown,100m Breaststroke,17,01:47.71
+Male,Unknown,100m Butterfly,17,03:47.80
+Male,Unknown,100m Backstroke,17,07:54.39
+Male,Unknown,400m Individual Medley,17,15:04.92
+Male,Unknown,100m Freestyle,16,00:22.71
+Male,Unknown,800m Freestyle,16,00:49.80
+Male,Unknown,100m Breaststroke,16,01:49.30
+Male,Unknown,100m Butterfly,16,03:51.16
+Male,Unknown,100m Backstroke,16,08:01.40
+Male,Unknown,400m Individual Medley,16,15:18.30
+Male,Unknown,100m Freestyle,15,00:23.04
+Male,Unknown,800m Freestyle,15,00:50.53
+Male,Unknown,100m Breaststroke,15,01:50.90
+Male,Unknown,100m Butterfly,15,03:54.53
+Male,Unknown,100m Backstroke,15,08:08.41
+Male,Unknown,400m Individual Medley,15,15:31.67
+Male,Unknown,100m Freestyle,14,00:23.37
+Male,Unknown,800m Freestyle,14,00:51.25
+Male,Unknown,100m Breaststroke,14,01:52.49
+Male,Unknown,100m Butterfly,14,03:57.90
+Male,Unknown,100m Backstroke,14,08:15.42
+Male,Unknown,400m Individual Medley,14,15:45.04
+Male,Unknown,100m Freestyle,13,00:23.70
+Male,Unknown,800m Freestyle,13,00:51.98
+Male,Unknown,100m Breaststroke,13,01:54.08
+Male,Unknown,100m Butterfly,13,04:01.26
+Male,Unknown,100m Backstroke,13,08:22.43
+Male,Unknown,400m Individual Medley,13,15:58.42
+Male,Unknown,100m Freestyle,12,00:24.03
+Male,Unknown,800m Freestyle,12,00:52.70
+Male,Unknown,100m Breaststroke,12,01:55.67
+Male,Unknown,100m Butterfly,12,04:04.63
+Male,Unknown,100m Backstroke,12,08:29.44
+Male,Unknown,400m Individual Medley,12,16:11.79
+Male,Unknown,100m Freestyle,11,00:24.37
+Male,Unknown,800m Freestyle,11,00:53.43
+Male,Unknown,100m Breaststroke,11,01:57.26
+Male,Unknown,100m Butterfly,11,04:08.00
+Male,Unknown,100m Backstroke,11,08:36.45
+Male,Unknown,400m Individual Medley,11,16:25.16
+Male,Unknown,100m Freestyle,10,00:24.70
+Male,Unknown,800m Freestyle,10,00:54.15
+Male,Unknown,100m Breaststroke,10,01:58.85
+Male,Unknown,100m Butterfly,10,04:11.36
+Male,Unknown,100m Backstroke,10,08:43.47
+Male,Unknown,400m Individual Medley,10,16:38.54
+Male,Unknown,100m Freestyle,9,00:25.03
+Male,Unknown,800m Freestyle,9,00:54.88
+Male,Unknown,100m Breaststroke,9,02:00.45
+Male,Unknown,100m Butterfly,9,04:14.73
+Male,Unknown,100m Backstroke,9,08:50.48
+Male,Unknown,400m Individual Medley,9,16:51.91
+Male,Unknown,100m Freestyle,8,00:25.36
+Male,Unknown,800m Freestyle,8,00:55.60
+Male,Unknown,100m Breaststroke,8,02:02.04
+Male,Unknown,100m Butterfly,8,04:18.09
+Male,Unknown,100m Backstroke,8,08:57.49
+Male,Unknown,400m Individual Medley,8,17:05.28
+Male,Unknown,100m Freestyle,7,00:25.69
+Male,Unknown,800m Freestyle,7,00:56.33
+Male,Unknown,100m Breaststroke,7,02:03.63
+Male,Unknown,100m Butterfly,7,04:21.46
+Male,Unknown,100m Backstroke,7,09:04.50
+Male,Unknown,400m Individual Medley,7,17:18.66
+Male,Unknown,100m Freestyle,6,00:26.02
+Male,Unknown,800m Freestyle,6,00:57.05
+Male,Unknown,100m Breaststroke,6,02:05.22
+Male,Unknown,100m Butterfly,6,04:24.83
+Male,Unknown,100m Backstroke,6,09:11.51
+Male,Unknown,400m Individual Medley,6,17:32.03
+Male,Unknown,100m Freestyle,5,00:26.35
+Male,Unknown,800m Freestyle,5,00:57.78
+Male,Unknown,100m Breaststroke,5,02:06.81
+Male,Unknown,100m Butterfly,5,04:28.19
+Male,Unknown,100m Backstroke,5,09:18.52
+Male,Unknown,400m Individual Medley,5,17:45.40
+Male,Unknown,100m Freestyle,4,00:26.68
+Male,Unknown,800m Freestyle,4,00:58.50
+Male,Unknown,100m Breaststroke,4,02:08.41
+Male,Unknown,100m Butterfly,4,04:31.56
+Male,Unknown,100m Backstroke,4,09:25.53
+Male,Unknown,400m Individual Medley,4,17:58.78
+Male,Unknown,100m Freestyle,3,00:27.01
+Male,Unknown,800m Freestyle,3,00:59.23
+Male,Unknown,100m Breaststroke,3,02:10.00
+Male,Unknown,100m Butterfly,3,04:34.93
+Male,Unknown,100m Backstroke,3,09:32.54
+Male,Unknown,400m Individual Medley,3,18:12.15
+Male,Unknown,100m Freestyle,2,00:27.34
+Male,Unknown,800m Freestyle,2,00:59.95
+Male,Unknown,100m Breaststroke,2,02:11.59
+Male,Unknown,100m Butterfly,2,04:38.29
+Male,Unknown,100m Backstroke,2,09:39.55
+Male,Unknown,400m Individual Medley,2,18:25.52
+Male,Unknown,100m Freestyle,1,00:27.67
+Male,Unknown,800m Freestyle,1,01:00.68
+Male,Unknown,100m Breaststroke,1,02:13.18
+Male,Unknown,100m Butterfly,1,04:41.66
+Male,Unknown,100m Backstroke,1,09:46.56
+Male,Unknown,400m Individual Medley,1,18:38.90
+Female,8,50m Freestyle,20,00:35.12
+Female,8,100m Freestyle,20,00:35.12
+Female,8,400m Freestyle,20,01:18.79
+Female,8,800m Freestyle,20,01:18.79
+Female,8,50m Breaststroke,20,02:57.13
+Female,8,100m Breaststroke,20,02:57.13
+Female,8,50m Butterfly,20,05:58.90
+Female,8,100m Butterfly,20,05:58.90
+Female,8,50m Backstroke,20,12:47.27
+Female,8,100m Backstroke,20,12:47.27
+Female,8,200m Individual Medley,20,24:44.10
+Female,8,400m Individual Medley,20,24:44.10
+Female,8,100m Freestyle,19,00:35.67
+Female,8,800m Freestyle,19,01:20.01
+Female,8,100m Breaststroke,19,02:59.87
+Female,8,100m Butterfly,19,06:04.45
+Female,8,100m Backstroke,19,12:59.14
+Female,8,400m Individual Medley,19,25:07.05
+Female,8,100m Freestyle,18,00:36.21
+Female,8,800m Freestyle,18,01:21.23
+Female,8,100m Breaststroke,18,03:02.61
+Female,8,100m Butterfly,18,06:10.00
+Female,8,100m Backstroke,18,13:11.00
+Female,8,400m Individual Medley,18,25:30.00
+Female,8,100m Freestyle,17,00:36.75
+Female,8,800m Freestyle,17,01:22.45
+Female,8,100m Breaststroke,17,03:05.35
+Female,8,100m Butterfly,17,06:15.55
+Female,8,100m Backstroke,17,13:22.86
+Female,8,400m Individual Medley,17,25:52.95
+Female,8,100m Freestyle,16,00:37.30
+Female,8,800m Freestyle,16,01:23.67
+Female,8,100m Breaststroke,16,03:08.09
+Female,8,100m Butterfly,16,06:21.10
+Female,8,100m Backstroke,16,13:34.73
+Female,8,400m Individual Medley,16,26:15.90
+Female,8,100m Freestyle,15,00:37.84
+Female,8,800m Freestyle,15,01:24.89
+Female,8,100m Breaststroke,15,03:10.83
+Female,8,100m Butterfly,15,06:26.65
+Female,8,100m Backstroke,15,13:46.60
+Female,8,400m Individual Medley,15,26:38.85
+Female,8,100m Freestyle,14,00:38.38
+Female,8,800m Freestyle,14,01:26.10
+Female,8,100m Breaststroke,14,03:13.57
+Female,8,100m Butterfly,14,06:32.20
+Female,8,100m Backstroke,14,13:58.46
+Female,8,400m Individual Medley,14,27:01.80
+Female,8,100m Freestyle,13,00:38.93
+Female,8,800m Freestyle,13,01:27.32
+Female,8,100m Breaststroke,13,03:16.31
+Female,8,100m Butterfly,13,06:37.75
+Female,8,100m Backstroke,13,14:10.33
+Female,8,400m Individual Medley,13,27:24.75
+Female,8,100m Freestyle,12,00:39.47
+Female,8,800m Freestyle,12,01:28.54
+Female,8,100m Breaststroke,12,03:19.04
+Female,8,100m Butterfly,12,06:43.30
+Female,8,100m Backstroke,12,14:22.19
+Female,8,400m Individual Medley,12,27:47.70
+Female,8,100m Freestyle,11,00:40.01
+Female,8,800m Freestyle,11,01:29.76
+Female,8,100m Breaststroke,11,03:21.78
+Female,8,100m Butterfly,11,06:48.85
+Female,8,100m Backstroke,11,14:34.06
+Female,8,400m Individual Medley,11,28:10.65
+Female,8,100m Freestyle,10,00:40.56
+Female,8,800m Freestyle,10,01:30.98
+Female,8,100m Breaststroke,10,03:24.52
+Female,8,100m Butterfly,10,06:54.40
+Female,8,100m Backstroke,10,14:45.92
+Female,8,400m Individual Medley,10,28:33.60
+Female,8,100m Freestyle,9,00:41.10
+Female,8,800m Freestyle,9,01:32.20
+Female,8,100m Breaststroke,9,03:27.26
+Female,8,100m Butterfly,9,06:59.95
+Female,8,100m Backstroke,9,14:57.79
+Female,8,400m Individual Medley,9,28:56.55
+Female,8,100m Freestyle,8,00:41.64
+Female,8,800m Freestyle,8,01:33.41
+Female,8,100m Breaststroke,8,03:30.00
+Female,8,100m Butterfly,8,07:05.50
+Female,8,100m Backstroke,8,15:09.65
+Female,8,400m Individual Medley,8,29:19.50
+Female,8,100m Freestyle,7,00:42.18
+Female,8,800m Freestyle,7,01:34.63
+Female,8,100m Breaststroke,7,03:32.74
+Female,8,100m Butterfly,7,07:11.05
+Female,8,100m Backstroke,7,15:21.52
+Female,8,400m Individual Medley,7,29:42.45
+Female,8,100m Freestyle,6,00:42.73
+Female,8,800m Freestyle,6,01:35.85
+Female,8,100m Breaststroke,6,03:35.48
+Female,8,100m Butterfly,6,07:16.60
+Female,8,100m Backstroke,6,15:33.38
+Female,8,400m Individual Medley,6,30:05.40
+Female,8,100m Freestyle,5,00:43.27
+Female,8,800m Freestyle,5,01:37.07
+Female,8,100m Breaststroke,5,03:38.22
+Female,8,100m Butterfly,5,07:22.15
+Female,8,100m Backstroke,5,15:45.25
+Female,8,400m Individual Medley,5,30:28.35
+Female,8,100m Freestyle,4,00:43.81
+Female,8,800m Freestyle,4,01:38.29
+Female,8,100m Breaststroke,4,03:40.96
+Female,8,100m Butterfly,4,07:27.70
+Female,8,100m Backstroke,4,15:57.11
+Female,8,400m Individual Medley,4,30:51.30
+Female,8,100m Freestyle,3,00:44.36
+Female,8,800m Freestyle,3,01:39.51
+Female,8,100m Breaststroke,3,03:43.70
+Female,8,100m Butterfly,3,07:33.25
+Female,8,100m Backstroke,3,16:08.98
+Female,8,400m Individual Medley,3,31:14.25
+Female,8,100m Freestyle,2,00:44.90
+Female,8,800m Freestyle,2,01:40.73
+Female,8,100m Breaststroke,2,03:46.44
+Female,8,100m Butterfly,2,07:38.80
+Female,8,100m Backstroke,2,16:20.84
+Female,8,400m Individual Medley,2,31:37.20
+Female,8,100m Freestyle,1,00:45.44
+Female,8,800m Freestyle,1,01:41.94
+Female,8,100m Breaststroke,1,03:49.18
+Female,8,100m Butterfly,1,07:44.35
+Female,8,100m Backstroke,1,16:32.71
+Female,8,400m Individual Medley,1,32:00.15
+Female,9,100m Freestyle,20,00:31.52
+Female,9,800m Freestyle,20,01:10.72
+Female,9,100m Breaststroke,20,02:35.36
+Female,9,100m Butterfly,20,05:26.69
+Female,9,100m Backstroke,20,11:19.00
+Female,9,400m Individual Medley,20,22:18.60
+Female,9,100m Freestyle,19,00:32.01
+Female,9,800m Freestyle,19,01:11.82
+Female,9,100m Breaststroke,19,02:37.76
+Female,9,100m Butterfly,19,05:31.74
+Female,9,100m Backstroke,19,11:29.50
+Female,9,400m Individual Medley,19,22:39.30
+Female,9,100m Freestyle,18,00:32.50
+Female,9,800m Freestyle,18,01:12.91
+Female,9,100m Breaststroke,18,02:40.16
+Female,9,100m Butterfly,18,05:36.79
+Female,9,100m Backstroke,18,11:40.00
+Female,9,400m Individual Medley,18,23:00.00
+Female,9,100m Freestyle,17,00:32.99
+Female,9,800m Freestyle,17,01:14.00
+Female,9,100m Breaststroke,17,02:42.56
+Female,9,100m Butterfly,17,05:41.84
+Female,9,100m Backstroke,17,11:50.50
+Female,9,400m Individual Medley,17,23:20.70
+Female,9,100m Freestyle,16,00:33.47
+Female,9,800m Freestyle,16,01:15.10
+Female,9,100m Breaststroke,16,02:44.96
+Female,9,100m Butterfly,16,05:46.89
+Female,9,100m Backstroke,16,12:01.00
+Female,9,400m Individual Medley,16,23:41.40
+Female,9,100m Freestyle,15,00:33.96
+Female,9,800m Freestyle,15,01:16.19
+Female,9,100m Breaststroke,15,02:47.37
+Female,9,100m Butterfly,15,05:51.95
+Female,9,100m Backstroke,15,12:11.50
+Female,9,400m Individual Medley,15,24:02.10
+Female,9,100m Freestyle,14,00:34.45
+Female,9,800m Freestyle,14,01:17.28
+Female,9,100m Breaststroke,14,02:49.77
+Female,9,100m Butterfly,14,05:57.00
+Female,9,100m Backstroke,14,12:22.00
+Female,9,400m Individual Medley,14,24:22.80
+Female,9,100m Freestyle,13,00:34.94
+Female,9,800m Freestyle,13,01:18.38
+Female,9,100m Breaststroke,13,02:52.17
+Female,9,100m Butterfly,13,06:02.05
+Female,9,100m Backstroke,13,12:32.50
+Female,9,400m Individual Medley,13,24:43.50
+Female,9,100m Freestyle,12,00:35.42
+Female,9,800m Freestyle,12,01:19.47
+Female,9,100m Breaststroke,12,02:54.57
+Female,9,100m Butterfly,12,06:07.10
+Female,9,100m Backstroke,12,12:43.00
+Female,9,400m Individual Medley,12,25:04.20
+Female,9,100m Freestyle,11,00:35.91
+Female,9,800m Freestyle,11,01:20.57
+Female,9,100m Breaststroke,11,02:56.98
+Female,9,100m Butterfly,11,06:12.15
+Female,9,100m Backstroke,11,12:53.50
+Female,9,400m Individual Medley,11,25:24.90
+Female,9,100m Freestyle,10,00:36.40
+Female,9,800m Freestyle,10,01:21.66
+Female,9,100m Breaststroke,10,02:59.38
+Female,9,100m Butterfly,10,06:17.20
+Female,9,100m Backstroke,10,13:04.00
+Female,9,400m Individual Medley,10,25:45.60
+Female,9,100m Freestyle,9,00:36.89
+Female,9,800m Freestyle,9,01:22.75
+Female,9,100m Breaststroke,9,03:01.78
+Female,9,100m Butterfly,9,06:22.26
+Female,9,100m Backstroke,9,13:14.50
+Female,9,400m Individual Medley,9,26:06.30
+Female,9,100m Freestyle,8,00:37.37
+Female,9,800m Freestyle,8,01:23.85
+Female,9,100m Breaststroke,8,03:04.18
+Female,9,100m Butterfly,8,06:27.31
+Female,9,100m Backstroke,8,13:25.00
+Female,9,400m Individual Medley,8,26:27.00
+Female,9,100m Freestyle,7,00:37.86
+Female,9,800m Freestyle,7,01:24.94
+Female,9,100m Breaststroke,7,03:06.59
+Female,9,100m Butterfly,7,06:32.36
+Female,9,100m Backstroke,7,13:35.50
+Female,9,400m Individual Medley,7,26:47.70
+Female,9,100m Freestyle,6,00:38.35
+Female,9,800m Freestyle,6,01:26.03
+Female,9,100m Breaststroke,6,03:08.99
+Female,9,100m Butterfly,6,06:37.41
+Female,9,100m Backstroke,6,13:46.00
+Female,9,400m Individual Medley,6,27:08.40
+Female,9,100m Freestyle,5,00:38.84
+Female,9,800m Freestyle,5,01:27.13
+Female,9,100m Breaststroke,5,03:11.39
+Female,9,100m Butterfly,5,06:42.46
+Female,9,100m Backstroke,5,13:56.50
+Female,9,400m Individual Medley,5,27:29.10
+Female,9,100m Freestyle,4,00:39.32
+Female,9,800m Freestyle,4,01:28.22
+Female,9,100m Breaststroke,4,03:13.79
+Female,9,100m Butterfly,4,06:47.52
+Female,9,100m Backstroke,4,14:07.00
+Female,9,400m Individual Medley,4,27:49.80
+Female,9,100m Freestyle,3,00:39.81
+Female,9,800m Freestyle,3,01:29.31
+Female,9,100m Breaststroke,3,03:16.20
+Female,9,100m Butterfly,3,06:52.57
+Female,9,100m Backstroke,3,14:17.50
+Female,9,400m Individual Medley,3,28:10.50
+Female,9,100m Freestyle,2,00:40.30
+Female,9,800m Freestyle,2,01:30.41
+Female,9,100m Breaststroke,2,03:18.60
+Female,9,100m Butterfly,2,06:57.62
+Female,9,100m Backstroke,2,14:28.00
+Female,9,400m Individual Medley,2,28:31.20
+Female,9,100m Freestyle,1,00:40.79
+Female,9,800m Freestyle,1,01:31.50
+Female,9,100m Breaststroke,1,03:21.00
+Female,9,100m Butterfly,1,07:02.67
+Female,9,100m Backstroke,1,14:38.50
+Female,9,400m Individual Medley,1,28:51.90
+Female,Unknown,50m Freestyle,20,00:29.54
+Female,Unknown,100m Freestyle,20,00:29.54
+Female,Unknown,400m Freestyle,20,01:05.78
+Female,Unknown,800m Freestyle,20,01:05.78
+Female,Unknown,50m Breaststroke,20,02:23.22
+Female,Unknown,100m Breaststroke,20,02:23.22
+Female,Unknown,50m Butterfly,20,05:01.41
+Female,Unknown,100m Butterfly,20,05:01.41
+Female,Unknown,50m Backstroke,20,10:26.78
+Female,Unknown,100m Backstroke,20,10:26.78
+Female,Unknown,200m Individual Medley,20,20:51.30
+Female,Unknown,400m Individual Medley,20,20:51.30
+Female,Unknown,100m Freestyle,19,00:29.99
+Female,Unknown,800m Freestyle,19,01:06.79
+Female,Unknown,100m Breaststroke,19,02:25.44
+Female,Unknown,100m Butterfly,19,05:06.07
+Female,Unknown,100m Backstroke,19,10:36.47
+Female,Unknown,400m Individual Medley,19,21:10.65
+Female,Unknown,100m Freestyle,18,00:30.45
+Female,Unknown,800m Freestyle,18,01:07.81
+Female,Unknown,100m Breaststroke,18,02:27.65
+Female,Unknown,100m Butterfly,18,05:10.73
+Female,Unknown,100m Backstroke,18,10:46.16
+Female,Unknown,400m Individual Medley,18,21:30.00
+Female,Unknown,100m Freestyle,17,00:30.91
+Female,Unknown,800m Freestyle,17,01:08.83
+Female,Unknown,100m Breaststroke,17,02:29.86
+Female,Unknown,100m Butterfly,17,05:15.39
+Female,Unknown,100m Backstroke,17,10:55.85
+Female,Unknown,400m Individual Medley,17,21:49.35
+Female,Unknown,100m Freestyle,16,00:31.36
+Female,Unknown,800m Freestyle,16,01:09.84
+Female,Unknown,100m Breaststroke,16,02:32.08
+Female,Unknown,100m Butterfly,16,05:20.05
+Female,Unknown,100m Backstroke,16,11:05.54
+Female,Unknown,400m Individual Medley,16,22:08.70
+Female,Unknown,100m Freestyle,15,00:31.82
+Female,Unknown,800m Freestyle,15,01:10.86
+Female,Unknown,100m Breaststroke,15,02:34.29
+Female,Unknown,100m Butterfly,15,05:24.71
+Female,Unknown,100m Backstroke,15,11:15.24
+Female,Unknown,400m Individual Medley,15,22:28.05
+Female,Unknown,100m Freestyle,14,00:32.28
+Female,Unknown,800m Freestyle,14,01:11.88
+Female,Unknown,100m Breaststroke,14,02:36.51
+Female,Unknown,100m Butterfly,14,05:29.37
+Female,Unknown,100m Backstroke,14,11:24.93
+Female,Unknown,400m Individual Medley,14,22:47.40
+Female,Unknown,100m Freestyle,13,00:32.73
+Female,Unknown,800m Freestyle,13,01:12.90
+Female,Unknown,100m Breaststroke,13,02:38.72
+Female,Unknown,100m Butterfly,13,05:34.03
+Female,Unknown,100m Backstroke,13,11:34.62
+Female,Unknown,400m Individual Medley,13,23:06.75
+Female,Unknown,100m Freestyle,12,00:33.19
+Female,Unknown,800m Freestyle,12,01:13.91
+Female,Unknown,100m Breaststroke,12,02:40.94
+Female,Unknown,100m Butterfly,12,05:38.70
+Female,Unknown,100m Backstroke,12,11:44.31
+Female,Unknown,400m Individual Medley,12,23:26.10
+Female,Unknown,100m Freestyle,11,00:33.65
+Female,Unknown,800m Freestyle,11,01:14.93
+Female,Unknown,100m Breaststroke,11,02:43.15
+Female,Unknown,100m Butterfly,11,05:43.36
+Female,Unknown,100m Backstroke,11,11:54.01
+Female,Unknown,400m Individual Medley,11,23:45.45
+Female,Unknown,100m Freestyle,10,00:34.10
+Female,Unknown,800m Freestyle,10,01:15.95
+Female,Unknown,100m Breaststroke,10,02:45.37
+Female,Unknown,100m Butterfly,10,05:48.02
+Female,Unknown,100m Backstroke,10,12:03.70
+Female,Unknown,400m Individual Medley,10,24:04.80
+Female,Unknown,100m Freestyle,9,00:34.56
+Female,Unknown,800m Freestyle,9,01:16.96
+Female,Unknown,100m Breaststroke,9,02:47.58
+Female,Unknown,100m Butterfly,9,05:52.68
+Female,Unknown,100m Backstroke,9,12:13.39
+Female,Unknown,400m Individual Medley,9,24:24.15
+Female,Unknown,100m Freestyle,8,00:35.02
+Female,Unknown,800m Freestyle,8,01:17.98
+Female,Unknown,100m Breaststroke,8,02:49.80
+Female,Unknown,100m Butterfly,8,05:57.34
+Female,Unknown,100m Backstroke,8,12:23.08
+Female,Unknown,400m Individual Medley,8,24:43.50
+Female,Unknown,100m Freestyle,7,00:35.47
+Female,Unknown,800m Freestyle,7,01:19.00
+Female,Unknown,100m Breaststroke,7,02:52.01
+Female,Unknown,100m Butterfly,7,06:02.00
+Female,Unknown,100m Backstroke,7,12:32.78
+Female,Unknown,400m Individual Medley,7,25:02.85
+Female,Unknown,100m Freestyle,6,00:35.93
+Female,Unknown,800m Freestyle,6,01:20.02
+Female,Unknown,100m Breaststroke,6,02:54.23
+Female,Unknown,100m Butterfly,6,06:06.66
+Female,Unknown,100m Backstroke,6,12:42.47
+Female,Unknown,400m Individual Medley,6,25:22.20
+Female,Unknown,100m Freestyle,5,00:36.39
+Female,Unknown,800m Freestyle,5,01:21.03
+Female,Unknown,100m Breaststroke,5,02:56.44
+Female,Unknown,100m Butterfly,5,06:11.32
+Female,Unknown,100m Backstroke,5,12:52.16
+Female,Unknown,400m Individual Medley,5,25:41.55
+Female,Unknown,100m Freestyle,4,00:36.84
+Female,Unknown,800m Freestyle,4,01:22.05
+Female,Unknown,100m Breaststroke,4,02:58.66
+Female,Unknown,100m Butterfly,4,06:15.98
+Female,Unknown,100m Backstroke,4,13:01.85
+Female,Unknown,400m Individual Medley,4,26:00.90
+Female,Unknown,100m Freestyle,3,00:37.30
+Female,Unknown,800m Freestyle,3,01:23.07
+Female,Unknown,100m Breaststroke,3,03:00.87
+Female,Unknown,100m Butterfly,3,06:20.64
+Female,Unknown,100m Backstroke,3,13:11.55
+Female,Unknown,400m Individual Medley,3,26:20.25
+Female,Unknown,100m Freestyle,2,00:37.76
+Female,Unknown,800m Freestyle,2,01:24.08
+Female,Unknown,100m Breaststroke,2,03:03.09
+Female,Unknown,100m Butterfly,2,06:25.31
+Female,Unknown,100m Backstroke,2,13:21.24
+Female,Unknown,400m Individual Medley,2,26:39.60
+Female,Unknown,50m Freestyle,1,00:38.21
+Female,Unknown,100m Freestyle,1,00:38.21
+Female,Unknown,400m Freestyle,1,01:25.10
+Female,Unknown,800m Freestyle,1,01:25.10
+Female,Unknown,50m Breaststroke,1,03:05.30
+Female,Unknown,100m Breaststroke,1,03:05.30
+Female,Unknown,50m Butterfly,1,06:29.97
+Female,Unknown,100m Butterfly,1,06:29.97
+Female,Unknown,50m Backstroke,1,13:30.93
+Female,Unknown,100m Backstroke,1,13:30.93
+Female,Unknown,200m Individual Medley,1,26:58.95
+Female,Unknown,400m Individual Medley,1,26:58.95
+Female,11,100m Freestyle,20,00:27.92
+Female,11,800m Freestyle,20,01:01.30
+Female,11,100m Breaststroke,20,02:12.88
+Female,11,100m Butterfly,20,04:42.56
+Female,11,100m Backstroke,20,09:41.83
+Female,11,400m Individual Medley,20,19:03.97
+Female,11,100m Freestyle,19,00:28.35
+Female,11,800m Freestyle,19,01:02.25
+Female,11,100m Breaststroke,19,02:14.94
+Female,11,100m Butterfly,19,04:46.93
+Female,11,100m Backstroke,19,09:50.82
+Female,11,400m Individual Medley,19,19:21.66
+Female,11,100m Freestyle,18,00:28.78
+Female,11,800m Freestyle,18,01:03.20
+Female,11,100m Breaststroke,18,02:16.99
+Female,11,100m Butterfly,18,04:51.30
+Female,11,100m Backstroke,18,09:59.82
+Female,11,400m Individual Medley,18,19:39.35
+Female,11,100m Freestyle,17,00:29.21
+Female,11,800m Freestyle,17,01:04.15
+Female,11,100m Breaststroke,17,02:19.04
+Female,11,100m Butterfly,17,04:55.67
+Female,11,100m Backstroke,17,10:08.82
+Female,11,400m Individual Medley,17,19:57.04
+Female,11,100m Freestyle,16,00:29.64
+Female,11,800m Freestyle,16,01:05.10
+Female,11,100m Breaststroke,16,02:21.10
+Female,11,100m Butterfly,16,05:00.04
+Female,11,100m Backstroke,16,10:17.81
+Female,11,400m Individual Medley,16,20:14.73
+Female,11,100m Freestyle,15,00:30.08
+Female,11,800m Freestyle,15,01:06.04
+Female,11,100m Breaststroke,15,02:23.15
+Female,11,100m Butterfly,15,05:04.41
+Female,11,100m Backstroke,15,10:26.81
+Female,11,400m Individual Medley,15,20:32.42
+Female,11,100m Freestyle,14,00:30.51
+Female,11,800m Freestyle,14,01:06.99
+Female,11,100m Breaststroke,14,02:25.21
+Female,11,100m Butterfly,14,05:08.78
+Female,11,100m Backstroke,14,10:35.81
+Female,11,400m Individual Medley,14,20:50.11
+Female,11,100m Freestyle,13,00:30.94
+Female,11,800m Freestyle,13,01:07.94
+Female,11,100m Breaststroke,13,02:27.26
+Female,11,100m Butterfly,13,05:13.15
+Female,11,100m Backstroke,13,10:44.81
+Female,11,400m Individual Medley,13,21:07.80
+Female,11,100m Freestyle,12,00:31.37
+Female,11,800m Freestyle,12,01:08.89
+Female,11,100m Breaststroke,12,02:29.32
+Female,11,100m Butterfly,12,05:17.52
+Female,11,100m Backstroke,12,10:53.80
+Female,11,400m Individual Medley,12,21:25.49
+Female,11,100m Freestyle,11,00:31.80
+Female,11,800m Freestyle,11,01:09.84
+Female,11,100m Breaststroke,11,02:31.37
+Female,11,100m Butterfly,11,05:21.89
+Female,11,100m Backstroke,11,11:02.80
+Female,11,400m Individual Medley,11,21:43.18
+Female,11,100m Freestyle,10,00:32.23
+Female,11,800m Freestyle,10,01:10.78
+Female,11,100m Breaststroke,10,02:33.43
+Female,11,100m Butterfly,10,05:26.26
+Female,11,100m Backstroke,10,11:11.80
+Female,11,400m Individual Medley,10,22:00.87
+Female,11,100m Freestyle,9,00:32.67
+Female,11,800m Freestyle,9,01:11.73
+Female,11,100m Breaststroke,9,02:35.48
+Female,11,100m Butterfly,9,05:30.63
+Female,11,100m Backstroke,9,11:20.80
+Female,11,400m Individual Medley,9,22:18.56
+Female,11,100m Freestyle,8,00:33.10
+Female,11,800m Freestyle,8,01:12.68
+Female,11,100m Breaststroke,8,02:37.54
+Female,11,100m Butterfly,8,05:35.00
+Female,11,100m Backstroke,8,11:29.79
+Female,11,400m Individual Medley,8,22:36.25
+Female,11,100m Freestyle,7,00:33.53
+Female,11,800m Freestyle,7,01:13.63
+Female,11,100m Breaststroke,7,02:39.59
+Female,11,100m Butterfly,7,05:39.36
+Female,11,100m Backstroke,7,11:38.79
+Female,11,400m Individual Medley,7,22:53.94
+Female,11,100m Freestyle,6,00:33.96
+Female,11,800m Freestyle,6,01:14.58
+Female,11,100m Breaststroke,6,02:41.65
+Female,11,100m Butterfly,6,05:43.73
+Female,11,100m Backstroke,6,11:47.79
+Female,11,400m Individual Medley,6,23:11.63
+Female,11,100m Freestyle,5,00:34.39
+Female,11,800m Freestyle,5,01:15.52
+Female,11,100m Breaststroke,5,02:43.70
+Female,11,100m Butterfly,5,05:48.10
+Female,11,100m Backstroke,5,11:56.78
+Female,11,400m Individual Medley,5,23:29.32
+Female,11,100m Freestyle,4,00:34.82
+Female,11,800m Freestyle,4,01:16.47
+Female,11,100m Breaststroke,4,02:45.76
+Female,11,100m Butterfly,4,05:52.47
+Female,11,100m Backstroke,4,12:05.78
+Female,11,400m Individual Medley,4,23:47.01
+Female,11,100m Freestyle,3,00:35.26
+Female,11,800m Freestyle,3,01:17.42
+Female,11,100m Breaststroke,3,02:47.81
+Female,11,100m Butterfly,3,05:56.84
+Female,11,100m Backstroke,3,12:14.78
+Female,11,400m Individual Medley,3,24:04.70
+Female,11,100m Freestyle,2,00:35.69
+Female,11,800m Freestyle,2,01:18.37
+Female,11,100m Breaststroke,2,02:49.87
+Female,11,100m Butterfly,2,06:01.21
+Female,11,100m Backstroke,2,12:23.78
+Female,11,400m Individual Medley,2,24:22.39
+Female,11,100m Freestyle,1,00:36.12
+Female,11,800m Freestyle,1,01:19.32
+Female,11,100m Breaststroke,1,02:51.92
+Female,11,100m Butterfly,1,06:05.58
+Female,11,100m Backstroke,1,12:32.77
+Female,11,400m Individual Medley,1,24:40.08
+Female,12,50m Freestyle,20,00:26.84
+Female,12,100m Freestyle,20,00:26.84
+Female,12,400m Freestyle,20,00:58.41
+Female,12,800m Freestyle,20,00:58.41
+Female,12,50m Breaststroke,20,02:07.74
+Female,12,100m Breaststroke,20,02:07.74
+Female,12,50m Butterfly,20,04:28.43
+Female,12,100m Butterfly,20,04:28.43
+Female,12,50m Backstroke,20,09:18.39
+Female,12,100m Backstroke,20,09:18.39
+Female,12,200m Individual Medley,20,17:56.59
+Female,12,400m Individual Medley,20,17:56.59
+Female,12,100m Freestyle,19,00:27.25
+Female,12,800m Freestyle,19,00:59.32
+Female,12,100m Breaststroke,19,02:09.71
+Female,12,100m Butterfly,19,04:32.58
+Female,12,100m Backstroke,19,09:27.03
+Female,12,400m Individual Medley,19,18:13.24
+Female,12,100m Freestyle,18,00:27.67
+Female,12,800m Freestyle,18,01:00.22
+Female,12,100m Breaststroke,18,02:11.69
+Female,12,100m Butterfly,18,04:36.73
+Female,12,100m Backstroke,18,09:35.66
+Female,12,400m Individual Medley,18,18:29.89
+Female,12,100m Freestyle,17,00:28.09
+Female,12,800m Freestyle,17,01:01.12
+Female,12,100m Breaststroke,17,02:13.67
+Female,12,100m Butterfly,17,04:40.88
+Female,12,100m Backstroke,17,09:44.29
+Female,12,400m Individual Medley,17,18:46.54
+Female,12,100m Freestyle,16,00:28.50
+Female,12,800m Freestyle,16,01:02.03
+Female,12,100m Breaststroke,16,02:15.64
+Female,12,100m Butterfly,16,04:45.03
+Female,12,100m Backstroke,16,09:52.93
+Female,12,400m Individual Medley,16,19:03.19
+Female,12,100m Freestyle,15,00:28.92
+Female,12,800m Freestyle,15,01:02.93
+Female,12,100m Breaststroke,15,02:17.62
+Female,12,100m Butterfly,15,04:49.18
+Female,12,100m Backstroke,15,10:01.56
+Female,12,400m Individual Medley,15,19:19.84
+Female,12,100m Freestyle,14,00:29.33
+Female,12,800m Freestyle,14,01:03.83
+Female,12,100m Breaststroke,14,02:19.59
+Female,12,100m Butterfly,14,04:53.33
+Female,12,100m Backstroke,14,10:10.20
+Female,12,400m Individual Medley,14,19:36.48
+Female,12,100m Freestyle,13,00:29.75
+Female,12,800m Freestyle,13,01:04.74
+Female,12,100m Breaststroke,13,02:21.57
+Female,12,100m Butterfly,13,04:57.48
+Female,12,100m Backstroke,13,10:18.83
+Female,12,400m Individual Medley,13,19:53.13
+Female,12,100m Freestyle,12,00:30.16
+Female,12,800m Freestyle,12,01:05.64
+Female,12,100m Breaststroke,12,02:23.54
+Female,12,100m Butterfly,12,05:01.64
+Female,12,100m Backstroke,12,10:27.47
+Female,12,400m Individual Medley,12,20:09.78
+Female,12,100m Freestyle,11,00:30.58
+Female,12,800m Freestyle,11,01:06.54
+Female,12,100m Breaststroke,11,02:25.52
+Female,12,100m Butterfly,11,05:05.79
+Female,12,100m Backstroke,11,10:36.10
+Female,12,400m Individual Medley,11,20:26.43
+Female,12,100m Freestyle,10,00:30.99
+Female,12,800m Freestyle,10,01:07.45
+Female,12,100m Breaststroke,10,02:27.49
+Female,12,100m Butterfly,10,05:09.94
+Female,12,100m Backstroke,10,10:44.74
+Female,12,400m Individual Medley,10,20:43.08
+Female,12,100m Freestyle,9,00:31.41
+Female,12,800m Freestyle,9,01:08.35
+Female,12,100m Breaststroke,9,02:29.47
+Female,12,100m Butterfly,9,05:14.09
+Female,12,100m Backstroke,9,10:53.37
+Female,12,400m Individual Medley,9,20:59.73
+Female,12,100m Freestyle,8,00:31.82
+Female,12,800m Freestyle,8,01:09.25
+Female,12,100m Breaststroke,8,02:31.44
+Female,12,100m Butterfly,8,05:18.24
+Female,12,100m Backstroke,8,11:02.01
+Female,12,400m Individual Medley,8,21:16.37
+Female,12,100m Freestyle,7,00:32.24
+Female,12,800m Freestyle,7,01:10.16
+Female,12,100m Breaststroke,7,02:33.42
+Female,12,100m Butterfly,7,05:22.39
+Female,12,100m Backstroke,7,11:10.64
+Female,12,400m Individual Medley,7,21:33.02
+Female,12,100m Freestyle,6,00:32.65
+Female,12,800m Freestyle,6,01:11.06
+Female,12,100m Breaststroke,6,02:35.39
+Female,12,100m Butterfly,6,05:26.54
+Female,12,100m Backstroke,6,11:19.28
+Female,12,400m Individual Medley,6,21:49.67
+Female,12,100m Freestyle,5,00:33.07
+Female,12,800m Freestyle,5,01:11.96
+Female,12,100m Breaststroke,5,02:37.37
+Female,12,100m Butterfly,5,05:30.69
+Female,12,100m Backstroke,5,11:27.91
+Female,12,400m Individual Medley,5,22:06.32
+Female,12,100m Freestyle,4,00:33.48
+Female,12,800m Freestyle,4,01:12.87
+Female,12,100m Breaststroke,4,02:39.34
+Female,12,100m Butterfly,4,05:34.84
+Female,12,100m Backstroke,4,11:36.55
+Female,12,400m Individual Medley,4,22:22.97
+Female,12,100m Freestyle,3,00:33.90
+Female,12,800m Freestyle,3,01:13.77
+Female,12,100m Breaststroke,3,02:41.32
+Female,12,100m Butterfly,3,05:38.99
+Female,12,100m Backstroke,3,11:45.18
+Female,12,400m Individual Medley,3,22:39.62
+Female,12,100m Freestyle,2,00:34.31
+Female,12,800m Freestyle,2,01:14.67
+Female,12,100m Breaststroke,2,02:43.30
+Female,12,100m Butterfly,2,05:43.15
+Female,12,100m Backstroke,2,11:53.82
+Female,12,400m Individual Medley,2,22:56.26
+Female,12,100m Freestyle,1,00:34.73
+Female,12,800m Freestyle,1,01:15.58
+Female,12,100m Breaststroke,1,02:45.27
+Female,12,100m Butterfly,1,05:47.30
+Female,12,100m Backstroke,1,12:02.45
+Female,12,400m Individual Medley,1,23:12.91
+Female,13,50m Freestyle,20,00:25.90
+Female,13,100m Freestyle,20,00:25.90
+Female,13,400m Freestyle,20,00:56.44
+Female,13,800m Freestyle,20,00:56.44
+Female,13,50m Breaststroke,20,02:02.22
+Female,13,100m Breaststroke,20,02:02.22
+Female,13,50m Butterfly,20,04:17.95
+Female,13,100m Butterfly,20,04:17.95
+Female,13,50m Backstroke,20,08:52.48
+Female,13,100m Backstroke,20,08:52.48
+Female,13,200m Individual Medley,20,17:11.51
+Female,13,400m Individual Medley,20,17:11.51
+Female,13,100m Freestyle,19,00:26.30
+Female,13,800m Freestyle,19,00:57.32
+Female,13,100m Breaststroke,19,02:04.11
+Female,13,100m Butterfly,19,04:21.94
+Female,13,100m Backstroke,19,09:00.72
+Female,13,400m Individual Medley,19,17:27.46
+Female,13,100m Freestyle,18,00:26.70
+Female,13,800m Freestyle,18,00:58.19
+Female,13,100m Breaststroke,18,02:06.00
+Female,13,100m Butterfly,18,04:25.93
+Female,13,100m Backstroke,18,09:08.95
+Female,13,400m Individual Medley,18,17:43.41
+Female,13,100m Freestyle,17,00:27.10
+Female,13,800m Freestyle,17,00:59.06
+Female,13,100m Breaststroke,17,02:07.89
+Female,13,100m Butterfly,17,04:29.92
+Female,13,100m Backstroke,17,09:17.18
+Female,13,400m Individual Medley,17,17:59.36
+Female,13,100m Freestyle,16,00:27.50
+Female,13,800m Freestyle,16,00:59.94
+Female,13,100m Breaststroke,16,02:09.78
+Female,13,100m Butterfly,16,04:33.91
+Female,13,100m Backstroke,16,09:25.42
+Female,13,400m Individual Medley,16,18:15.31
+Female,13,100m Freestyle,15,00:27.90
+Female,13,800m Freestyle,15,01:00.81
+Female,13,100m Breaststroke,15,02:11.67
+Female,13,100m Butterfly,15,04:37.90
+Female,13,100m Backstroke,15,09:33.65
+Female,13,400m Individual Medley,15,18:31.26
+Female,13,100m Freestyle,14,00:28.30
+Female,13,800m Freestyle,14,01:01.68
+Female,13,100m Breaststroke,14,02:13.56
+Female,13,100m Butterfly,14,04:41.89
+Female,13,100m Backstroke,14,09:41.89
+Female,13,400m Individual Medley,14,18:47.21
+Female,13,100m Freestyle,13,00:28.70
+Female,13,800m Freestyle,13,01:02.55
+Female,13,100m Breaststroke,13,02:15.45
+Female,13,100m Butterfly,13,04:45.87
+Female,13,100m Backstroke,13,09:50.12
+Female,13,400m Individual Medley,13,19:03.17
+Female,13,100m Freestyle,12,00:29.10
+Female,13,800m Freestyle,12,01:03.43
+Female,13,100m Breaststroke,12,02:17.34
+Female,13,100m Butterfly,12,04:49.86
+Female,13,100m Backstroke,12,09:58.36
+Female,13,400m Individual Medley,12,19:19.12
+Female,13,100m Freestyle,11,00:29.50
+Female,13,800m Freestyle,11,01:04.30
+Female,13,100m Breaststroke,11,02:19.23
+Female,13,100m Butterfly,11,04:53.85
+Female,13,100m Backstroke,11,10:06.59
+Female,13,400m Individual Medley,11,19:35.07
+Female,13,100m Freestyle,10,00:29.90
+Female,13,800m Freestyle,10,01:05.17
+Female,13,100m Breaststroke,10,02:21.12
+Female,13,100m Butterfly,10,04:57.84
+Female,13,100m Backstroke,10,10:14.82
+Female,13,400m Individual Medley,10,19:51.02
+Female,13,100m Freestyle,9,00:30.30
+Female,13,800m Freestyle,9,01:06.05
+Female,13,100m Breaststroke,9,02:23.01
+Female,13,100m Butterfly,9,05:01.83
+Female,13,100m Backstroke,9,10:23.06
+Female,13,400m Individual Medley,9,20:06.97
+Female,13,100m Freestyle,8,00:30.71
+Female,13,800m Freestyle,8,01:06.92
+Female,13,100m Breaststroke,8,02:24.90
+Female,13,100m Butterfly,8,05:05.82
+Female,13,100m Backstroke,8,10:31.29
+Female,13,400m Individual Medley,8,20:22.92
+Female,13,100m Freestyle,7,00:31.11
+Female,13,800m Freestyle,7,01:07.79
+Female,13,100m Breaststroke,7,02:26.79
+Female,13,100m Butterfly,7,05:09.81
+Female,13,100m Backstroke,7,10:39.53
+Female,13,400m Individual Medley,7,20:38.87
+Female,13,100m Freestyle,6,00:31.51
+Female,13,800m Freestyle,6,01:08.66
+Female,13,100m Breaststroke,6,02:28.68
+Female,13,100m Butterfly,6,05:13.80
+Female,13,100m Backstroke,6,10:47.76
+Female,13,400m Individual Medley,6,20:54.82
+Female,13,100m Freestyle,5,00:31.91
+Female,13,800m Freestyle,5,01:09.54
+Female,13,100m Breaststroke,5,02:30.57
+Female,13,100m Butterfly,5,05:17.79
+Female,13,100m Backstroke,5,10:56.00
+Female,13,400m Individual Medley,5,21:10.77
+Female,13,100m Freestyle,4,00:32.31
+Female,13,800m Freestyle,4,01:10.41
+Female,13,100m Breaststroke,4,02:32.46
+Female,13,100m Butterfly,4,05:21.78
+Female,13,100m Backstroke,4,11:04.23
+Female,13,400m Individual Medley,4,21:26.73
+Female,13,100m Freestyle,3,00:32.71
+Female,13,800m Freestyle,3,01:11.28
+Female,13,100m Breaststroke,3,02:34.35
+Female,13,100m Butterfly,3,05:25.76
+Female,13,100m Backstroke,3,11:12.46
+Female,13,400m Individual Medley,3,21:42.68
+Female,13,100m Freestyle,2,00:33.11
+Female,13,800m Freestyle,2,01:12.16
+Female,13,100m Breaststroke,2,02:36.24
+Female,13,100m Butterfly,2,05:29.75
+Female,13,100m Backstroke,2,11:20.70
+Female,13,400m Individual Medley,2,21:58.63
+Female,13,100m Freestyle,1,00:33.51
+Female,13,800m Freestyle,1,01:13.03
+Female,13,100m Breaststroke,1,02:38.13
+Female,13,100m Butterfly,1,05:33.74
+Female,13,100m Backstroke,1,11:28.93
+Female,13,400m Individual Medley,1,22:14.58
+Female,14,50m Freestyle,20,00:25.43
+Female,14,100m Freestyle,20,00:25.43
+Female,14,400m Freestyle,20,00:54.98
+Female,14,800m Freestyle,20,00:54.98
+Female,14,50m Breaststroke,20,01:59.03
+Female,14,100m Breaststroke,20,01:59.03
+Female,14,50m Butterfly,20,04:11.47
+Female,14,100m Butterfly,20,04:11.47
+Female,14,50m Backstroke,20,08:35.92
+Female,14,100m Backstroke,20,08:35.92
+Female,14,200m Individual Medley,20,16:43.87
+Female,14,400m Individual Medley,20,16:43.87
+Female,14,100m Freestyle,19,00:25.83
+Female,14,800m Freestyle,19,00:55.83
+Female,14,100m Breaststroke,19,02:00.87
+Female,14,100m Butterfly,19,04:15.36
+Female,14,100m Backstroke,19,08:43.90
+Female,14,400m Individual Medley,19,16:59.40
+Female,14,100m Freestyle,18,00:26.22
+Female,14,800m Freestyle,18,00:56.68
+Female,14,100m Breaststroke,18,02:02.71
+Female,14,100m Butterfly,18,04:19.25
+Female,14,100m Backstroke,18,08:51.88
+Female,14,400m Individual Medley,18,17:14.92
+Female,14,100m Freestyle,17,00:26.61
+Female,14,800m Freestyle,17,00:57.53
+Female,14,100m Breaststroke,17,02:04.55
+Female,14,100m Butterfly,17,04:23.14
+Female,14,100m Backstroke,17,08:59.86
+Female,14,400m Individual Medley,17,17:30.44
+Female,14,100m Freestyle,16,00:27.01
+Female,14,800m Freestyle,16,00:58.38
+Female,14,100m Breaststroke,16,02:06.39
+Female,14,100m Butterfly,16,04:27.03
+Female,14,100m Backstroke,16,09:07.84
+Female,14,400m Individual Medley,16,17:45.97
+Female,14,100m Freestyle,15,00:27.40
+Female,14,800m Freestyle,15,00:59.23
+Female,14,100m Breaststroke,15,02:08.23
+Female,14,100m Butterfly,15,04:30.92
+Female,14,100m Backstroke,15,09:15.81
+Female,14,400m Individual Medley,15,18:01.49
+Female,14,100m Freestyle,14,00:27.79
+Female,14,800m Freestyle,14,01:00.08
+Female,14,100m Breaststroke,14,02:10.07
+Female,14,100m Butterfly,14,04:34.81
+Female,14,100m Backstroke,14,09:23.79
+Female,14,400m Individual Medley,14,18:17.02
+Female,14,100m Freestyle,13,00:28.19
+Female,14,800m Freestyle,13,01:00.93
+Female,14,100m Breaststroke,13,02:11.91
+Female,14,100m Butterfly,13,04:38.69
+Female,14,100m Backstroke,13,09:31.77
+Female,14,400m Individual Medley,13,18:32.54
+Female,14,100m Freestyle,12,00:28.58
+Female,14,800m Freestyle,12,01:01.78
+Female,14,100m Breaststroke,12,02:13.75
+Female,14,100m Butterfly,12,04:42.58
+Female,14,100m Backstroke,12,09:39.75
+Female,14,400m Individual Medley,12,18:48.06
+Female,14,100m Freestyle,11,00:28.97
+Female,14,800m Freestyle,11,01:02.63
+Female,14,100m Breaststroke,11,02:15.59
+Female,14,100m Butterfly,11,04:46.47
+Female,14,100m Backstroke,11,09:47.73
+Female,14,400m Individual Medley,11,19:03.59
+Female,14,100m Freestyle,10,00:29.37
+Female,14,800m Freestyle,10,01:03.48
+Female,14,100m Breaststroke,10,02:17.44
+Female,14,100m Butterfly,10,04:50.36
+Female,14,100m Backstroke,10,09:55.71
+Female,14,400m Individual Medley,10,19:19.11
+Female,14,100m Freestyle,9,00:29.76
+Female,14,800m Freestyle,9,01:04.33
+Female,14,100m Breaststroke,9,02:19.28
+Female,14,100m Butterfly,9,04:54.25
+Female,14,100m Backstroke,9,10:03.68
+Female,14,400m Individual Medley,9,19:34.63
+Female,14,100m Freestyle,8,00:30.15
+Female,14,800m Freestyle,8,01:05.18
+Female,14,100m Breaststroke,8,02:21.12
+Female,14,100m Butterfly,8,04:58.14
+Female,14,100m Backstroke,8,10:11.66
+Female,14,400m Individual Medley,8,19:50.16
+Female,14,100m Freestyle,7,00:30.55
+Female,14,800m Freestyle,7,01:06.03
+Female,14,100m Breaststroke,7,02:22.96
+Female,14,100m Butterfly,7,05:02.03
+Female,14,100m Backstroke,7,10:19.64
+Female,14,400m Individual Medley,7,20:05.68
+Female,14,100m Freestyle,6,00:30.94
+Female,14,800m Freestyle,6,01:06.88
+Female,14,100m Breaststroke,6,02:24.80
+Female,14,100m Butterfly,6,05:05.91
+Female,14,100m Backstroke,6,10:27.62
+Female,14,400m Individual Medley,6,20:21.21
+Female,14,100m Freestyle,5,00:31.33
+Female,14,800m Freestyle,5,01:07.73
+Female,14,100m Breaststroke,5,02:26.64
+Female,14,100m Butterfly,5,05:09.80
+Female,14,100m Backstroke,5,10:35.60
+Female,14,400m Individual Medley,5,20:36.73
+Female,14,100m Freestyle,4,00:31.73
+Female,14,800m Freestyle,4,01:08.58
+Female,14,100m Breaststroke,4,02:28.48
+Female,14,100m Butterfly,4,05:13.69
+Female,14,100m Backstroke,4,10:43.57
+Female,14,400m Individual Medley,4,20:52.25
+Female,14,100m Freestyle,3,00:32.12
+Female,14,800m Freestyle,3,01:09.43
+Female,14,100m Breaststroke,3,02:30.32
+Female,14,100m Butterfly,3,05:17.58
+Female,14,100m Backstroke,3,10:51.55
+Female,14,400m Individual Medley,3,21:07.78
+Female,14,100m Freestyle,2,00:32.51
+Female,14,800m Freestyle,2,01:10.28
+Female,14,100m Breaststroke,2,02:32.16
+Female,14,100m Butterfly,2,05:21.47
+Female,14,100m Backstroke,2,10:59.53
+Female,14,400m Individual Medley,2,21:23.30
+Female,14,100m Freestyle,1,00:32.91
+Female,14,800m Freestyle,1,01:11.13
+Female,14,100m Breaststroke,1,02:34.00
+Female,14,100m Butterfly,1,05:25.36
+Female,14,100m Backstroke,1,11:07.51
+Female,14,400m Individual Medley,1,21:38.82
+Female,15,50m Freestyle,20,00:24.98
+Female,15,100m Freestyle,20,00:24.98
+Female,15,400m Freestyle,20,00:54.07
+Female,15,800m Freestyle,20,00:54.07
+Female,15,50m Breaststroke,20,01:57.24
+Female,15,100m Breaststroke,20,01:57.24
+Female,15,50m Butterfly,20,04:07.51
+Female,15,100m Butterfly,20,04:07.51
+Female,15,50m Backstroke,20,08:29.79
+Female,15,100m Backstroke,20,08:29.79
+Female,15,200m Individual Medley,20,16:16.77
+Female,15,400m Individual Medley,20,16:16.77
+Female,15,100m Freestyle,19,00:25.36
+Female,15,800m Freestyle,19,00:54.90
+Female,15,100m Breaststroke,19,01:59.06
+Female,15,100m Butterfly,19,04:11.34
+Female,15,100m Backstroke,19,08:37.68
+Female,15,400m Individual Medley,19,16:31.88
+Female,15,100m Freestyle,18,00:25.75
+Female,15,800m Freestyle,18,00:55.74
+Female,15,100m Breaststroke,18,02:00.87
+Female,15,100m Butterfly,18,04:15.17
+Female,15,100m Backstroke,18,08:45.56
+Female,15,400m Individual Medley,18,16:46.98
+Female,15,100m Freestyle,17,00:26.14
+Female,15,800m Freestyle,17,00:56.58
+Female,15,100m Breaststroke,17,02:02.68
+Female,15,100m Butterfly,17,04:19.00
+Female,15,100m Backstroke,17,08:53.44
+Female,15,400m Individual Medley,17,17:02.08
+Female,15,100m Freestyle,16,00:26.52
+Female,15,800m Freestyle,16,00:57.41
+Female,15,100m Breaststroke,16,02:04.50
+Female,15,100m Butterfly,16,04:22.83
+Female,15,100m Backstroke,16,09:01.33
+Female,15,400m Individual Medley,16,17:17.19
+Female,15,100m Freestyle,15,00:26.91
+Female,15,800m Freestyle,15,00:58.25
+Female,15,100m Breaststroke,15,02:06.31
+Female,15,100m Butterfly,15,04:26.65
+Female,15,100m Backstroke,15,09:09.21
+Female,15,400m Individual Medley,15,17:32.29
+Female,15,100m Freestyle,14,00:27.29
+Female,15,800m Freestyle,14,00:59.08
+Female,15,100m Breaststroke,14,02:08.12
+Female,15,100m Butterfly,14,04:30.48
+Female,15,100m Backstroke,14,09:17.09
+Female,15,400m Individual Medley,14,17:47.40
+Female,15,100m Freestyle,13,00:27.68
+Female,15,800m Freestyle,13,00:59.92
+Female,15,100m Breaststroke,13,02:09.94
+Female,15,100m Butterfly,13,04:34.31
+Female,15,100m Backstroke,13,09:24.98
+Female,15,400m Individual Medley,13,18:02.50
+Female,15,100m Freestyle,12,00:28.07
+Female,15,800m Freestyle,12,01:00.76
+Female,15,100m Breaststroke,12,02:11.75
+Female,15,100m Butterfly,12,04:38.14
+Female,15,100m Backstroke,12,09:32.86
+Female,15,400m Individual Medley,12,18:17.61
+Female,15,100m Freestyle,11,00:28.45
+Female,15,800m Freestyle,11,01:01.59
+Female,15,100m Breaststroke,11,02:13.56
+Female,15,100m Butterfly,11,04:41.96
+Female,15,100m Backstroke,11,09:40.74
+Female,15,400m Individual Medley,11,18:32.71
+Female,15,100m Freestyle,10,00:28.84
+Female,15,800m Freestyle,10,01:02.43
+Female,15,100m Breaststroke,10,02:15.37
+Female,15,100m Butterfly,10,04:45.79
+Female,15,100m Backstroke,10,09:48.63
+Female,15,400m Individual Medley,10,18:47.82
+Female,15,100m Freestyle,9,00:29.23
+Female,15,800m Freestyle,9,01:03.26
+Female,15,100m Breaststroke,9,02:17.19
+Female,15,100m Butterfly,9,04:49.62
+Female,15,100m Backstroke,9,09:56.51
+Female,15,400m Individual Medley,9,19:02.92
+Female,15,100m Freestyle,8,00:29.61
+Female,15,800m Freestyle,8,01:04.10
+Female,15,100m Breaststroke,8,02:19.00
+Female,15,100m Butterfly,8,04:53.45
+Female,15,100m Backstroke,8,10:04.39
+Female,15,400m Individual Medley,8,19:18.03
+Female,15,100m Freestyle,7,00:30.00
+Female,15,800m Freestyle,7,01:04.94
+Female,15,100m Breaststroke,7,02:20.81
+Female,15,100m Butterfly,7,04:57.27
+Female,15,100m Backstroke,7,10:12.28
+Female,15,400m Individual Medley,7,19:33.13
+Female,15,100m Freestyle,6,00:30.38
+Female,15,800m Freestyle,6,01:05.77
+Female,15,100m Breaststroke,6,02:22.63
+Female,15,100m Butterfly,6,05:01.10
+Female,15,100m Backstroke,6,10:20.16
+Female,15,400m Individual Medley,6,19:48.24
+Female,15,100m Freestyle,5,00:30.77
+Female,15,800m Freestyle,5,01:06.61
+Female,15,100m Breaststroke,5,02:24.44
+Female,15,100m Butterfly,5,05:04.93
+Female,15,100m Backstroke,5,10:28.04
+Female,15,400m Individual Medley,5,20:03.34
+Female,15,100m Freestyle,4,00:31.16
+Female,15,800m Freestyle,4,01:07.45
+Female,15,100m Breaststroke,4,02:26.25
+Female,15,100m Butterfly,4,05:08.76
+Female,15,100m Backstroke,4,10:35.93
+Female,15,400m Individual Medley,4,20:18.45
+Female,15,100m Freestyle,3,00:31.54
+Female,15,800m Freestyle,3,01:08.28
+Female,15,100m Breaststroke,3,02:28.07
+Female,15,100m Butterfly,3,05:12.58
+Female,15,100m Backstroke,3,10:43.81
+Female,15,400m Individual Medley,3,20:33.55
+Female,15,100m Freestyle,2,00:31.93
+Female,15,800m Freestyle,2,01:09.12
+Female,15,100m Breaststroke,2,02:29.88
+Female,15,100m Butterfly,2,05:16.41
+Female,15,100m Backstroke,2,10:51.69
+Female,15,400m Individual Medley,2,20:48.66
+Female,15,100m Freestyle,1,00:32.32
+Female,15,800m Freestyle,1,01:09.95
+Female,15,100m Breaststroke,1,02:31.69
+Female,15,100m Butterfly,1,05:20.24
+Female,15,100m Backstroke,1,10:59.58
+Female,15,400m Individual Medley,1,21:03.76
+Female,16,50m Freestyle,20,00:24.83
+Female,16,100m Freestyle,20,00:24.83
+Female,16,400m Freestyle,20,00:53.94
+Female,16,800m Freestyle,20,00:53.94
+Female,16,50m Breaststroke,20,01:56.20
+Female,16,100m Breaststroke,20,01:56.20
+Female,16,50m Butterfly,20,04:05.16
+Female,16,100m Butterfly,20,04:05.16
+Female,16,50m Backstroke,20,08:23.85
+Female,16,100m Backstroke,20,08:23.85
+Female,16,200m Individual Medley,20,16:07.25
+Female,16,400m Individual Medley,20,16:07.25
+Female,16,100m Freestyle,19,00:25.22
+Female,16,800m Freestyle,19,00:54.78
+Female,16,100m Breaststroke,19,01:57.99
+Female,16,100m Butterfly,19,04:08.95
+Female,16,100m Backstroke,19,08:31.64
+Female,16,400m Individual Medley,19,16:22.21
+Female,16,100m Freestyle,18,00:25.60
+Female,16,800m Freestyle,18,00:55.61
+Female,16,100m Breaststroke,18,01:59.79
+Female,16,100m Butterfly,18,04:12.74
+Female,16,100m Backstroke,18,08:39.43
+Female,16,400m Individual Medley,18,16:37.17
+Female,16,100m Freestyle,17,00:25.98
+Female,16,800m Freestyle,17,00:56.44
+Female,16,100m Breaststroke,17,02:01.59
+Female,16,100m Butterfly,17,04:16.53
+Female,16,100m Backstroke,17,08:47.22
+Female,16,400m Individual Medley,17,16:52.13
+Female,16,100m Freestyle,16,00:26.37
+Female,16,800m Freestyle,16,00:57.28
+Female,16,100m Breaststroke,16,02:03.38
+Female,16,100m Butterfly,16,04:20.32
+Female,16,100m Backstroke,16,08:55.01
+Female,16,400m Individual Medley,16,17:07.09
+Female,16,100m Freestyle,15,00:26.75
+Female,16,800m Freestyle,15,00:58.11
+Female,16,100m Breaststroke,15,02:05.18
+Female,16,100m Butterfly,15,04:24.11
+Female,16,100m Backstroke,15,09:02.80
+Female,16,400m Individual Medley,15,17:22.04
+Female,16,100m Freestyle,14,00:27.14
+Female,16,800m Freestyle,14,00:58.95
+Female,16,100m Breaststroke,14,02:06.98
+Female,16,100m Butterfly,14,04:27.90
+Female,16,100m Backstroke,14,09:10.60
+Female,16,400m Individual Medley,14,17:37.00
+Female,16,100m Freestyle,13,00:27.52
+Female,16,800m Freestyle,13,00:59.78
+Female,16,100m Breaststroke,13,02:08.77
+Female,16,100m Butterfly,13,04:31.70
+Female,16,100m Backstroke,13,09:18.39
+Female,16,400m Individual Medley,13,17:51.96
+Female,16,100m Freestyle,12,00:27.90
+Female,16,800m Freestyle,12,01:00.61
+Female,16,100m Breaststroke,12,02:10.57
+Female,16,100m Butterfly,12,04:35.49
+Female,16,100m Backstroke,12,09:26.18
+Female,16,400m Individual Medley,12,18:06.92
+Female,16,100m Freestyle,11,00:28.29
+Female,16,800m Freestyle,11,01:01.45
+Female,16,100m Breaststroke,11,02:12.37
+Female,16,100m Butterfly,11,04:39.28
+Female,16,100m Backstroke,11,09:33.97
+Female,16,400m Individual Medley,11,18:21.87
+Female,16,100m Freestyle,10,00:28.67
+Female,16,800m Freestyle,10,01:02.28
+Female,16,100m Breaststroke,10,02:14.16
+Female,16,100m Butterfly,10,04:43.07
+Female,16,100m Backstroke,10,09:41.76
+Female,16,400m Individual Medley,10,18:36.83
+Female,16,100m Freestyle,9,00:29.06
+Female,16,800m Freestyle,9,01:03.12
+Female,16,100m Breaststroke,9,02:15.96
+Female,16,100m Butterfly,9,04:46.86
+Female,16,100m Backstroke,9,09:49.55
+Female,16,400m Individual Medley,9,18:51.79
+Female,16,100m Freestyle,8,00:29.44
+Female,16,800m Freestyle,8,01:03.95
+Female,16,100m Breaststroke,8,02:17.76
+Female,16,100m Butterfly,8,04:50.65
+Female,16,100m Backstroke,8,09:57.34
+Female,16,400m Individual Medley,8,19:06.75
+Female,16,100m Freestyle,7,00:29.82
+Female,16,800m Freestyle,7,01:04.79
+Female,16,100m Breaststroke,7,02:19.56
+Female,16,100m Butterfly,7,04:54.44
+Female,16,100m Backstroke,7,10:05.14
+Female,16,400m Individual Medley,7,19:21.70
+Female,16,100m Freestyle,6,00:30.21
+Female,16,800m Freestyle,6,01:05.62
+Female,16,100m Breaststroke,6,02:21.35
+Female,16,100m Butterfly,6,04:58.23
+Female,16,100m Backstroke,6,10:12.93
+Female,16,400m Individual Medley,6,19:36.66
+Female,16,100m Freestyle,5,00:30.59
+Female,16,800m Freestyle,5,01:06.45
+Female,16,100m Breaststroke,5,02:23.15
+Female,16,100m Butterfly,5,05:02.02
+Female,16,100m Backstroke,5,10:20.72
+Female,16,400m Individual Medley,5,19:51.62
+Female,16,100m Freestyle,4,00:30.98
+Female,16,800m Freestyle,4,01:07.29
+Female,16,100m Breaststroke,4,02:24.95
+Female,16,100m Butterfly,4,05:05.82
+Female,16,100m Backstroke,4,10:28.51
+Female,16,400m Individual Medley,4,20:06.58
+Female,16,100m Freestyle,3,00:31.36
+Female,16,800m Freestyle,3,01:08.12
+Female,16,100m Breaststroke,3,02:26.74
+Female,16,100m Butterfly,3,05:09.61
+Female,16,100m Backstroke,3,10:36.30
+Female,16,400m Individual Medley,3,20:21.53
+Female,16,100m Freestyle,2,00:31.74
+Female,16,800m Freestyle,2,01:08.96
+Female,16,100m Breaststroke,2,02:28.54
+Female,16,100m Butterfly,2,05:13.40
+Female,16,100m Backstroke,2,10:44.09
+Female,16,400m Individual Medley,2,20:36.49
+Female,16,100m Freestyle,1,00:32.13
+Female,16,800m Freestyle,1,01:09.79
+Female,16,100m Breaststroke,1,02:30.34
+Female,16,100m Butterfly,1,05:17.19
+Female,16,100m Backstroke,1,10:51.88
+Female,16,400m Individual Medley,1,20:51.45
+Female,17,50m Freestyle,20,00:24.71
+Female,17,100m Freestyle,20,00:24.71
+Female,17,400m Freestyle,20,00:53.67
+Female,17,800m Freestyle,20,00:53.67
+Female,17,50m Breaststroke,20,01:55.44
+Female,17,100m Breaststroke,20,01:55.44
+Female,17,50m Butterfly,20,04:04.38
+Female,17,100m Butterfly,20,04:04.38
+Female,17,50m Backstroke,20,08:22.63
+Female,17,100m Backstroke,20,08:22.63
+Female,17,200m Individual Medley,20,15:55.45
+Female,17,400m Individual Medley,20,15:55.45
+Female,17,100m Freestyle,19,00:25.09
+Female,17,800m Freestyle,19,00:54.50
+Female,17,100m Breaststroke,19,01:57.22
+Female,17,100m Butterfly,19,04:08.16
+Female,17,100m Backstroke,19,08:30.41
+Female,17,400m Individual Medley,19,16:10.23
+Female,17,100m Freestyle,18,00:25.47
+Female,17,800m Freestyle,18,00:55.33
+Female,17,100m Breaststroke,18,01:59.01
+Female,17,100m Butterfly,18,04:11.94
+Female,17,100m Backstroke,18,08:38.18
+Female,17,400m Individual Medley,18,16:25.00
+Female,17,100m Freestyle,17,00:25.85
+Female,17,800m Freestyle,17,00:56.16
+Female,17,100m Breaststroke,17,02:00.80
+Female,17,100m Butterfly,17,04:15.72
+Female,17,100m Backstroke,17,08:45.95
+Female,17,400m Individual Medley,17,16:39.78
+Female,17,100m Freestyle,16,00:26.23
+Female,17,800m Freestyle,16,00:56.99
+Female,17,100m Breaststroke,16,02:02.58
+Female,17,100m Butterfly,16,04:19.50
+Female,17,100m Backstroke,16,08:53.73
+Female,17,400m Individual Medley,16,16:54.55
+Female,17,100m Freestyle,15,00:26.62
+Female,17,800m Freestyle,15,00:57.82
+Female,17,100m Breaststroke,15,02:04.37
+Female,17,100m Butterfly,15,04:23.28
+Female,17,100m Backstroke,15,09:01.50
+Female,17,400m Individual Medley,15,17:09.33
+Female,17,100m Freestyle,14,00:27.00
+Female,17,800m Freestyle,14,00:58.65
+Female,17,100m Breaststroke,14,02:06.15
+Female,17,100m Butterfly,14,04:27.06
+Female,17,100m Backstroke,14,09:09.27
+Female,17,400m Individual Medley,14,17:24.10
+Female,17,100m Freestyle,13,00:27.38
+Female,17,800m Freestyle,13,00:59.48
+Female,17,100m Breaststroke,13,02:07.94
+Female,17,100m Butterfly,13,04:30.84
+Female,17,100m Backstroke,13,09:17.04
+Female,17,400m Individual Medley,13,17:38.88
+Female,17,100m Freestyle,12,00:27.76
+Female,17,800m Freestyle,12,01:00.31
+Female,17,100m Breaststroke,12,02:09.72
+Female,17,100m Butterfly,12,04:34.61
+Female,17,100m Backstroke,12,09:24.82
+Female,17,400m Individual Medley,12,17:53.65
+Female,17,100m Freestyle,11,00:28.14
+Female,17,800m Freestyle,11,01:01.14
+Female,17,100m Breaststroke,11,02:11.51
+Female,17,100m Butterfly,11,04:38.39
+Female,17,100m Backstroke,11,09:32.59
+Female,17,400m Individual Medley,11,18:08.43
+Female,17,100m Freestyle,10,00:28.53
+Female,17,800m Freestyle,10,01:01.97
+Female,17,100m Breaststroke,10,02:13.29
+Female,17,100m Butterfly,10,04:42.17
+Female,17,100m Backstroke,10,09:40.36
+Female,17,400m Individual Medley,10,18:23.20
+Female,17,100m Freestyle,9,00:28.91
+Female,17,800m Freestyle,9,01:02.80
+Female,17,100m Breaststroke,9,02:15.08
+Female,17,100m Butterfly,9,04:45.95
+Female,17,100m Backstroke,9,09:48.13
+Female,17,400m Individual Medley,9,18:37.98
+Female,17,100m Freestyle,8,00:29.29
+Female,17,800m Freestyle,8,01:03.63
+Female,17,100m Breaststroke,8,02:16.86
+Female,17,100m Butterfly,8,04:49.73
+Female,17,100m Backstroke,8,09:55.91
+Female,17,400m Individual Medley,8,18:52.75
+Female,17,100m Freestyle,7,00:29.67
+Female,17,800m Freestyle,7,01:04.46
+Female,17,100m Breaststroke,7,02:18.65
+Female,17,100m Butterfly,7,04:53.51
+Female,17,100m Backstroke,7,10:03.68
+Female,17,400m Individual Medley,7,19:07.53
+Female,17,100m Freestyle,6,00:30.05
+Female,17,800m Freestyle,6,01:05.29
+Female,17,100m Breaststroke,6,02:20.43
+Female,17,100m Butterfly,6,04:57.29
+Female,17,100m Backstroke,6,10:11.45
+Female,17,400m Individual Medley,6,19:22.30
+Female,17,100m Freestyle,5,00:30.44
+Female,17,800m Freestyle,5,01:06.12
+Female,17,100m Breaststroke,5,02:22.22
+Female,17,100m Butterfly,5,05:01.07
+Female,17,100m Backstroke,5,10:19.23
+Female,17,400m Individual Medley,5,19:37.08
+Female,17,100m Freestyle,4,00:30.82
+Female,17,800m Freestyle,4,01:06.95
+Female,17,100m Breaststroke,4,02:24.00
+Female,17,100m Butterfly,4,05:04.85
+Female,17,100m Backstroke,4,10:27.00
+Female,17,400m Individual Medley,4,19:51.85
+Female,17,100m Freestyle,3,00:31.20
+Female,17,800m Freestyle,3,01:07.78
+Female,17,100m Breaststroke,3,02:25.79
+Female,17,100m Butterfly,3,05:08.63
+Female,17,100m Backstroke,3,10:34.77
+Female,17,400m Individual Medley,3,20:06.63
+Female,17,100m Freestyle,2,00:31.58
+Female,17,800m Freestyle,2,01:08.61
+Female,17,100m Breaststroke,2,02:27.57
+Female,17,100m Butterfly,2,05:12.41
+Female,17,100m Backstroke,2,10:42.54
+Female,17,400m Individual Medley,2,20:21.40
+Female,17,100m Freestyle,1,00:31.96
+Female,17,800m Freestyle,1,01:09.44
+Female,17,100m Breaststroke,1,02:29.36
+Female,17,100m Butterfly,1,05:16.18
+Female,17,100m Backstroke,1,10:50.32
+Female,17,400m Individual Medley,1,20:36.18
+Female,18,50m Freestyle,20,00:24.54
+Female,18,100m Freestyle,20,00:24.54
+Female,18,400m Freestyle,20,00:53.61
+Female,18,800m Freestyle,20,00:53.61
+Female,18,50m Breaststroke,20,01:54.95
+Female,18,100m Breaststroke,20,01:54.95
+Female,18,50m Butterfly,20,04:02.94
+Female,18,100m Butterfly,20,04:02.94
+Female,18,50m Backstroke,20,08:19.14
+Female,18,100m Backstroke,20,08:19.14
+Female,18,200m Individual Medley,20,15:50.60
+Female,18,400m Individual Medley,20,15:50.60
+Female,18,100m Freestyle,19,00:24.92
+Female,18,800m Freestyle,19,00:54.44
+Female,18,100m Breaststroke,19,01:56.72
+Female,18,100m Butterfly,19,04:06.69
+Female,18,100m Backstroke,19,08:26.86
+Female,18,400m Individual Medley,19,16:05.30
+Female,18,100m Freestyle,18,00:25.30
+Female,18,800m Freestyle,18,00:55.27
+Female,18,100m Breaststroke,18,01:58.50
+Female,18,100m Butterfly,18,04:10.45
+Female,18,100m Backstroke,18,08:34.58
+Female,18,400m Individual Medley,18,16:20.00
+Female,18,100m Freestyle,17,00:25.68
+Female,18,800m Freestyle,17,00:56.10
+Female,18,100m Breaststroke,17,02:00.28
+Female,18,100m Butterfly,17,04:14.21
+Female,18,100m Backstroke,17,08:42.30
+Female,18,400m Individual Medley,17,16:34.70
+Female,18,100m Freestyle,16,00:26.06
+Female,18,800m Freestyle,16,00:56.93
+Female,18,100m Breaststroke,16,02:02.06
+Female,18,100m Butterfly,16,04:17.96
+Female,18,100m Backstroke,16,08:50.02
+Female,18,400m Individual Medley,16,16:49.40
+Female,18,100m Freestyle,15,00:26.44
+Female,18,800m Freestyle,15,00:57.76
+Female,18,100m Breaststroke,15,02:03.83
+Female,18,100m Butterfly,15,04:21.72
+Female,18,100m Backstroke,15,08:57.74
+Female,18,400m Individual Medley,15,17:04.10
+Female,18,100m Freestyle,14,00:26.82
+Female,18,800m Freestyle,14,00:58.59
+Female,18,100m Breaststroke,14,02:05.61
+Female,18,100m Butterfly,14,04:25.48
+Female,18,100m Backstroke,14,09:05.45
+Female,18,400m Individual Medley,14,17:18.80
+Female,18,100m Freestyle,13,00:27.20
+Female,18,800m Freestyle,13,00:59.42
+Female,18,100m Breaststroke,13,02:07.39
+Female,18,100m Butterfly,13,04:29.23
+Female,18,100m Backstroke,13,09:13.17
+Female,18,400m Individual Medley,13,17:33.50
+Female,18,100m Freestyle,12,00:27.58
+Female,18,800m Freestyle,12,01:00.24
+Female,18,100m Breaststroke,12,02:09.17
+Female,18,100m Butterfly,12,04:32.99
+Female,18,100m Backstroke,12,09:20.89
+Female,18,400m Individual Medley,12,17:48.20
+Female,18,100m Freestyle,11,00:27.96
+Female,18,800m Freestyle,11,01:01.07
+Female,18,100m Breaststroke,11,02:10.94
+Female,18,100m Butterfly,11,04:36.75
+Female,18,100m Backstroke,11,09:28.61
+Female,18,400m Individual Medley,11,18:02.90
+Female,18,100m Freestyle,10,00:28.34
+Female,18,800m Freestyle,10,01:01.90
+Female,18,100m Breaststroke,10,02:12.72
+Female,18,100m Butterfly,10,04:40.50
+Female,18,100m Backstroke,10,09:36.33
+Female,18,400m Individual Medley,10,18:17.60
+Female,18,100m Freestyle,9,00:28.72
+Female,18,800m Freestyle,9,01:02.73
+Female,18,100m Breaststroke,9,02:14.50
+Female,18,100m Butterfly,9,04:44.26
+Female,18,100m Backstroke,9,09:44.05
+Female,18,400m Individual Medley,9,18:32.30
+Female,18,100m Freestyle,8,00:29.09
+Female,18,800m Freestyle,8,01:03.56
+Female,18,100m Breaststroke,8,02:16.28
+Female,18,100m Butterfly,8,04:48.02
+Female,18,100m Backstroke,8,09:51.77
+Female,18,400m Individual Medley,8,18:47.00
+Female,18,100m Freestyle,7,00:29.47
+Female,18,800m Freestyle,7,01:04.39
+Female,18,100m Breaststroke,7,02:18.05
+Female,18,100m Butterfly,7,04:51.77
+Female,18,100m Backstroke,7,09:59.49
+Female,18,400m Individual Medley,7,19:01.70
+Female,18,100m Freestyle,6,00:29.85
+Female,18,800m Freestyle,6,01:05.22
+Female,18,100m Breaststroke,6,02:19.83
+Female,18,100m Butterfly,6,04:55.53
+Female,18,100m Backstroke,6,10:07.20
+Female,18,400m Individual Medley,6,19:16.40
+Female,18,100m Freestyle,5,00:30.23
+Female,18,800m Freestyle,5,01:06.05
+Female,18,100m Breaststroke,5,02:21.61
+Female,18,100m Butterfly,5,04:59.29
+Female,18,100m Backstroke,5,10:14.92
+Female,18,400m Individual Medley,5,19:31.10
+Female,18,100m Freestyle,4,00:30.61
+Female,18,800m Freestyle,4,01:06.88
+Female,18,100m Breaststroke,4,02:23.38
+Female,18,100m Butterfly,4,05:03.04
+Female,18,100m Backstroke,4,10:22.64
+Female,18,400m Individual Medley,4,19:45.80
+Female,18,100m Freestyle,3,00:30.99
+Female,18,800m Freestyle,3,01:07.71
+Female,18,100m Breaststroke,3,02:25.16
+Female,18,100m Butterfly,3,05:06.80
+Female,18,100m Backstroke,3,10:30.36
+Female,18,400m Individual Medley,3,20:00.50
+Female,18,100m Freestyle,2,00:31.37
+Female,18,800m Freestyle,2,01:08.53
+Female,18,100m Breaststroke,2,02:26.94
+Female,18,100m Butterfly,2,05:10.56
+Female,18,100m Backstroke,2,10:38.08
+Female,18,400m Individual Medley,2,20:15.20
+Female,18,100m Freestyle,1,00:31.75
+Female,18,800m Freestyle,1,01:09.36
+Female,18,100m Breaststroke,1,02:28.72
+Female,18,100m Butterfly,1,05:14.31
+Female,18,100m Backstroke,1,10:45.80
+Female,18,400m Individual Medley,1,20:29.90
+Female,Unknown,50m Freestyle,20,00:24.10
+Female,Unknown,100m Freestyle,20,00:24.10
+Female,Unknown,400m Freestyle,20,00:52.51
+Female,Unknown,800m Freestyle,20,00:52.51
+Female,Unknown,50m Breaststroke,20,01:53.81
+Female,Unknown,100m Breaststroke,20,01:53.81
+Female,Unknown,50m Butterfly,20,03:59.20
+Female,Unknown,100m Butterfly,20,03:59.20
+Female,Unknown,50m Backstroke,20,08:10.38
+Female,Unknown,100m Backstroke,20,08:10.38
+Female,Unknown,200m Individual Medley,20,15:36.22
+Female,Unknown,400m Individual Medley,20,15:36.22
+Female,Unknown,100m Freestyle,19,00:24.48
+Female,Unknown,800m Freestyle,19,00:53.32
+Female,Unknown,100m Breaststroke,19,01:55.57
+Female,Unknown,100m Butterfly,19,04:02.90
+Female,Unknown,100m Backstroke,19,08:17.97
+Female,Unknown,400m Individual Medley,19,15:50.70
+Female,Unknown,100m Freestyle,18,00:24.85
+Female,Unknown,800m Freestyle,18,00:54.13
+Female,Unknown,100m Breaststroke,18,01:57.33
+Female,Unknown,100m Butterfly,18,04:06.60
+Female,Unknown,100m Backstroke,18,08:25.55
+Female,Unknown,400m Individual Medley,18,16:05.18
+Female,Unknown,100m Freestyle,17,00:25.22
+Female,Unknown,800m Freestyle,17,00:54.94
+Female,Unknown,100m Breaststroke,17,01:59.09
+Female,Unknown,100m Butterfly,17,04:10.30
+Female,Unknown,100m Backstroke,17,08:33.13
+Female,Unknown,400m Individual Medley,17,16:19.66
+Female,Unknown,100m Freestyle,16,00:25.60
+Female,Unknown,800m Freestyle,16,00:55.75
+Female,Unknown,100m Breaststroke,16,02:00.85
+Female,Unknown,100m Butterfly,16,04:14.00
+Female,Unknown,100m Backstroke,16,08:40.72
+Female,Unknown,400m Individual Medley,16,16:34.14
+Female,Unknown,100m Freestyle,15,00:25.97
+Female,Unknown,800m Freestyle,15,00:56.57
+Female,Unknown,100m Breaststroke,15,02:02.61
+Female,Unknown,100m Butterfly,15,04:17.70
+Female,Unknown,100m Backstroke,15,08:48.30
+Female,Unknown,400m Individual Medley,15,16:48.61
+Female,Unknown,100m Freestyle,14,00:26.34
+Female,Unknown,800m Freestyle,14,00:57.38
+Female,Unknown,100m Breaststroke,14,02:04.37
+Female,Unknown,100m Butterfly,14,04:21.40
+Female,Unknown,100m Backstroke,14,08:55.88
+Female,Unknown,400m Individual Medley,14,17:03.09
+Female,Unknown,100m Freestyle,13,00:26.71
+Female,Unknown,800m Freestyle,13,00:58.19
+Female,Unknown,100m Breaststroke,13,02:06.13
+Female,Unknown,100m Butterfly,13,04:25.10
+Female,Unknown,100m Backstroke,13,09:03.47
+Female,Unknown,400m Individual Medley,13,17:17.57
+Female,Unknown,100m Freestyle,12,00:27.09
+Female,Unknown,800m Freestyle,12,00:59.00
+Female,Unknown,100m Breaststroke,12,02:07.89
+Female,Unknown,100m Butterfly,12,04:28.79
+Female,Unknown,100m Backstroke,12,09:11.05
+Female,Unknown,400m Individual Medley,12,17:32.05
+Female,Unknown,100m Freestyle,11,00:27.46
+Female,Unknown,800m Freestyle,11,00:59.81
+Female,Unknown,100m Breaststroke,11,02:09.65
+Female,Unknown,100m Butterfly,11,04:32.49
+Female,Unknown,100m Backstroke,11,09:18.63
+Female,Unknown,400m Individual Medley,11,17:46.52
+Female,Unknown,100m Freestyle,10,00:27.83
+Female,Unknown,800m Freestyle,10,01:00.63
+Female,Unknown,100m Breaststroke,10,02:11.41
+Female,Unknown,100m Butterfly,10,04:36.19
+Female,Unknown,100m Backstroke,10,09:26.22
+Female,Unknown,400m Individual Medley,10,18:01.00
+Female,Unknown,100m Freestyle,9,00:28.20
+Female,Unknown,800m Freestyle,9,01:01.44
+Female,Unknown,100m Breaststroke,9,02:13.17
+Female,Unknown,100m Butterfly,9,04:39.89
+Female,Unknown,100m Backstroke,9,09:33.80
+Female,Unknown,400m Individual Medley,9,18:15.48
+Female,Unknown,100m Freestyle,8,00:28.58
+Female,Unknown,800m Freestyle,8,01:02.25
+Female,Unknown,100m Breaststroke,8,02:14.93
+Female,Unknown,100m Butterfly,8,04:43.59
+Female,Unknown,100m Backstroke,8,09:41.38
+Female,Unknown,400m Individual Medley,8,18:29.96
+Female,Unknown,100m Freestyle,7,00:28.95
+Female,Unknown,800m Freestyle,7,01:03.06
+Female,Unknown,100m Breaststroke,7,02:16.69
+Female,Unknown,100m Butterfly,7,04:47.29
+Female,Unknown,100m Backstroke,7,09:48.97
+Female,Unknown,400m Individual Medley,7,18:44.43
+Female,Unknown,100m Freestyle,6,00:29.32
+Female,Unknown,800m Freestyle,6,01:03.87
+Female,Unknown,100m Breaststroke,6,02:18.45
+Female,Unknown,100m Butterfly,6,04:50.99
+Female,Unknown,100m Backstroke,6,09:56.55
+Female,Unknown,400m Individual Medley,6,18:58.91
+Female,Unknown,100m Freestyle,5,00:29.70
+Female,Unknown,800m Freestyle,5,01:04.69
+Female,Unknown,100m Breaststroke,5,02:20.21
+Female,Unknown,100m Butterfly,5,04:54.69
+Female,Unknown,100m Backstroke,5,10:04.13
+Female,Unknown,400m Individual Medley,5,19:13.39
+Female,Unknown,100m Freestyle,4,00:30.07
+Female,Unknown,800m Freestyle,4,01:05.50
+Female,Unknown,100m Breaststroke,4,02:21.97
+Female,Unknown,100m Butterfly,4,04:58.39
+Female,Unknown,100m Backstroke,4,10:11.72
+Female,Unknown,400m Individual Medley,4,19:27.87
+Female,Unknown,100m Freestyle,3,00:30.44
+Female,Unknown,800m Freestyle,3,01:06.31
+Female,Unknown,100m Breaststroke,3,02:23.73
+Female,Unknown,100m Butterfly,3,05:02.09
+Female,Unknown,100m Backstroke,3,10:19.30
+Female,Unknown,400m Individual Medley,3,19:42.35
+Female,Unknown,100m Freestyle,2,00:30.81
+Female,Unknown,800m Freestyle,2,01:07.12
+Female,Unknown,100m Breaststroke,2,02:25.49
+Female,Unknown,100m Butterfly,2,05:05.78
+Female,Unknown,100m Backstroke,2,10:26.88
+Female,Unknown,400m Individual Medley,2,19:56.82
+Female,Unknown,100m Freestyle,1,00:31.19
+Female,Unknown,800m Freestyle,1,01:07.93
+Female,Unknown,100m Breaststroke,1,02:27.25
+Female,Unknown,100m Butterfly,1,05:09.48
+Female,Unknown,100m Backstroke,1,10:34.47
+Female,Unknown,400m Individual Medley,1,20:11.30
