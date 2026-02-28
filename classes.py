@@ -142,3 +142,9 @@ class AthleticsDisciplineResults():
 #test = AthleticsDisciplineResults(url)
 #comp_details = test.extract_results_table()
 #comp_details
+
+if __name__ == "__main__":
+    url = 'https://loglig.com:2053/LeagueTable/AthleticsDisciplineResults/67364'
+    test = AthleticsDisciplineResults(url)
+    comp_details = test.extract_results_table()
+    print(comp_details)

@@ -18,7 +18,7 @@ with open('links.json', 'r') as f:
     links_data = json.load(f)
 
 # Select year - change this to switch between years
-SELECTED_YEAR = "2024"
+SELECTED_YEAR = "2025"
 
 # Get URL for selected year
 url = None

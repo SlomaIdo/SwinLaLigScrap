@@ -79,7 +79,7 @@ def extract_athletics_discipline_results(soup:BeautifulSoup, n:int=8)-> list:
     results_table = soup.find_all('table', {"class": "table res-table"})
     if len(results_table) == 0:
         return []
-    main_table_columns = results_table[0].find('tr', {"class": "disciplines-title"})        
+    main_table_columns = results_table[0].find('tr', {"class": "disciplines-title"})    
     #Only 8 headers are needed.
     # Parsing the main table columns.
     main_table_columns = tuple([i.text for i in main_table_columns.find_all('th')])
